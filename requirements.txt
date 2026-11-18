@@ -1,0 +1,8 @@
+# Local (Mac) environment: launching Modal jobs, plots, overlays.
+# GPU-side packages are pinned in modal_app.py.
+modal==1.6.4
+numpy==2.3.5
+opencv-python-headless==4.14.0.94
+matplotlib==3.11.2
+pillow
+pyyaml==6.0.3
