@@ -1,0 +1,260 @@
+{
+  "label_panels": [
+    {
+      "name": "ego4d_6f9d83ec-bea0-4788-8079-ff409d7da830_10350",
+      "size": "1440x1080",
+      "ids": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "name": "ego4d_fcc1b592-f210-4e4a-a2e4-2dd811ae9b2b_20100",
+      "size": "1920x1440",
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "epic_P15_04_frame_0000019351",
+      "size": "456x256",
+      "ids": [
+        0,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "name": "epic_P02_02_frame_0000007201",
+      "size": "456x256",
+      "ids": [
+        0,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "name": "escape_GX010070_004920",
+      "size": "3840x2160",
+      "ids": [
+        0,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "name": "escape_S01_long_cut_4680",
+      "size": "1920x1080",
+      "ids": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "name": "thu_use_stapler_RGB_use_stapler_cgy_3_65",
+      "size": "640x480",
+      "ids": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "thu_umbrella_RGB_umbrella_cgy_3_67",
+      "size": "640x480",
+      "ids": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "name": "ego4d_c5c0dc6e-f414-490c-b9ec-1d36852e95d1_19650",
+      "size": "1440x1080",
+      "ids": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "name": "epic_P33_104_frame_0000033751",
+      "size": "456x256",
+      "ids": [
+        0,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "name": "ego4d_ec8eb536-e142-4628-9b87-4df3fd403f91_24300",
+      "size": "1920x1440",
+      "ids": [
+        0,
+        2,
+        5
+      ]
+    },
+    {
+      "name": "ego4d_7bb3ad7f-9bdd-4806-afd6-efb7aa7babbc_119400",
+      "size": "1920x1080",
+      "ids": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "name": "escape_S06_long_flip_cut_11850",
+      "size": "1920x1080",
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "ego4d_52925c77-6be9-4953-9a06-993110acf76d_27300",
+      "size": "2560x1920",
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "ego4d_a7a4014b-f938-49ca-bd5f-f5bb88843ac4_3450",
+      "size": "1440x1080",
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "ego4d_52b42c33-ac42-435a-aef0-2b00d43516ec_2400",
+      "size": "1920x1440",
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "ego4d_38473fe0-8311-44f0-a976-46a1eef5c6d6_4200",
+      "size": "1440x1080",
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "ego4d_8e5c3d75-8a5c-45c7-ad7c-3dec1c7615ed_3450",
+      "size": "1440x1080",
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "thu_thumb_RGB_thumb_lzy_2_22",
+      "size": "640x480",
+      "ids": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "ego4d_55510a84-858b-4857-bb9f-6a923b5f7882_5250",
+      "size": "1440x1080",
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "aug_panels": [
+    {
+      "name": "epic_P08_22_frame_0000004411",
+      "stored_size": "456x256"
+    },
+    {
+      "name": "thu_draw_paper_RGB_draw_paper_cgy_1_57",
+      "stored_size": "640x480"
+    },
+    {
+      "name": "escape_S06_long_flip_cut_1980",
+      "stored_size": "910x512"
+    },
+    {
+      "name": "ego4d_1938c632-f575-49dd-8ae0-e48dbb467920_9450",
+      "stored_size": "683x512"
+    },
+    {
+      "name": "ego4d_def2e8dd-aaf7-467f-aa8f-46f654e6f4e0_22800",
+      "stored_size": "683x512"
+    }
+  ],
+  "eval_panels": [
+    {
+      "name": "epic_P12_05_frame_0000001171",
+      "original_size": "342x256",
+      "eval_input_size": "684x512",
+      "eval_shorter_side": 512,
+      "mask_size_equals_original": true
+    },
+    {
+      "name": "escape_GX010071_009900",
+      "original_size": "3840x2160",
+      "eval_input_size": "910x512",
+      "eval_shorter_side": 512,
+      "mask_size_equals_original": true
+    },
+    {
+      "name": "ego4d_2dbb7845-1de0-4e26-877a-035c051d12a5_750",
+      "original_size": "1920x1080",
+      "eval_input_size": "910x512",
+      "eval_shorter_side": 512,
+      "mask_size_equals_original": true
+    }
+  ],
+  "remapped_values_seen": [
+    0,
+    1,
+    2,
+    255
+  ],
+  "checks": {
+    "remapped_values_in_0_1_2_255": true,
+    "eval_shorter_side_is_512": true,
+    "eval_mask_at_original_size": true
+  }
+}

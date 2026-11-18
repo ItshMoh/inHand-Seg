@@ -1,0 +1,46 @@
+{
+  "split": "train",
+  "dst": "/data/egohos_512/train",
+  "n_source_pairs": 8993,
+  "actions": {
+    "resized": 6671,
+    "copied": 2322
+  },
+  "n_out_images": 8993,
+  "n_out_labels": 8993,
+  "n_out_pairs": 8993,
+  "out_sizes_top": {
+    "683x512": 5686,
+    "456x256": 1684,
+    "910x512": 985,
+    "640x480": 637,
+    "342x256": 1
+  },
+  "max_shorter_side": 512,
+  "label_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "remapped_values": [
+    0,
+    1,
+    2,
+    255
+  ],
+  "label_size_mismatch": [],
+  "checks": {
+    "pairs_match_source": true,
+    "shorter_side_le_512": true,
+    "labels_single_channel": true,
+    "label_values_within_0_8": true,
+    "remapped_values_in_0_1_2_255": true,
+    "label_sizes_match_images": true
+  }
+}

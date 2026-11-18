@@ -1,8 +1,14 @@
-# Local (Mac) environment: launching Modal jobs, plots, overlays.
-# GPU-side packages are pinned in modal_app.py.
+# Local (Mac) environment: launching Modal jobs, local debugging, plots, overlays.
+# Versions match the GPU image in modal_app.py.
 modal==1.6.4
+torch==2.14.1
+torchvision==0.29.2
+transformers==5.22.2
+albumentations==2.0.8
 numpy==2.3.5
 opencv-python-headless==4.14.0.94
 matplotlib==3.11.2
 pillow
 pyyaml==6.0.3
+scipy==1.18.1
+tqdm==4.70.1

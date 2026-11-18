@@ -1,0 +1,267 @@
+{
+  "root": "/data/egohos",
+  "splits": {
+    "train": {
+      "n_images": 8993,
+      "n_labels": 8993,
+      "n_contact": 0,
+      "n_paired": 8993,
+      "expected": 8993,
+      "images_without_label": [],
+      "labels_without_image": [],
+      "image_extensions": {
+        ".jpg": 8993
+      },
+      "label_extensions": {
+        ".png": 8993
+      },
+      "label_modes": {
+        "L": 8993
+      },
+      "image_sizes_top": {
+        "1440x1080": 2949,
+        "1920x1440": 1974,
+        "456x256": 1684,
+        "1920x1080": 807,
+        "2560x1920": 763,
+        "640x480": 637,
+        "3840x2160": 163,
+        "2560x1440": 15,
+        "342x256": 1
+      },
+      "n_distinct_image_sizes": 9,
+      "label_size_mismatch": {
+        "count": 0,
+        "examples": []
+      },
+      "contact_size_mismatch": {
+        "count": 0,
+        "examples": []
+      },
+      "label_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "label_pixel_share": {
+        "0 background": 0.809436,
+        "1 left_hand": 0.051517,
+        "2 right_hand": 0.052281,
+        "3 obj1_left": 0.025857,
+        "4 obj1_right": 0.013427,
+        "5 obj1_both": 0.018349,
+        "6 obj2_left": 0.002934,
+        "7 obj2_right": 0.013458,
+        "8 obj2_both": 0.012741
+      },
+      "contact_values": []
+    },
+    "val": {
+      "n_images": 1124,
+      "n_labels": 1124,
+      "n_contact": 0,
+      "n_paired": 1124,
+      "expected": 1124,
+      "images_without_label": [],
+      "labels_without_image": [],
+      "image_extensions": {
+        ".jpg": 1124
+      },
+      "label_extensions": {
+        ".png": 1124
+      },
+      "label_modes": {
+        "L": 1124
+      },
+      "image_sizes_top": {
+        "1440x1080": 371,
+        "1920x1440": 244,
+        "456x256": 217,
+        "1920x1080": 101,
+        "2560x1920": 89,
+        "640x480": 78,
+        "3840x2160": 20,
+        "2560x1440": 3,
+        "342x256": 1
+      },
+      "n_distinct_image_sizes": 9,
+      "label_size_mismatch": {
+        "count": 0,
+        "examples": []
+      },
+      "contact_size_mismatch": {
+        "count": 0,
+        "examples": []
+      },
+      "label_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "label_pixel_share": {
+        "0 background": 0.811572,
+        "1 left_hand": 0.047485,
+        "2 right_hand": 0.052735,
+        "3 obj1_left": 0.024288,
+        "4 obj1_right": 0.013855,
+        "5 obj1_both": 0.016112,
+        "6 obj2_left": 0.002956,
+        "7 obj2_right": 0.022338,
+        "8 obj2_both": 0.008659
+      },
+      "contact_values": []
+    },
+    "test_indomain": {
+      "n_images": 1126,
+      "n_labels": 1126,
+      "n_contact": 0,
+      "n_paired": 1126,
+      "expected": 1126,
+      "images_without_label": [],
+      "labels_without_image": [],
+      "image_extensions": {
+        ".jpg": 1126
+      },
+      "label_extensions": {
+        ".png": 1126
+      },
+      "label_modes": {
+        "L": 1126
+      },
+      "image_sizes_top": {
+        "1440x1080": 382,
+        "1920x1440": 236,
+        "456x256": 215,
+        "1920x1080": 96,
+        "640x480": 88,
+        "2560x1920": 85,
+        "3840x2160": 19,
+        "2560x1440": 3,
+        "342x256": 2
+      },
+      "n_distinct_image_sizes": 9,
+      "label_size_mismatch": {
+        "count": 0,
+        "examples": []
+      },
+      "contact_size_mismatch": {
+        "count": 0,
+        "examples": []
+      },
+      "label_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "label_pixel_share": {
+        "0 background": 0.80767,
+        "1 left_hand": 0.052777,
+        "2 right_hand": 0.053978,
+        "3 obj1_left": 0.025251,
+        "4 obj1_right": 0.012512,
+        "5 obj1_both": 0.018003,
+        "6 obj2_left": 0.001727,
+        "7 obj2_right": 0.017727,
+        "8 obj2_both": 0.010355
+      },
+      "contact_values": []
+    },
+    "test_outdomain": {
+      "n_images": 500,
+      "n_labels": 500,
+      "n_contact": 0,
+      "n_paired": 500,
+      "expected": 500,
+      "images_without_label": [],
+      "labels_without_image": [],
+      "image_extensions": {
+        ".jpg": 500
+      },
+      "label_extensions": {
+        ".png": 500
+      },
+      "label_modes": {
+        "L": 500
+      },
+      "image_sizes_top": {
+        "1920x1080": 500
+      },
+      "n_distinct_image_sizes": 1,
+      "label_size_mismatch": {
+        "count": 0,
+        "examples": []
+      },
+      "contact_size_mismatch": {
+        "count": 0,
+        "examples": []
+      },
+      "label_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "label_pixel_share": {
+        "0 background": 0.803052,
+        "1 left_hand": 0.036578,
+        "2 right_hand": 0.049184,
+        "3 obj1_left": 0.032155,
+        "4 obj1_right": 0.012564,
+        "5 obj1_both": 0.009244,
+        "6 obj2_left": 0.005826,
+        "7 obj2_right": 0.01547,
+        "8 obj2_both": 0.035926
+      },
+      "contact_values": []
+    }
+  },
+  "checks": {
+    "counts_match_paper": {
+      "train": true,
+      "val": true,
+      "test_indomain": true,
+      "test_outdomain": true
+    },
+    "every_image_has_label": {
+      "train": true,
+      "val": true,
+      "test_indomain": true,
+      "test_outdomain": true
+    },
+    "label_values_within_0_8": {
+      "train": true,
+      "val": true,
+      "test_indomain": true,
+      "test_outdomain": true
+    },
+    "label_sizes_match_images": {
+      "train": true,
+      "val": true,
+      "test_indomain": true,
+      "test_outdomain": true
+    }
+  }
+}

@@ -1,10 +1,13 @@
 """Modal app: container image, shared Volume and remote functions for the project."""
 
+import os
+
 import modal
 
 APP_NAME = "egohos-segformer"
 VOLUME_NAME = "egohos"
 VOL_DIR = "/data"
+GPU = os.environ.get("EGOHOS_GPU", "L40S")
 
 image = (
     modal.Image.debian_slim(python_version="3.12")
@@ -29,10 +32,8 @@ app = modal.App(APP_NAME, image=image)
 volume = modal.Volume.from_name(VOLUME_NAME, create_if_missing=True)
 
 
-@app.function(gpu="L40S", cpu=2, timeout=10 * 60, volumes={VOL_DIR: volume})
+@app.function(gpu=GPU, cpu=2, timeout=10 * 60, volumes={VOL_DIR: volume})
 def check_env() -> dict:
-    import os
-
     import albumentations
     import cv2
     import numpy
@@ -41,7 +42,7 @@ def check_env() -> dict:
     from transformers import SegformerForSemanticSegmentation
 
     info = {
-        "torch": torch.__version__,
+        "torch": str(torch.__version__),
         "torch_cuda": torch.version.cuda,
         "cuda_available": torch.cuda.is_available(),
         "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else None,
@@ -54,7 +55,10 @@ def check_env() -> dict:
         "volume_contents": sorted(os.listdir(VOL_DIR)),
     }
 
-    model = SegformerForSemanticSegmentation.from_pretrained("nvidia/mit-b0", num_labels=3).cuda().eval()
+    id2label = {0: "background", 1: "hand", 2: "interacting_object"}
+    model = SegformerForSemanticSegmentation.from_pretrained(
+        "nvidia/mit-b0", id2label=id2label, label2id={v: k for k, v in id2label.items()}
+    ).cuda().eval()
     x = torch.randn(2, 3, 512, 512, device="cuda")
     with torch.no_grad(), torch.autocast("cuda", dtype=torch.bfloat16):
         logits = model(pixel_values=x).logits
