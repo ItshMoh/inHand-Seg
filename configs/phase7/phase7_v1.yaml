@@ -1,0 +1,3 @@
+# Independent analysis schema; never loaded as a training config.
+analysis_name: phase7_v1
+# All other fields use the explicitly agreed defaults in src/phase7_config.py.

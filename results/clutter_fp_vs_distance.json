@@ -1,0 +1,1500 @@
+{
+  "analysis_fingerprint": "029ee11ad0192b08535327cfd58fe5ea2c4dafe03bdf2004e569f887c4b6f36c",
+  "config": {
+    "analysis_name": "clutter_sam_v1",
+    "analysis_root": "/data/analysis",
+    "cache_root": "/data/clutter_cache/sam",
+    "data_root": "/data/egohos",
+    "distance_bin_edges": [
+      0.0,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      1.0
+    ],
+    "filter": {
+      "component_connectivity": 8,
+      "foreground_inside_threshold": 0.5,
+      "foreground_iou_threshold": 0.3,
+      "mask_nms_iou_threshold": 0.9,
+      "max_area_fraction": 0.3,
+      "min_area_fraction": 0.001,
+      "reject_any_ignore": true
+    },
+    "fp_threshold": 0.5,
+    "models": [
+      {
+        "checkpoint": "/data/runs/b0_full_ft/model_final.pt",
+        "kind": "baseline",
+        "name": "b0_full_ft",
+        "seed": 0
+      },
+      {
+        "checkpoint": "/data/runs/b0_full_ft_s1/model_final.pt",
+        "kind": "baseline",
+        "name": "b0_full_ft_s1",
+        "seed": 1
+      },
+      {
+        "checkpoint": "/data/runs/b0_cascade_stage2/model_final.pt",
+        "kind": "cascade",
+        "name": "b0_cascade_stage2",
+        "seed": 0
+      },
+      {
+        "checkpoint": "/data/runs/b0_cascade_stage2_s1/model_final.pt",
+        "kind": "cascade",
+        "name": "b0_cascade_stage2_s1",
+        "seed": 1
+      }
+    ],
+    "pilot": {
+      "indomain_images": 6,
+      "outdomain_videos": 4,
+      "seed": 0
+    },
+    "sam": {
+      "checkpoint": "/data/checkpoints/sam/sam_vit_h_4b8939.pth",
+      "checkpoint_url": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth",
+      "precision": "fp32",
+      "revision": "dca509fe793f601edb92606367a655c15ac00fdf",
+      "settings": {
+        "box_nms_thresh": 0.7,
+        "crop_n_layers": 0,
+        "crop_n_points_downscale_factor": 1,
+        "crop_nms_thresh": 0.7,
+        "crop_overlap_ratio": 0.3413333333333333,
+        "min_mask_region_area": 0,
+        "output_mode": "uncompressed_rle",
+        "points_per_batch": 32,
+        "points_per_side": 32,
+        "pred_iou_thresh": 0.88,
+        "stability_score_offset": 1.0,
+        "stability_score_thresh": 0.95
+      },
+      "variant": "vit_h"
+    },
+    "splits": {
+      "test_indomain": 1126,
+      "test_outdomain": 500
+    },
+    "stage1_checkpoint": "/data/runs/b0_hands_only/model_final.pt"
+  },
+  "splits": {
+    "test_indomain": {
+      "n_images": 1126,
+      "n_no_hand_images": 0,
+      "n_empty_images": 0,
+      "n_candidates": 68160,
+      "n_no_hand_candidates": 0,
+      "filter_counts": {
+        "duplicate": 5453,
+        "eligible_area": 107,
+        "empty_eligible": 0,
+        "empty_raw": 0,
+        "foreground_overlap": 10310,
+        "ignore_overlap": 4318,
+        "raw_area": 24732,
+        "retained": 68160
+      },
+      "sources": {
+        "ego4d": {
+          "n_images": 774,
+          "n_proposals": 87355,
+          "n_candidates": 50627,
+          "n_distance_candidates": 50627,
+          "n_no_hand_images": 0
+        },
+        "epic": {
+          "n_images": 217,
+          "n_proposals": 17506,
+          "n_candidates": 12642,
+          "n_distance_candidates": 12642,
+          "n_no_hand_images": 0
+        },
+        "own": {
+          "n_images": 47,
+          "n_proposals": 3767,
+          "n_candidates": 2267,
+          "n_distance_candidates": 2267,
+          "n_no_hand_images": 0
+        },
+        "thu": {
+          "n_images": 88,
+          "n_proposals": 4452,
+          "n_candidates": 2624,
+          "n_distance_candidates": 2624,
+          "n_no_hand_images": 0
+        }
+      },
+      "bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.01,
+          "n_candidates": 13390,
+          "n_images": 1106,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 304,
+              "rate": 0.02270351008215086,
+              "per_image_mean_rate": 0.02312233412990002
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 284,
+              "rate": 0.021209858103061988,
+              "per_image_mean_rate": 0.021542681714390277
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 356,
+              "rate": 0.026587005227781926,
+              "per_image_mean_rate": 0.027533555361643345
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 350,
+              "rate": 0.026138909634055265,
+              "per_image_mean_rate": 0.02584277928390896
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.021956684092606423,
+              "seed_min": 0.021209858103061988,
+              "seed_max": 0.02270351008215086
+            },
+            "cascade": {
+              "mean_rate": 0.026362957430918595,
+              "seed_min": 0.026138909634055265,
+              "seed_max": 0.026587005227781926
+            }
+          }
+        },
+        {
+          "lower": 0.01,
+          "upper": 0.02,
+          "n_candidates": 1683,
+          "n_images": 701,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 50,
+              "rate": 0.029708853238265002,
+              "per_image_mean_rate": 0.029128455947286188
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 49,
+              "rate": 0.029114676173499703,
+              "per_image_mean_rate": 0.028508027081493553
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 54,
+              "rate": 0.03208556149732621,
+              "per_image_mean_rate": 0.03248647057491565
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 58,
+              "rate": 0.0344622697563874,
+              "per_image_mean_rate": 0.03896927292077078
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.029411764705882353,
+              "seed_min": 0.029114676173499703,
+              "seed_max": 0.029708853238265002
+            },
+            "cascade": {
+              "mean_rate": 0.033273915626856804,
+              "seed_min": 0.03208556149732621,
+              "seed_max": 0.0344622697563874
+            }
+          }
+        },
+        {
+          "lower": 0.02,
+          "upper": 0.05,
+          "n_candidates": 4961,
+          "n_images": 1004,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 96,
+              "rate": 0.019350937311026002,
+              "per_image_mean_rate": 0.021870391118399085
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 89,
+              "rate": 0.017939931465430357,
+              "per_image_mean_rate": 0.02069167137643233
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 115,
+              "rate": 0.0231808103204999,
+              "per_image_mean_rate": 0.023961661125505747
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 109,
+              "rate": 0.021971376738560772,
+              "per_image_mean_rate": 0.021015519305447823
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.01864543438822818,
+              "seed_min": 0.017939931465430357,
+              "seed_max": 0.019350937311026002
+            },
+            "cascade": {
+              "mean_rate": 0.022576093529530335,
+              "seed_min": 0.021971376738560772,
+              "seed_max": 0.0231808103204999
+            }
+          }
+        },
+        {
+          "lower": 0.05,
+          "upper": 0.1,
+          "n_candidates": 8506,
+          "n_images": 1056,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 109,
+              "rate": 0.012814483893722079,
+              "per_image_mean_rate": 0.017346847176392628
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 106,
+              "rate": 0.012461791676463673,
+              "per_image_mean_rate": 0.017627889786980697
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 121,
+              "rate": 0.014225252762755701,
+              "per_image_mean_rate": 0.021227266717777644
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 123,
+              "rate": 0.014460380907594638,
+              "per_image_mean_rate": 0.01959696784338812
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.012638137785092877,
+              "seed_min": 0.012461791676463673,
+              "seed_max": 0.012814483893722079
+            },
+            "cascade": {
+              "mean_rate": 0.01434281683517517,
+              "seed_min": 0.014225252762755701,
+              "seed_max": 0.014460380907594638
+            }
+          }
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n_candidates": 16375,
+          "n_images": 1108,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 150,
+              "rate": 0.00916030534351145,
+              "per_image_mean_rate": 0.014309408069495138
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 134,
+              "rate": 0.00818320610687023,
+              "per_image_mean_rate": 0.013524558882618033
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 143,
+              "rate": 0.008732824427480915,
+              "per_image_mean_rate": 0.013311507852207019
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 138,
+              "rate": 0.008427480916030534,
+              "per_image_mean_rate": 0.012258815084524064
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.008671755725190841,
+              "seed_min": 0.00818320610687023,
+              "seed_max": 0.00916030534351145
+            },
+            "cascade": {
+              "mean_rate": 0.008580152671755725,
+              "seed_min": 0.008427480916030534,
+              "seed_max": 0.008732824427480915
+            }
+          }
+        },
+        {
+          "lower": 0.2,
+          "upper": 1.0,
+          "n_candidates": 23245,
+          "n_images": 1072,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 98,
+              "rate": 0.004215960421596042,
+              "per_image_mean_rate": 0.006071520419986986
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 102,
+              "rate": 0.004388040438804044,
+              "per_image_mean_rate": 0.00598647642286871
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 66,
+              "rate": 0.0028393202839320283,
+              "per_image_mean_rate": 0.004081233583268705
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 85,
+              "rate": 0.0036567003656700365,
+              "per_image_mean_rate": 0.0051312617535366105
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.0043020004302000425,
+              "seed_min": 0.004215960421596042,
+              "seed_max": 0.004388040438804044
+            },
+            "cascade": {
+              "mean_rate": 0.0032480103248010324,
+              "seed_min": 0.0028393202839320283,
+              "seed_max": 0.0036567003656700365
+            }
+          }
+        }
+      ],
+      "overall_including_no_hands": {
+        "b0_full_ft": {
+          "fp_count": 807,
+          "rate": 0.011839788732394366
+        },
+        "b0_full_ft_s1": {
+          "fp_count": 764,
+          "rate": 0.011208920187793427
+        },
+        "b0_cascade_stage2": {
+          "fp_count": 855,
+          "rate": 0.012544014084507043
+        },
+        "b0_cascade_stage2_s1": {
+          "fp_count": 863,
+          "rate": 0.012661384976525821
+        }
+      }
+    },
+    "test_outdomain": {
+      "n_images": 500,
+      "n_no_hand_images": 0,
+      "n_empty_images": 0,
+      "n_candidates": 34614,
+      "n_no_hand_candidates": 0,
+      "filter_counts": {
+        "duplicate": 3147,
+        "eligible_area": 23,
+        "empty_eligible": 0,
+        "empty_raw": 0,
+        "foreground_overlap": 4424,
+        "ignore_overlap": 4643,
+        "raw_area": 7721,
+        "retained": 34614
+      },
+      "sources": {
+        "youtube": {
+          "n_images": 500,
+          "n_proposals": 54572,
+          "n_candidates": 34614,
+          "n_distance_candidates": 34614,
+          "n_no_hand_images": 0
+        }
+      },
+      "bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.01,
+          "n_candidates": 6482,
+          "n_images": 496,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 108,
+              "rate": 0.01666152422091947,
+              "per_image_mean_rate": 0.015025408707261973
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 121,
+              "rate": 0.018667078062326443,
+              "per_image_mean_rate": 0.016110079760984174
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 132,
+              "rate": 0.020364085158901573,
+              "per_image_mean_rate": 0.018645245285210773
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 127,
+              "rate": 0.01959271829682197,
+              "per_image_mean_rate": 0.017756611248446106
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.017664301141622957,
+              "seed_min": 0.01666152422091947,
+              "seed_max": 0.018667078062326443
+            },
+            "cascade": {
+              "mean_rate": 0.01997840172786177,
+              "seed_min": 0.01959271829682197,
+              "seed_max": 0.020364085158901573
+            }
+          }
+        },
+        {
+          "lower": 0.01,
+          "upper": 0.02,
+          "n_candidates": 762,
+          "n_images": 346,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 9,
+              "rate": 0.011811023622047244,
+              "per_image_mean_rate": 0.01703137902559868
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 12,
+              "rate": 0.015748031496062992,
+              "per_image_mean_rate": 0.025770712909441232
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 13,
+              "rate": 0.01706036745406824,
+              "per_image_mean_rate": 0.02112579135700523
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 12,
+              "rate": 0.015748031496062992,
+              "per_image_mean_rate": 0.01751307459399945
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.013779527559055118,
+              "seed_min": 0.011811023622047244,
+              "seed_max": 0.015748031496062992
+            },
+            "cascade": {
+              "mean_rate": 0.016404199475065617,
+              "seed_min": 0.015748031496062992,
+              "seed_max": 0.01706036745406824
+            }
+          }
+        },
+        {
+          "lower": 0.02,
+          "upper": 0.05,
+          "n_candidates": 2339,
+          "n_images": 469,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 17,
+              "rate": 0.007268063274903805,
+              "per_image_mean_rate": 0.008280951457923739
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 20,
+              "rate": 0.008550662676357419,
+              "per_image_mean_rate": 0.010279201963636932
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 25,
+              "rate": 0.010688328345446772,
+              "per_image_mean_rate": 0.013679976739678232
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 28,
+              "rate": 0.011970927746900385,
+              "per_image_mean_rate": 0.015343505108963531
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.007909362975630612,
+              "seed_min": 0.007268063274903805,
+              "seed_max": 0.008550662676357419
+            },
+            "cascade": {
+              "mean_rate": 0.011329628046173578,
+              "seed_min": 0.010688328345446772,
+              "seed_max": 0.011970927746900385
+            }
+          }
+        },
+        {
+          "lower": 0.05,
+          "upper": 0.1,
+          "n_candidates": 4203,
+          "n_images": 497,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 26,
+              "rate": 0.006186057577920533,
+              "per_image_mean_rate": 0.006392774451124552
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 24,
+              "rate": 0.005710206995003569,
+              "per_image_mean_rate": 0.005540586174388991
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 28,
+              "rate": 0.006661908160837497,
+              "per_image_mean_rate": 0.007467549218052236
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 33,
+              "rate": 0.007851534618129907,
+              "per_image_mean_rate": 0.008025268940761898
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.00594813228646205,
+              "seed_min": 0.005710206995003569,
+              "seed_max": 0.006186057577920533
+            },
+            "cascade": {
+              "mean_rate": 0.007256721389483702,
+              "seed_min": 0.006661908160837497,
+              "seed_max": 0.007851534618129907
+            }
+          }
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "n_candidates": 8829,
+          "n_images": 500,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 18,
+              "rate": 0.0020387359836901123,
+              "per_image_mean_rate": 0.0015422252589934605
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 29,
+              "rate": 0.003284630195945181,
+              "per_image_mean_rate": 0.002753264842364741
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 20,
+              "rate": 0.0022652622041001245,
+              "per_image_mean_rate": 0.002076537949056501
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 22,
+              "rate": 0.002491788424510137,
+              "per_image_mean_rate": 0.0021912626097455815
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.0026616830898176466,
+              "seed_min": 0.0020387359836901123,
+              "seed_max": 0.003284630195945181
+            },
+            "cascade": {
+              "mean_rate": 0.002378525314305131,
+              "seed_min": 0.0022652622041001245,
+              "seed_max": 0.002491788424510137
+            }
+          }
+        },
+        {
+          "lower": 0.2,
+          "upper": 1.0,
+          "n_candidates": 11999,
+          "n_images": 499,
+          "models": {
+            "b0_full_ft": {
+              "fp_count": 36,
+              "rate": 0.0030002500208350697,
+              "per_image_mean_rate": 0.002727295210882912
+            },
+            "b0_full_ft_s1": {
+              "fp_count": 32,
+              "rate": 0.0026668889074089506,
+              "per_image_mean_rate": 0.0027939876585536825
+            },
+            "b0_cascade_stage2": {
+              "fp_count": 38,
+              "rate": 0.003166930577548129,
+              "per_image_mean_rate": 0.0028885508520915945
+            },
+            "b0_cascade_stage2_s1": {
+              "fp_count": 43,
+              "rate": 0.0035836319693307774,
+              "per_image_mean_rate": 0.0028808938583671333
+            }
+          },
+          "systems": {
+            "baseline": {
+              "mean_rate": 0.00283356946412201,
+              "seed_min": 0.0026668889074089506,
+              "seed_max": 0.0030002500208350697
+            },
+            "cascade": {
+              "mean_rate": 0.0033752812734394533,
+              "seed_min": 0.003166930577548129,
+              "seed_max": 0.0035836319693307774
+            }
+          }
+        }
+      ],
+      "overall_including_no_hands": {
+        "b0_full_ft": {
+          "fp_count": 214,
+          "rate": 0.006182469521003062
+        },
+        "b0_full_ft_s1": {
+          "fp_count": 238,
+          "rate": 0.0068758305887791065
+        },
+        "b0_cascade_stage2": {
+          "fp_count": 256,
+          "rate": 0.00739585138961114
+        },
+        "b0_cascade_stage2_s1": {
+          "fp_count": 265,
+          "rate": 0.0076558617900271565
+        }
+      }
+    }
+  },
+  "models": {
+    "b0_cascade_stage2": {
+      "architecture": {
+        "_name_or_path": "nvidia/mit-b0",
+        "architectures": [
+          "SegformerForImageClassification"
+        ],
+        "attention_probs_dropout_prob": 0.0,
+        "chunk_size_feed_forward": 0,
+        "classifier_dropout_prob": 0.1,
+        "decoder_hidden_size": 256,
+        "depths": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "downsampling_rates": [
+          1,
+          4,
+          8,
+          16
+        ],
+        "drop_path_rate": 0.1,
+        "dtype": "float32",
+        "hidden_act": "gelu",
+        "hidden_dropout_prob": 0.0,
+        "hidden_sizes": [
+          32,
+          64,
+          160,
+          256
+        ],
+        "id2label": {
+          "0": "background",
+          "1": "interacting_object"
+        },
+        "image_size": 224,
+        "initializer_range": 0.02,
+        "is_encoder_decoder": false,
+        "label2id": {
+          "background": 0,
+          "interacting_object": 1
+        },
+        "layer_norm_eps": 1e-06,
+        "mlp_ratios": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "model_type": "segformer",
+        "num_attention_heads": [
+          1,
+          2,
+          5,
+          8
+        ],
+        "num_channels": 4,
+        "num_encoder_blocks": 4,
+        "output_attentions": false,
+        "output_hidden_states": false,
+        "patch_sizes": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "problem_type": null,
+        "reshape_last_stage": true,
+        "return_dict": true,
+        "semantic_loss_ignore_index": 255,
+        "sr_ratios": [
+          8,
+          4,
+          2,
+          1
+        ],
+        "strides": [
+          4,
+          2,
+          2,
+          2
+        ],
+        "transformers_version": "5.22.2"
+      },
+      "bytes": 14953975,
+      "checkpoint": "/data/runs/b0_cascade_stage2/model_final.pt",
+      "kind": "cascade",
+      "name": "b0_cascade_stage2",
+      "run_config": {
+        "cascade": {
+          "corruption": {
+            "blob_count": [
+              1,
+              3
+            ],
+            "blob_prob": 0.2,
+            "blob_radius": [
+              3,
+              10
+            ],
+            "drop_prob": 0.1,
+            "kernel_sizes": [
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ],
+            "morph_probs": [
+              0.4,
+              0.3,
+              0.3
+            ]
+          },
+          "enabled": true,
+          "stage1_checkpoint": "/data/runs/b0_hands_only/model_final.pt"
+        },
+        "data": {
+          "augment": true,
+          "label_map": {
+            "1": 0,
+            "2": 1
+          },
+          "num_workers": 8,
+          "subset": null,
+          "train_file_list": null,
+          "train_root": "/data/egohos_512"
+        },
+        "eval": {
+          "boundary_dilation_ratio": 0.02,
+          "min_fg_iou": null,
+          "n_vis": 8,
+          "splits": [
+            "val",
+            "test_indomain",
+            "test_outdomain"
+          ],
+          "val_every": 2000
+        },
+        "model": {
+          "class_names": [
+            "background",
+            "interacting_object"
+          ],
+          "freeze_encoder": false,
+          "pretrained": "nvidia/mit-b0"
+        },
+        "run_name": "b0_cascade_stage2",
+        "seed": 0,
+        "train": {
+          "batch_size": 16,
+          "bf16": true,
+          "ckpt_every": 2000,
+          "head_lr_mult": 10.0,
+          "log_every": 20,
+          "lr": 6e-05,
+          "max_iters": 11240,
+          "poly_power": 1.0,
+          "warmup_iters": 1500,
+          "weight_decay": 0.01
+        }
+      },
+      "seed": 0,
+      "sha256": "70dce20dc05a2a6479e0e5c762af80aabd8f5bada0c8f78bb5c744c6f43c7db7"
+    },
+    "b0_cascade_stage2_s1": {
+      "architecture": {
+        "_name_or_path": "nvidia/mit-b0",
+        "architectures": [
+          "SegformerForImageClassification"
+        ],
+        "attention_probs_dropout_prob": 0.0,
+        "chunk_size_feed_forward": 0,
+        "classifier_dropout_prob": 0.1,
+        "decoder_hidden_size": 256,
+        "depths": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "downsampling_rates": [
+          1,
+          4,
+          8,
+          16
+        ],
+        "drop_path_rate": 0.1,
+        "dtype": "float32",
+        "hidden_act": "gelu",
+        "hidden_dropout_prob": 0.0,
+        "hidden_sizes": [
+          32,
+          64,
+          160,
+          256
+        ],
+        "id2label": {
+          "0": "background",
+          "1": "interacting_object"
+        },
+        "image_size": 224,
+        "initializer_range": 0.02,
+        "is_encoder_decoder": false,
+        "label2id": {
+          "background": 0,
+          "interacting_object": 1
+        },
+        "layer_norm_eps": 1e-06,
+        "mlp_ratios": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "model_type": "segformer",
+        "num_attention_heads": [
+          1,
+          2,
+          5,
+          8
+        ],
+        "num_channels": 4,
+        "num_encoder_blocks": 4,
+        "output_attentions": false,
+        "output_hidden_states": false,
+        "patch_sizes": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "problem_type": null,
+        "reshape_last_stage": true,
+        "return_dict": true,
+        "semantic_loss_ignore_index": 255,
+        "sr_ratios": [
+          8,
+          4,
+          2,
+          1
+        ],
+        "strides": [
+          4,
+          2,
+          2,
+          2
+        ],
+        "transformers_version": "5.22.2"
+      },
+      "bytes": 14953975,
+      "checkpoint": "/data/runs/b0_cascade_stage2_s1/model_final.pt",
+      "kind": "cascade",
+      "name": "b0_cascade_stage2_s1",
+      "run_config": {
+        "cascade": {
+          "corruption": {
+            "blob_count": [
+              1,
+              3
+            ],
+            "blob_prob": 0.2,
+            "blob_radius": [
+              3,
+              10
+            ],
+            "drop_prob": 0.1,
+            "kernel_sizes": [
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ],
+            "morph_probs": [
+              0.4,
+              0.3,
+              0.3
+            ]
+          },
+          "enabled": true,
+          "stage1_checkpoint": "/data/runs/b0_hands_only/model_final.pt"
+        },
+        "data": {
+          "augment": true,
+          "label_map": {
+            "1": 0,
+            "2": 1
+          },
+          "num_workers": 8,
+          "subset": null,
+          "train_file_list": null,
+          "train_root": "/data/egohos_512"
+        },
+        "eval": {
+          "boundary_dilation_ratio": 0.02,
+          "min_fg_iou": null,
+          "n_vis": 8,
+          "splits": [
+            "val",
+            "test_indomain",
+            "test_outdomain"
+          ],
+          "val_every": 2000
+        },
+        "model": {
+          "class_names": [
+            "background",
+            "interacting_object"
+          ],
+          "freeze_encoder": false,
+          "pretrained": "nvidia/mit-b0"
+        },
+        "run_name": "b0_cascade_stage2_s1",
+        "seed": 1,
+        "train": {
+          "batch_size": 16,
+          "bf16": true,
+          "ckpt_every": 2000,
+          "head_lr_mult": 10.0,
+          "log_every": 20,
+          "lr": 6e-05,
+          "max_iters": 11240,
+          "poly_power": 1.0,
+          "warmup_iters": 1500,
+          "weight_decay": 0.01
+        }
+      },
+      "seed": 1,
+      "sha256": "e4af44634bbf1a2dc1255a1b5cf3a02a31e7dd42e3067b157dc8df781da35bf7"
+    },
+    "b0_full_ft": {
+      "architecture": {
+        "_name_or_path": "nvidia/mit-b0",
+        "architectures": [
+          "SegformerForImageClassification"
+        ],
+        "attention_probs_dropout_prob": 0.0,
+        "chunk_size_feed_forward": 0,
+        "classifier_dropout_prob": 0.1,
+        "decoder_hidden_size": 256,
+        "depths": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "downsampling_rates": [
+          1,
+          4,
+          8,
+          16
+        ],
+        "drop_path_rate": 0.1,
+        "dtype": "float32",
+        "hidden_act": "gelu",
+        "hidden_dropout_prob": 0.0,
+        "hidden_sizes": [
+          32,
+          64,
+          160,
+          256
+        ],
+        "id2label": {
+          "0": "background",
+          "1": "hand",
+          "2": "interacting_object"
+        },
+        "image_size": 224,
+        "initializer_range": 0.02,
+        "is_encoder_decoder": false,
+        "label2id": {
+          "background": 0,
+          "hand": 1,
+          "interacting_object": 2
+        },
+        "layer_norm_eps": 1e-06,
+        "mlp_ratios": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "model_type": "segformer",
+        "num_attention_heads": [
+          1,
+          2,
+          5,
+          8
+        ],
+        "num_channels": 3,
+        "num_encoder_blocks": 4,
+        "output_attentions": false,
+        "output_hidden_states": false,
+        "patch_sizes": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "problem_type": null,
+        "reshape_last_stage": true,
+        "return_dict": true,
+        "semantic_loss_ignore_index": 255,
+        "sr_ratios": [
+          8,
+          4,
+          2,
+          1
+        ],
+        "strides": [
+          4,
+          2,
+          2,
+          2
+        ],
+        "transformers_version": "5.22.2"
+      },
+      "bytes": 14948343,
+      "checkpoint": "/data/runs/b0_full_ft/model_final.pt",
+      "kind": "baseline",
+      "name": "b0_full_ft",
+      "run_config": {
+        "data": {
+          "augment": true,
+          "label_map": null,
+          "num_workers": 8,
+          "subset": null,
+          "train_file_list": null,
+          "train_root": "/data/egohos_512"
+        },
+        "eval": {
+          "boundary_dilation_ratio": 0.02,
+          "min_fg_iou": null,
+          "n_vis": 8,
+          "splits": [
+            "val",
+            "test_indomain",
+            "test_outdomain"
+          ],
+          "val_every": 2000
+        },
+        "model": {
+          "class_names": [
+            "background",
+            "hand",
+            "interacting_object"
+          ],
+          "freeze_encoder": false,
+          "pretrained": "nvidia/mit-b0"
+        },
+        "run_name": "b0_full_ft",
+        "seed": 0,
+        "train": {
+          "batch_size": 16,
+          "bf16": true,
+          "ckpt_every": 2000,
+          "head_lr_mult": 10.0,
+          "log_every": 20,
+          "lr": 6e-05,
+          "max_iters": 11240,
+          "poly_power": 1.0,
+          "warmup_iters": 1500,
+          "weight_decay": 0.01
+        }
+      },
+      "seed": 0,
+      "sha256": "80489ce548eebafd0faf0e5ec11643fde89fbd89b4798ba94ea3da18ec9871b4"
+    },
+    "b0_full_ft_s1": {
+      "architecture": {
+        "_name_or_path": "nvidia/mit-b0",
+        "architectures": [
+          "SegformerForImageClassification"
+        ],
+        "attention_probs_dropout_prob": 0.0,
+        "chunk_size_feed_forward": 0,
+        "classifier_dropout_prob": 0.1,
+        "decoder_hidden_size": 256,
+        "depths": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "downsampling_rates": [
+          1,
+          4,
+          8,
+          16
+        ],
+        "drop_path_rate": 0.1,
+        "dtype": "float32",
+        "hidden_act": "gelu",
+        "hidden_dropout_prob": 0.0,
+        "hidden_sizes": [
+          32,
+          64,
+          160,
+          256
+        ],
+        "id2label": {
+          "0": "background",
+          "1": "hand",
+          "2": "interacting_object"
+        },
+        "image_size": 224,
+        "initializer_range": 0.02,
+        "is_encoder_decoder": false,
+        "label2id": {
+          "background": 0,
+          "hand": 1,
+          "interacting_object": 2
+        },
+        "layer_norm_eps": 1e-06,
+        "mlp_ratios": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "model_type": "segformer",
+        "num_attention_heads": [
+          1,
+          2,
+          5,
+          8
+        ],
+        "num_channels": 3,
+        "num_encoder_blocks": 4,
+        "output_attentions": false,
+        "output_hidden_states": false,
+        "patch_sizes": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "problem_type": null,
+        "reshape_last_stage": true,
+        "return_dict": true,
+        "semantic_loss_ignore_index": 255,
+        "sr_ratios": [
+          8,
+          4,
+          2,
+          1
+        ],
+        "strides": [
+          4,
+          2,
+          2,
+          2
+        ],
+        "transformers_version": "5.22.2"
+      },
+      "bytes": 14948343,
+      "checkpoint": "/data/runs/b0_full_ft_s1/model_final.pt",
+      "kind": "baseline",
+      "name": "b0_full_ft_s1",
+      "run_config": {
+        "data": {
+          "augment": true,
+          "label_map": null,
+          "num_workers": 8,
+          "subset": null,
+          "train_file_list": null,
+          "train_root": "/data/egohos_512"
+        },
+        "eval": {
+          "boundary_dilation_ratio": 0.02,
+          "min_fg_iou": null,
+          "n_vis": 8,
+          "splits": [
+            "val",
+            "test_indomain",
+            "test_outdomain"
+          ],
+          "val_every": 2000
+        },
+        "model": {
+          "class_names": [
+            "background",
+            "hand",
+            "interacting_object"
+          ],
+          "freeze_encoder": false,
+          "pretrained": "nvidia/mit-b0"
+        },
+        "run_name": "b0_full_ft_s1",
+        "seed": 1,
+        "train": {
+          "batch_size": 16,
+          "bf16": true,
+          "ckpt_every": 2000,
+          "head_lr_mult": 10.0,
+          "log_every": 20,
+          "lr": 6e-05,
+          "max_iters": 11240,
+          "poly_power": 1.0,
+          "warmup_iters": 1500,
+          "weight_decay": 0.01
+        }
+      },
+      "seed": 1,
+      "sha256": "29ca0bafe902eba09eb1228e78daa76e570768eece6d03266fd5d14d8bb8c37b"
+    },
+    "stage1": {
+      "architecture": {
+        "_name_or_path": "nvidia/mit-b0",
+        "architectures": [
+          "SegformerForImageClassification"
+        ],
+        "attention_probs_dropout_prob": 0.0,
+        "chunk_size_feed_forward": 0,
+        "classifier_dropout_prob": 0.1,
+        "decoder_hidden_size": 256,
+        "depths": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "downsampling_rates": [
+          1,
+          4,
+          8,
+          16
+        ],
+        "drop_path_rate": 0.1,
+        "dtype": "float32",
+        "hidden_act": "gelu",
+        "hidden_dropout_prob": 0.0,
+        "hidden_sizes": [
+          32,
+          64,
+          160,
+          256
+        ],
+        "id2label": {
+          "0": "background",
+          "1": "hand"
+        },
+        "image_size": 224,
+        "initializer_range": 0.02,
+        "is_encoder_decoder": false,
+        "label2id": {
+          "background": 0,
+          "hand": 1
+        },
+        "layer_norm_eps": 1e-06,
+        "mlp_ratios": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "model_type": "segformer",
+        "num_attention_heads": [
+          1,
+          2,
+          5,
+          8
+        ],
+        "num_channels": 3,
+        "num_encoder_blocks": 4,
+        "output_attentions": false,
+        "output_hidden_states": false,
+        "patch_sizes": [
+          7,
+          3,
+          3,
+          3
+        ],
+        "problem_type": null,
+        "reshape_last_stage": true,
+        "return_dict": true,
+        "semantic_loss_ignore_index": 255,
+        "sr_ratios": [
+          8,
+          4,
+          2,
+          1
+        ],
+        "strides": [
+          4,
+          2,
+          2,
+          2
+        ],
+        "transformers_version": "5.22.2"
+      },
+      "checkpoint": "/data/runs/b0_hands_only/model_final.pt",
+      "run_config": {
+        "data": {
+          "augment": true,
+          "label_map": {
+            "2": 0
+          },
+          "num_workers": 8,
+          "subset": null,
+          "train_file_list": null,
+          "train_root": "/data/egohos_512"
+        },
+        "eval": {
+          "boundary_dilation_ratio": 0.02,
+          "min_fg_iou": null,
+          "n_vis": 8,
+          "splits": [
+            "val",
+            "test_indomain",
+            "test_outdomain"
+          ],
+          "val_every": 2000
+        },
+        "model": {
+          "class_names": [
+            "background",
+            "hand"
+          ],
+          "freeze_encoder": false,
+          "pretrained": "nvidia/mit-b0"
+        },
+        "run_name": "b0_hands_only",
+        "seed": 0,
+        "train": {
+          "batch_size": 16,
+          "bf16": true,
+          "ckpt_every": 2000,
+          "head_lr_mult": 10.0,
+          "log_every": 20,
+          "lr": 6e-05,
+          "max_iters": 11240,
+          "poly_power": 1.0,
+          "warmup_iters": 1500,
+          "weight_decay": 0.01
+        }
+      },
+      "sha256": "c04b62bee5644ac5b2171c1ae903b62812252e466ea71c29bf25b59913b3a408"
+    }
+  },
+  "versions": {
+    "albumentations": "2.0.8",
+    "numpy": "2.3.5",
+    "opencv-python-headless": "4.14.0.94",
+    "pillow": "13.0.0",
+    "scipy": "1.18.1",
+    "segment-anything": "1.0",
+    "torch": "2.14.1",
+    "torchvision": "0.29.2",
+    "transformers": "5.22.2"
+  },
+  "source_hashes": {
+    "cascade.py": "3810cc62d784c10c1008259633b83e0295e18b489d568955470d92247d3af9e0",
+    "clutter_config.py": "b3137bd4818bbbf223efa270d31866e3911f6bc03de8962cdc2eaa0794323094",
+    "clutter_lock.py": "c4f3750123a9c582483a9daf035d71a4de5a348bfaf11d6294946c2cd6f8e2a3",
+    "clutter_preview.py": "db1d4846497309f76c17f93c9c1def28d6c1fe4113ea0aadb7abe4af8f4fc9dc",
+    "clutter_sam.py": "40d87e54b41aa515ec54b2eb118ad175fc5b5d90924e836a5ed679177885005a",
+    "clutter_workflow.py": "074ff77bfc87ffd1885ea768ad61433f9ecb306d320dee0cfa0a0589d7832f0f",
+    "data.py": "367c51b2ccda1afc3cb52f5d2b12f562e0a0e49c3aae4263c4d058cce8ffe1e7",
+    "evaluate.py": "764e0d51a9f54d3b3bde06fb39d60bd3bd32d4bb2e7487e3ded93bc4027f26a0",
+    "model.py": "ac1ffaa18696156b09fb0b0b3fcd1d32a4bf69f57857276ea4979f8c261b5c19"
+  },
+  "proposal_recipe": {
+    "checkpoint_sha256": "a7bf3b02f3ebf1267aba913ff637d9a2d5c33d3173bb679e46d9f338c26f262e",
+    "rgb_input": "original_HWC_uint8_ignore_EXIF",
+    "sam": {
+      "checkpoint": "/data/checkpoints/sam/sam_vit_h_4b8939.pth",
+      "checkpoint_url": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth",
+      "precision": "fp32",
+      "revision": "dca509fe793f601edb92606367a655c15ac00fdf",
+      "settings": {
+        "box_nms_thresh": 0.7,
+        "crop_n_layers": 0,
+        "crop_n_points_downscale_factor": 1,
+        "crop_nms_thresh": 0.7,
+        "crop_overlap_ratio": 0.3413333333333333,
+        "min_mask_region_area": 0,
+        "output_mode": "uncompressed_rle",
+        "points_per_batch": 32,
+        "points_per_side": 32,
+        "pred_iou_thresh": 0.88,
+        "stability_score_offset": 1.0,
+        "stability_score_thresh": 0.95
+      },
+      "variant": "vit_h"
+    },
+    "sam_install": {
+      "archive_info": {
+        "hash": "sha256=b693c2358e9e1c63589a322b1baa6a6dc384df0013ff455d933d9a8e23549dab",
+        "hashes": {
+          "sha256": "b693c2358e9e1c63589a322b1baa6a6dc384df0013ff455d933d9a8e23549dab"
+        }
+      },
+      "url": "https://github.com/facebookresearch/segment-anything/archive/dca509fe793f601edb92606367a655c15ac00fdf.tar.gz"
+    },
+    "schema": 1,
+    "seed": 0,
+    "tf32": false,
+    "versions": {
+      "numpy": "2.3.5",
+      "opencv-python-headless": "4.14.0.94",
+      "pillow": "13.0.0",
+      "segment-anything": "1.0",
+      "torch": "2.14.1",
+      "torchvision": "0.29.2"
+    }
+  },
+  "measurements": {
+    "path": "/Users/mohankumar/Downloads/code/inHand/results/phase6/clutter_sam_v1/measurements.jsonl.gz",
+    "sha256": "2ed23d646eb8f637d839a9279a44f647fa787c80fb523a46e0abbf6bef6cd69e"
+  },
+  "report_script_sha256": "cd19c0bedadab67439e1f37ce3724056fe56b19d99d0050ccd6c17948d34369b",
+  "uncertainty": "Two descriptive seeds, no proposal-independent confidence intervals"
+}

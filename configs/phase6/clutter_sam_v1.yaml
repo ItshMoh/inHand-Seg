@@ -1,0 +1,7 @@
+# Phase 6 only. A separate schema keeps the verified training configs unchanged.
+# All omitted settings are explicit, validated defaults in src/clutter_config.py.
+analysis_name: clutter_sam_v1
+execution:
+  shards: 4
+  worker_timeout_seconds: 7200  # upper bound; revise from the pilot timings before full launch
+  commit_every: 5

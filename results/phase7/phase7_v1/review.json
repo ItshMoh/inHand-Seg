@@ -1,0 +1,916 @@
+{
+  "analysis_fingerprint": "d95f14a370407ff1c0aacdda4dfd3639c5188a880c9178b19175c289b21418f9",
+  "instructions": "Set selected/preview, tags, evidence per tag and an evidence-based caption after visual review. No appearance category is assigned automatically. This draft was populated by the assistant from the actual 60 RGB/GT survey thumbnails and saved metrics. Prediction-mask locations, eligible-region semantics and final captions remain subject to real-panel/user review.",
+  "categories": {
+    "transparent": {
+      "status": "uncertain",
+      "note": "No unambiguous directly interacting transparent object was confirmed in the 60-image RGB/GT shortlist at thumbnail resolution. Clear background containers or packaging alone are insufficient."
+    },
+    "finger_occlusion": {
+      "status": "supported",
+      "note": "Assistant-reviewed RGB/GT draft; actual prediction panels and final user review are pending."
+    },
+    "motion_blur": {
+      "status": "uncertain",
+      "note": "Some frames have soft or smeared contours, but motion versus defocus cannot be established confidently from the available still thumbnails. No confirmed motion-blur tag is assigned."
+    },
+    "small_object": {
+      "status": "supported",
+      "note": "Assistant-reviewed RGB/GT draft; actual prediction panels and final user review are pending."
+    },
+    "two_hand_object": {
+      "status": "supported",
+      "note": "Assistant-reviewed RGB/GT draft; actual prediction panels and final user review are pending."
+    },
+    "lighting": {
+      "status": "supported",
+      "note": "Assistant-reviewed RGB/GT draft; actual prediction panels and final user review are pending."
+    }
+  },
+  "cases": [
+    {
+      "image_id": "5036ca659dc1f2329d96f389",
+      "split": "test_indomain",
+      "name": "ego4d_000cd456-ff8d-499b-b0c1-4acead128a8b_18450",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "7456679ad9956edc2040209b",
+      "split": "test_indomain",
+      "name": "ego4d_000cd456-ff8d-499b-b0c1-4acead128a8b_19050",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "1deb5d84b6a242d1e1aae9d8",
+      "split": "test_indomain",
+      "name": "ego4d_0a02a1ed-a327-4753-b270-e95298984b96_23100",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "55d0c5c2f277c4e05f7018a3",
+      "split": "test_indomain",
+      "name": "ego4d_0b8bba27-40f4-4c13-8513-17666c1361d1_6000",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "0efee7be5d35d6898356181b",
+      "split": "test_indomain",
+      "name": "epic_P09_105_frame_0000000631",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "63fe6c777266c16fc1b361c4",
+      "split": "test_indomain",
+      "name": "epic_P11_22_frame_0000002701",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "2f30be76a5c07253b2ebb9df",
+      "split": "test_indomain",
+      "name": "epic_P11_24_frame_0000003061",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "9671324c08408ff1db47ae16",
+      "split": "test_indomain",
+      "name": "epic_P12_104_frame_0000030151",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "small_object",
+        "finger_occlusion",
+        "regression"
+      ],
+      "evidence": {
+        "small_object": "The main GT component is 868 pixels, 0.744% of the original frame; the additional component is 52 pixels.",
+        "finger_occlusion": "The fingers visibly overlap the narrow utensil handle; this describes visibility, not an isolated cause of the error.",
+        "regression": "Saved object-IoU deltas (cascade minus baseline): seed 0 -2.28, seed 1 -3.04, mean -2.66 points. The actual spatial prediction errors await rendering."
+      },
+      "caption": "A slender utensil is gripped over a kitchen sink; fingers overlap its narrow handle. Saved mean object IoU: 2.66% baseline -> 0.00% cascade.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "bcf94c174bf5664f602ef6d1",
+      "split": "test_indomain",
+      "name": "escape_S01_long_cut_11190",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "ambiguous",
+        "clutter_diagnostic"
+      ],
+      "evidence": {
+        "ambiguous": "Hand/seat contours appear soft, but this single thumbnail does not distinguish motion blur from defocus.",
+        "clutter_diagnostic": "Eligible SAM ID 63, area 3946 pixels, d/diagonal=0.000454: baseline fractions 0.0000/0.0000; cascade 0.9235/0.7448. The selected event is cascade_only at both seeds with the fixed strict >0.5 threshold. The region description is provisional until its actual eligible outline is inspected."
+      },
+      "caption": "A hand reaches over a dark padded seat. This is a GT-background diagnostic: no directly interacting object is labelled in the frame. Eligible SAM ID 63, area 3946 pixels, d/diagonal=0.000454: baseline fractions 0.0000/0.0000; cascade 0.9235/0.7448. Background proposal type: surface; semantic extent awaits the reconstructed outline.",
+      "candidate_id": 63,
+      "region_kind": "surface",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "e14e4978c23e931498c27386",
+      "split": "test_indomain",
+      "name": "escape_S06_long_flip_cut_1560",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "48b804b50f31843fe6c4669a",
+      "split": "test_indomain",
+      "name": "escape_S06_short_cut_1380",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "small_object",
+        "finger_occlusion",
+        "regression"
+      ],
+      "evidence": {
+        "small_object": "The entire labelled object is one 5,173-pixel component, 0.2495% of the original frame.",
+        "finger_occlusion": "The right thumb and fingertips cover much of the small grasped item.",
+        "regression": "Saved object-IoU deltas (cascade minus baseline): seed 0 -8.93, seed 1 -10.53, mean -9.73 points. The actual spatial prediction errors await rendering."
+      },
+      "caption": "A small item is pinched by the right fingertips above a checkerboard-patterned surface. Saved mean object IoU: 10.15% baseline -> 0.42% cascade.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "819bb07cb30e12e169a83fc7",
+      "split": "test_indomain",
+      "name": "escape_GX010035_006540",
+      "selected": true,
+      "preview": true,
+      "tags": [
+        "finger_occlusion",
+        "ambiguous",
+        "regression"
+      ],
+      "evidence": {
+        "finger_occlusion": "The book is visible, with fingers overlapping its near edge at the grasp.",
+        "ambiguous": "The displayed seed-0 regression reverses for seed 1; the caption reports both directions.",
+        "regression": "Saved object-IoU deltas (cascade minus baseline): seed 0 -16.47, seed 1 +5.53, mean -5.47 points. The actual spatial prediction errors await rendering."
+      },
+      "caption": "The right hand grips a white book above a bed; fingers overlap its lower/right edge. Saved mean object IoU: 13.92% baseline -> 8.45% cascade. Seed deltas differ: -16.47/+5.53 points.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "c1856fa3829d1ec013a1674c",
+      "split": "test_indomain",
+      "name": "thu_close_drawer_RGB_close_drawer_cgy_2_91",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "fb39d915b6616c83c3d88202",
+      "split": "test_indomain",
+      "name": "thu_open_drawer_RGB_open_drawer_cgy_2_73",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "0bf2c335819413745909e1d6",
+      "split": "test_indomain",
+      "name": "thu_open_drawer_RGB_open_drawer_tys_3_56",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "576d539640c1cf17dc4a2278",
+      "split": "test_indomain",
+      "name": "thu_push_button_RGB_push_button_gs_3_56",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "fb98d46c3063bcd047b8ba3a",
+      "split": "test_outdomain",
+      "name": "youtube_Chicken_003600",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "60bfd090cc9807b9fa504adb",
+      "split": "test_outdomain",
+      "name": "youtube_Extra-Crabby_009060",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "4537f6d0b834c8d690ec5a2a",
+      "split": "test_outdomain",
+      "name": "youtube_Good_001260",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "2ca7dc4603ac44594331a6f7",
+      "split": "test_outdomain",
+      "name": "youtube_Good_003540",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "f14cf2afb52ea039396663bb",
+      "split": "test_indomain",
+      "name": "ego4d_0fbf42b1-23ed-4a2b-ad71-ab438b45e0d2_5100",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "9884ad4ff80c7e5cb7fc814e",
+      "split": "test_outdomain",
+      "name": "youtube_POV Cooking MONGOLIAN BEEF NOODLES  JONAH IN THE KITCHEN-seV_bNo_fLE-1080p-1644528285252_003060",
+      "selected": true,
+      "preview": true,
+      "tags": [
+        "improvement"
+      ],
+      "evidence": {
+        "improvement": "Saved object-IoU deltas (cascade minus baseline): seed 0 +66.90, seed 1 +61.82, mean +64.36 points. The actual spatial prediction errors await rendering."
+      },
+      "caption": "The hand grips a bowl/tray holding ingredients and packaging on a kitchen counter. Saved mean object IoU: 0.23% baseline -> 64.60% cascade.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "172bf74691ea959553c05f15",
+      "split": "test_indomain",
+      "name": "ego4d_2d386a76-9ef1-49ff-982e-d5e403bba456_3300",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "regression"
+      ],
+      "evidence": {
+        "regression": "Saved object-IoU deltas (cascade minus baseline): seed 0 -59.63, seed 1 -48.68, mean -54.16 points. The actual spatial prediction errors await rendering."
+      },
+      "caption": "Gloved hands hold a large rectangular metal fitting and a red-handled tool against a pale wall. Saved mean object IoU: 61.88% baseline -> 7.72% cascade.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "732895e391e533d8767b5ebc",
+      "split": "test_indomain",
+      "name": "ego4d_291953b9-d7f3-403b-8b8a-7aa935847064_32550",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "821e9ff6f8ac56b69545fe0b",
+      "split": "test_indomain",
+      "name": "ego4d_3ec84720-2ef4-4537-be8b-ecd37cbbb62b_21000",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "small_object",
+        "two_hand_object"
+      ],
+      "evidence": {
+        "small_object": "The cable/strand is one labelled 25,874-pixel component, 0.9358% of the original frame.",
+        "two_hand_object": "The strand is annotated as original ID 5 throughout its 25,874 object pixels; grasps are visible at the left and right image edge."
+      },
+      "caption": "A thin cable/strand extends between the grasps; the right grasp lies at the image edge. Saved mean object IoU: 0.00% baseline -> 0.00% cascade. Both seeds have zero object IoU for each system.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "09ce8413ab9b0a71cb210772",
+      "split": "test_indomain",
+      "name": "ego4d_11f51f72-c0bd-4631-aabb-6ecbe17d95c9_25950",
+      "selected": true,
+      "preview": true,
+      "tags": [
+        "regression",
+        "clutter_diagnostic"
+      ],
+      "evidence": {
+        "regression": "Saved object-IoU deltas (cascade minus baseline): seed 0 -6.78, seed 1 -3.68, mean -5.23 points. The actual spatial prediction errors await rendering.",
+        "clutter_diagnostic": "Eligible SAM ID 60, area 3090 pixels, d/diagonal=0.095402: baseline fractions 0.0000/0.0000; cascade 1.0000/1.0000. The selected event is cascade_only at both seeds with the fixed strict >0.5 threshold. The region description is provisional until its actual eligible outline is inspected."
+      },
+      "caption": "An orange-gloved hand works inside a scooter assembly beside a headlamp. The SAM diagnostic concerns an adjacent background-labelled headlamp part. Saved mean object IoU: 6.83% baseline -> 1.60% cascade. Eligible SAM ID 60, area 3090 pixels, d/diagonal=0.095402: baseline fractions 0.0000/0.0000; cascade 1.0000/1.0000. Background proposal type: object_part; semantic extent awaits the reconstructed outline.",
+      "candidate_id": 60,
+      "region_kind": "object_part",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "a4dc738a473f86a9ca541e1a",
+      "split": "test_indomain",
+      "name": "ego4d_6ac9ce64-b53e-40b6-b282-a9881da75f49_13200",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "437db67160e0dcdc69615aa0",
+      "split": "test_indomain",
+      "name": "ego4d_15ce76af-7eb0-4d27-9289-c9c71863f603_4800",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "15ee28953ee7bc1b8e455699",
+      "split": "test_indomain",
+      "name": "ego4d_7ba88d57-1d50-4fa0-973d-e2e064f13c88_57450",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "2dedef3a2e094edd6a3197e2",
+      "split": "test_outdomain",
+      "name": "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_007020",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "f59192a2d55f5c08b6936b2c",
+      "split": "test_indomain",
+      "name": "ego4d_3906d25a-d0a4-4a7c-8906-a87cea106c66_58950",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "296eebc099d2aaa6c16b0561",
+      "split": "test_indomain",
+      "name": "ego4d_4267a3f1-0903-4272-9085-3ef9364c288b_36600",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "two_hand_object",
+        "regression"
+      ],
+      "evidence": {
+        "two_hand_object": "Both hands visibly contact the workpiece; its 32,732 object pixels carry original ID 5.",
+        "regression": "Saved object-IoU deltas (cascade minus baseline): seed 0 -14.13, seed 1 -9.77, mean -11.95 points. The actual spatial prediction errors await rendering."
+      },
+      "caption": "Blue-gloved hands hold a rectangular workpiece at a machine. Saved mean object IoU: 11.95% baseline -> 0.00% cascade.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "8deff78c67c7402268b988d3",
+      "split": "test_indomain",
+      "name": "ego4d_1da50887-dd33-4644-9377-1bf855b86ffd_14550",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "b9e5a553830bcf66609d2202",
+      "split": "test_indomain",
+      "name": "epic_P07_101_frame_0000018721",
+      "selected": true,
+      "preview": true,
+      "tags": [
+        "two_hand_object",
+        "improvement",
+        "clutter_diagnostic"
+      ],
+      "evidence": {
+        "two_hand_object": "Both hands contact the square item; all 7,249 labelled object pixels are original ID 5.",
+        "improvement": "Saved object-IoU deltas (cascade minus baseline): seed 0 +59.12, seed 1 +45.23, mean +52.17 points. The actual spatial prediction errors await rendering.",
+        "clutter_diagnostic": "Eligible SAM ID 18, area 3541 pixels, d/diagonal=0.051025: baseline fractions 0.8526/0.9365; cascade 0.1226/0.0003. The selected event is baseline_only at both seeds with the fixed strict >0.5 threshold. The region description is provisional until its actual eligible outline is inspected."
+      },
+      "caption": "Both hands hold a square container/lid beside a sink. A separate packaging-looking background region is selected for the SAM comparison. Saved mean object IoU: 14.54% baseline -> 66.71% cascade. Eligible SAM ID 18, area 3541 pixels, d/diagonal=0.051025: baseline fractions 0.8526/0.9365; cascade 0.1226/0.0003. Background proposal type: object_like; semantic extent awaits the reconstructed outline.",
+      "candidate_id": 18,
+      "region_kind": "object_like",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "a4f57b85b44519571d4293e4",
+      "split": "test_indomain",
+      "name": "ego4d_19931aba-710a-43d3-87d7-b23995d6f43d_31200",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "9c8763735888b2a811f1916b",
+      "split": "test_indomain",
+      "name": "thu_umbrella_RGB_umbrella_lzy_3_3",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "two_hand_object",
+        "improvement"
+      ],
+      "evidence": {
+        "two_hand_object": "Two hands visibly manipulate the umbrella, with 98,045 original ID-5 pixels.",
+        "improvement": "Saved object-IoU deltas (cascade minus baseline): seed 0 +75.19, seed 1 +24.12, mean +49.65 points. The actual spatial prediction errors await rendering."
+      },
+      "caption": "One hand grips the umbrella ribs/shaft while the other reaches into the canopy. Saved mean object IoU: 7.69% baseline -> 57.34% cascade.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "e1a05930fea494aa59ae3877",
+      "split": "test_outdomain",
+      "name": "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_001920",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "8e5c33872712e97733f42227",
+      "split": "test_indomain",
+      "name": "ego4d_55301af6-c76b-45ae-a7b0-0135f9b5c06e_24750",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "d60548d68ecd06c90e7a318b",
+      "split": "test_indomain",
+      "name": "ego4d_b29b29d2-8335-4307-b5d7-976fa2b38f28_28200",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "98c3092230dcb4a107a3f800",
+      "split": "test_indomain",
+      "name": "ego4d_98fdad00-49db-478f-bc77-c7d06992882e_26100",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "lighting",
+        "regression"
+      ],
+      "evidence": {
+        "lighting": "A dark toolbox cavity sits behind brighter hands and foreground items, producing strong local illumination contrast; causation is not established.",
+        "regression": "Saved object-IoU deltas (cascade minus baseline): seed 0 -23.55, seed 1 -42.73, mean -33.14 points. The actual spatial prediction errors await rendering."
+      },
+      "caption": "Hands work at the edge of an open, deeply shadowed toolbox; GT marks small foreground items around the grasps. Saved mean object IoU: 36.07% baseline -> 2.93% cascade.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "3b4bab3a17efdd8a231fbd32",
+      "split": "test_indomain",
+      "name": "epic_P35_102_frame_0000034381",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "improvement",
+        "clutter_diagnostic"
+      ],
+      "evidence": {
+        "improvement": "Saved object-IoU deltas (cascade minus baseline): seed 0 +7.99, seed 1 +8.17, mean +8.08 points. The actual spatial prediction errors await rendering.",
+        "clutter_diagnostic": "Eligible SAM ID 60, area 440 pixels, d/diagonal=0.254048: baseline fractions 1.0000/1.0000; cascade 0.0000/0.0000. The selected event is baseline_only at both seeds with the fixed strict >0.5 threshold. The region description is provisional until its actual eligible outline is inspected."
+      },
+      "caption": "A pan and cloth are held above a patterned floor; the selected SAM region lies on the background floor at the left edge. Saved mean object IoU: 9.83% baseline -> 17.91% cascade. Eligible SAM ID 60, area 440 pixels, d/diagonal=0.254048: baseline fractions 1.0000/1.0000; cascade 0.0000/0.0000. Background proposal type: surface; semantic extent awaits the reconstructed outline.",
+      "candidate_id": 60,
+      "region_kind": "surface",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "dd887897b6b7b966a2cfa1ef",
+      "split": "test_indomain",
+      "name": "ego4d_1b9c07d3-0656-48ad-bae4-cca25f6664c9_4650",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "2521fa8893954a1dd664f75b",
+      "split": "test_indomain",
+      "name": "ego4d_2d386a76-9ef1-49ff-982e-d5e403bba456_12750",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "11362671571b9b72f346c457",
+      "split": "test_indomain",
+      "name": "ego4d_b0bef990-651b-42f2-aa99-b11dcde5d678_18000",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "72c9cf2c639822eeeea353c1",
+      "split": "test_indomain",
+      "name": "ego4d_55301af6-c76b-45ae-a7b0-0135f9b5c06e_25500",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "abf5aa5f0ece8edd5db59eae",
+      "split": "test_outdomain",
+      "name": "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_002160",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "finger_occlusion",
+        "small_object",
+        "two_hand_object",
+        "regression"
+      ],
+      "evidence": {
+        "finger_occlusion": "The handled item is largely hidden by the pressed-together fingers/palms; GT contains only 1,487 object pixels in three exposed components.",
+        "small_object": "Each exposed GT component is below 0.03% of frame area; this describes visible mask size, not the physical size of the occluded item.",
+        "two_hand_object": "Both hands overlap the handled item and all 1,487 original object pixels are ID 5.",
+        "regression": "Saved object-IoU deltas (cascade minus baseline): seed 0 -1.98, seed 1 -6.14, mean -4.06 points. The actual spatial prediction errors await rendering."
+      },
+      "caption": "The hands press together over the counter, leaving only narrow labelled object fragments exposed between fingers. Saved mean object IoU: 4.06% baseline -> 0.00% cascade.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "ed8ffbe2586a36228957eaa8",
+      "split": "test_indomain",
+      "name": "ego4d_c2a3d4ac-8d13-4daa-a9a9-a867999e956f_48450",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "b66a19779ab4209a0577ac95",
+      "split": "test_indomain",
+      "name": "ego4d_3534864b-2289-4aaf-b3ed-10eeeee7acd2_50100",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "64d187a43c9b9afeebf43bda",
+      "split": "test_indomain",
+      "name": "ego4d_2dbb7845-1de0-4e26-877a-035c051d12a5_21300",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "e9809bef34163c4978871f81",
+      "split": "test_outdomain",
+      "name": "youtube_Why_001860",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "06f1f97ea2c7bcf1150ec706",
+      "split": "test_outdomain",
+      "name": "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_000420",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "two_hand_object",
+        "regression"
+      ],
+      "evidence": {
+        "two_hand_object": "Both grasps are visible and all 63,319 labelled object pixels are original ID 5.",
+        "regression": "Saved object-IoU deltas (cascade minus baseline): seed 0 -50.78, seed 1 -38.30, mean -44.54 points. The actual spatial prediction errors await rendering."
+      },
+      "caption": "Both hands grip a dark bowl over the sink, with fingers overlapping opposite sides of its rim. Saved mean object IoU: 74.91% baseline -> 30.37% cascade.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "aa7383df42ac4d745da35fcf",
+      "split": "test_indomain",
+      "name": "ego4d_55510a84-858b-4857-bb9f-6a923b5f7882_900",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "83e7dcc3fa99e1734cb65dac",
+      "split": "test_indomain",
+      "name": "ego4d_63f32d44-1c3f-4b36-a33e-64a88592ad59_900",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "a8507e13bf85f9e4f3bc9d75",
+      "split": "test_outdomain",
+      "name": "youtube_Really_053460",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "11ed4e40c569814e7302fe7c",
+      "split": "test_indomain",
+      "name": "ego4d_744c58f8-9a76-40d4-838f-8c7676fcb316_8700",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "3d7a3018b61a00bb51699c7f",
+      "split": "test_indomain",
+      "name": "ego4d_36bff607-9c5d-43f4-97d2-38ad79e5220c_26100",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "e25dfdbc14c33d5ce85c5119",
+      "split": "test_indomain",
+      "name": "ego4d_a23b3840-0a21-4bdc-87df-b0c3b7df6bd2_9000",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "1ae490e61093462c26f6ddea",
+      "split": "test_indomain",
+      "name": "ego4d_3c7f716e-b3c3-4e9b-96a4-b5997a29a3e7_2250",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "f0ccecf172266e45ba5c3673",
+      "split": "test_indomain",
+      "name": "ego4d_570fc280-231c-4a3e-99c2-12eefed1c122_106500",
+      "selected": true,
+      "preview": false,
+      "tags": [
+        "lighting",
+        "regression"
+      ],
+      "evidence": {
+        "lighting": "Sharp rectangular shadow bands and bright exposed skin are visible on both forearms. This is an illumination example, not proof that lighting caused the model error.",
+        "regression": "Saved object-IoU deltas (cascade minus baseline): seed 0 -1.99, seed 1 +0.00, mean -1.00 points. The actual spatial prediction errors await rendering."
+      },
+      "caption": "Arms reach beside a wooden structure in direct light; hard rectangular shadows cross the forearms. Saved mean object IoU: 1.00% baseline -> 0.00% cascade. Seed deltas differ: -1.99/+0.00 points.",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    },
+    {
+      "image_id": "a5b4b543097dee1c5c2f0b7a",
+      "split": "test_indomain",
+      "name": "ego4d_d60ab94d-8e10-40a5-8ba1-bfb154a3c842_79050",
+      "selected": false,
+      "preview": false,
+      "tags": [],
+      "evidence": {},
+      "caption": "",
+      "candidate_id": null,
+      "region_kind": "uncertain",
+      "crop_xyxy": null
+    }
+  ]
+}
