@@ -1,0 +1,418 @@
+{
+  "run_name": "b0_cascade_stage2_s1",
+  "run_dir": "/data/runs/b0_cascade_stage2_s1",
+  "train": {
+    "n_train_images": 8993,
+    "train_sources": {
+      "ego4d": 6227,
+      "epic": 1685,
+      "own": 444,
+      "thu": 637
+    },
+    "train_names": null,
+    "steps": 11240,
+    "resumed_from": null,
+    "train_seconds": 907.9,
+    "val_curve_seconds": 240.2,
+    "first_loss": 0.68537,
+    "last_loss": 0.11048,
+    "imgs_per_s": 274.8,
+    "data_wait_frac": 0.004,
+    "peak_gpu_mem_gb": 4.77,
+    "n_params_M": 3.72,
+    "n_trainable_M": 3.72
+  },
+  "eval": {
+    "val_predicted": {
+      "split": "val",
+      "n_images": 1124,
+      "class_names": [
+        "background",
+        "hand",
+        "interacting_object"
+      ],
+      "iou": {
+        "background": 0.9440292474833564,
+        "hand": 0.845752885661308,
+        "interacting_object": 0.4663229591485472
+      },
+      "miou": 0.7520350307644038,
+      "miou_fg": 0.6560379224049276,
+      "boundary_iou": {
+        "hand": 0.7204859086476159,
+        "interacting_object": 0.34980753496486544
+      },
+      "boundary_miou_fg": 0.5351467218062407,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9490237248153861,
+      "confusion_matrix": [
+        [
+          1689191751,
+          14074971,
+          21165297
+        ],
+        [
+          16906498,
+          194472723,
+          1567900
+        ],
+        [
+          48004086,
+          2918268,
+          64359663
+        ]
+      ],
+      "eval_seconds": 47.1,
+      "hand_mode": "predicted",
+      "eval_seconds_scope": "all requested hand modes together",
+      "run_name": "b0_cascade_stage2_s1",
+      "stage1_checkpoint": "/data/runs/b0_hands_only/model_final.pt",
+      "stage2_label_map": {
+        "1": 0,
+        "2": 1
+      },
+      "hand_input_encoding": "binary_0_1",
+      "oracle_pastes_gt_hands": false,
+      "vis_names": [
+        "epic_P12_05_frame_0000001171",
+        "escape_GX010071_009900",
+        "ego4d_6f93978d-a3d0-467d-b401-e23b3c92f3bf_40800",
+        "epic_P28_18_frame_0000003781",
+        "thu_use_mobilephone_RGB_use_mobilephone_cgy_1_59",
+        "escape_GX010029_002700",
+        "ego4d_937ce95b-1fd0-4a2b-a9ed-8f9359dd38f1_10950",
+        "thu_cut_fruit_RGB_cut_fruit_fjw_2_103"
+      ]
+    },
+    "val_oracle": {
+      "split": "val",
+      "n_images": 1124,
+      "class_names": [
+        "background",
+        "hand",
+        "interacting_object"
+      ],
+      "iou": {
+        "background": 0.9604123863821258,
+        "hand": 1.0,
+        "interacting_object": 0.4848402084813697
+      },
+      "miou": 0.8150841982878317,
+      "miou_fg": 0.7424201042406848,
+      "boundary_iou": {
+        "hand": 1.0,
+        "interacting_object": 0.37937438736100665
+      },
+      "boundary_miou_fg": 0.6896871936805034,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9657937303677443,
+      "confusion_matrix": [
+        [
+          1703418692,
+          0,
+          21013327
+        ],
+        [
+          0,
+          212947121,
+          0
+        ],
+        [
+          49200554,
+          0,
+          66081463
+        ]
+      ],
+      "eval_seconds": 47.1,
+      "hand_mode": "oracle",
+      "eval_seconds_scope": "all requested hand modes together",
+      "run_name": "b0_cascade_stage2_s1",
+      "stage1_checkpoint": "/data/runs/b0_hands_only/model_final.pt",
+      "stage2_label_map": {
+        "1": 0,
+        "2": 1
+      },
+      "hand_input_encoding": "binary_0_1",
+      "oracle_pastes_gt_hands": true,
+      "vis_names": [
+        "epic_P12_05_frame_0000001171",
+        "escape_GX010071_009900",
+        "ego4d_6f93978d-a3d0-467d-b401-e23b3c92f3bf_40800",
+        "epic_P28_18_frame_0000003781",
+        "thu_use_mobilephone_RGB_use_mobilephone_cgy_1_59",
+        "escape_GX010029_002700",
+        "ego4d_937ce95b-1fd0-4a2b-a9ed-8f9359dd38f1_10950",
+        "thu_cut_fruit_RGB_cut_fruit_fjw_2_103"
+      ]
+    },
+    "test_indomain_predicted": {
+      "split": "test_indomain",
+      "n_images": 1126,
+      "class_names": [
+        "background",
+        "hand",
+        "interacting_object"
+      ],
+      "iou": {
+        "background": 0.939803225776275,
+        "hand": 0.8449980613655157,
+        "interacting_object": 0.46598829082444776
+      },
+      "miou": 0.7502631926554129,
+      "miou_fg": 0.6554931760949817,
+      "boundary_iou": {
+        "hand": 0.7179581019166632,
+        "interacting_object": 0.34957808655928396
+      },
+      "boundary_miou_fg": 0.5337680942379736,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.94570894993518,
+      "confusion_matrix": [
+        [
+          1642461760,
+          14595751,
+          26446941
+        ],
+        [
+          17988341,
+          202639449,
+          1891236
+        ],
+        [
+          46172798,
+          2695772,
+          67372006
+        ]
+      ],
+      "eval_seconds": 47.3,
+      "hand_mode": "predicted",
+      "eval_seconds_scope": "all requested hand modes together",
+      "run_name": "b0_cascade_stage2_s1",
+      "stage1_checkpoint": "/data/runs/b0_hands_only/model_final.pt",
+      "stage2_label_map": {
+        "1": 0,
+        "2": 1
+      },
+      "hand_input_encoding": "binary_0_1",
+      "oracle_pastes_gt_hands": false,
+      "vis_names": [
+        "epic_P12_05_frame_0000002161",
+        "escape_GX010071_010440",
+        "ego4d_72546b99-74eb-49f3-9e90-b0773dd7ef24_750",
+        "epic_P32_02_frame_0000003061",
+        "thu_throw_paperplane_RGB_throw_paperplane_fjw_3_54",
+        "escape_GX010025_011460",
+        "ego4d_9a4ed30a-1535-4eaa-b9dc-40437b77f852_15900",
+        "thu_fetch_water_RGB_fetch_water_cwx_1_109"
+      ]
+    },
+    "test_indomain_oracle": {
+      "split": "test_indomain",
+      "n_images": 1126,
+      "class_names": [
+        "background",
+        "hand",
+        "interacting_object"
+      ],
+      "iou": {
+        "background": 0.958484814532484,
+        "hand": 1.0,
+        "interacting_object": 0.4918353928354795
+      },
+      "miou": 0.8167734024559877,
+      "miou_fg": 0.7459176964177398,
+      "boundary_iou": {
+        "hand": 1.0,
+        "interacting_object": 0.3836680630422681
+      },
+      "boundary_miou_fg": 0.691834031521134,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9644801499300151,
+      "confusion_matrix": [
+        [
+          1658392177,
+          0,
+          25112275
+        ],
+        [
+          0,
+          222519026,
+          0
+        ],
+        [
+          46718241,
+          0,
+          69522335
+        ]
+      ],
+      "eval_seconds": 47.3,
+      "hand_mode": "oracle",
+      "eval_seconds_scope": "all requested hand modes together",
+      "run_name": "b0_cascade_stage2_s1",
+      "stage1_checkpoint": "/data/runs/b0_hands_only/model_final.pt",
+      "stage2_label_map": {
+        "1": 0,
+        "2": 1
+      },
+      "hand_input_encoding": "binary_0_1",
+      "oracle_pastes_gt_hands": true,
+      "vis_names": [
+        "epic_P12_05_frame_0000002161",
+        "escape_GX010071_010440",
+        "ego4d_72546b99-74eb-49f3-9e90-b0773dd7ef24_750",
+        "epic_P32_02_frame_0000003061",
+        "thu_throw_paperplane_RGB_throw_paperplane_fjw_3_54",
+        "escape_GX010025_011460",
+        "ego4d_9a4ed30a-1535-4eaa-b9dc-40437b77f852_15900",
+        "thu_fetch_water_RGB_fetch_water_cwx_1_109"
+      ]
+    },
+    "test_outdomain_predicted": {
+      "split": "test_outdomain",
+      "n_images": 500,
+      "class_names": [
+        "background",
+        "hand",
+        "interacting_object"
+      ],
+      "iou": {
+        "background": 0.9623641555528125,
+        "hand": 0.8972436141280757,
+        "interacting_object": 0.5988351792431109
+      },
+      "miou": 0.8194809829746664,
+      "miou_fg": 0.7480393966855934,
+      "boundary_iou": {
+        "hand": 0.8221811096807987,
+        "interacting_object": 0.45406629722598235
+      },
+      "boundary_miou_fg": 0.6381237034533905,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9653914461005958,
+      "confusion_matrix": [
+        [
+          821818021,
+          2562224,
+          8224535
+        ],
+        [
+          5253053,
+          82993116,
+          671361
+        ],
+        [
+          16099597,
+          1018108,
+          38831569
+        ]
+      ],
+      "eval_seconds": 21.7,
+      "hand_mode": "predicted",
+      "eval_seconds_scope": "all requested hand modes together",
+      "run_name": "b0_cascade_stage2_s1",
+      "stage1_checkpoint": "/data/runs/b0_hands_only/model_final.pt",
+      "stage2_label_map": {
+        "1": 0,
+        "2": 1
+      },
+      "hand_input_encoding": "binary_0_1",
+      "oracle_pastes_gt_hands": false,
+      "vis_names": [
+        "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_003720",
+        "youtube_Why_010740",
+        "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_003900",
+        "youtube_Chicken_006900",
+        "youtube_Good_004440",
+        "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_003660",
+        "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_002280",
+        "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_011820"
+      ]
+    },
+    "test_outdomain_oracle": {
+      "split": "test_outdomain",
+      "n_images": 500,
+      "class_names": [
+        "background",
+        "hand",
+        "interacting_object"
+      ],
+      "iou": {
+        "background": 0.971546671117983,
+        "hand": 1.0,
+        "interacting_object": 0.6197806277868186
+      },
+      "miou": 0.8637757663016005,
+      "miou_fg": 0.8098903138934093,
+      "boundary_iou": {
+        "hand": 1.0,
+        "interacting_object": 0.48746855627399355
+      },
+      "boundary_miou_fg": 0.7437342781369968,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9752814440895297,
+      "confusion_matrix": [
+        [
+          825007355,
+          0,
+          7597425
+        ],
+        [
+          0,
+          88917530,
+          0
+        ],
+        [
+          16564261,
+          0,
+          39385013
+        ]
+      ],
+      "eval_seconds": 21.7,
+      "hand_mode": "oracle",
+      "eval_seconds_scope": "all requested hand modes together",
+      "run_name": "b0_cascade_stage2_s1",
+      "stage1_checkpoint": "/data/runs/b0_hands_only/model_final.pt",
+      "stage2_label_map": {
+        "1": 0,
+        "2": 1
+      },
+      "hand_input_encoding": "binary_0_1",
+      "oracle_pastes_gt_hands": true,
+      "vis_names": [
+        "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_003720",
+        "youtube_Why_010740",
+        "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_003900",
+        "youtube_Chicken_006900",
+        "youtube_Good_004440",
+        "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_003660",
+        "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_002280",
+        "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_011820"
+      ]
+    }
+  },
+  "checks": {
+    "loss_finite": true,
+    "loss_decreased_by_half": true,
+    "predicted_val_n_images_1124": true,
+    "predicted_val_ious_in_0_1": true,
+    "oracle_val_n_images_1124": true,
+    "oracle_val_ious_in_0_1": true,
+    "val_predicted_hand_iou_matches_stage1": true,
+    "val_predicted_hand_boundary_iou_matches_stage1": true,
+    "val_oracle_hand_iou_is_1": true,
+    "predicted_test_indomain_n_images_1126": true,
+    "predicted_test_indomain_ious_in_0_1": true,
+    "oracle_test_indomain_n_images_1126": true,
+    "oracle_test_indomain_ious_in_0_1": true,
+    "test_indomain_predicted_hand_iou_matches_stage1": true,
+    "test_indomain_predicted_hand_boundary_iou_matches_stage1": true,
+    "test_indomain_oracle_hand_iou_is_1": true,
+    "predicted_test_outdomain_n_images_500": true,
+    "predicted_test_outdomain_ious_in_0_1": true,
+    "oracle_test_outdomain_n_images_500": true,
+    "oracle_test_outdomain_ious_in_0_1": true,
+    "test_outdomain_predicted_hand_iou_matches_stage1": true,
+    "test_outdomain_predicted_hand_boundary_iou_matches_stage1": true,
+    "test_outdomain_oracle_hand_iou_is_1": true
+  }
+}

@@ -1,0 +1,61 @@
+run_name: b0_cascade_stage2
+seed: 0
+data:
+  train_root: /data/egohos_512
+  train_file_list: null
+  subset: null
+  augment: true
+  label_map:
+    1: 0
+    2: 1
+  num_workers: 8
+model:
+  pretrained: nvidia/mit-b0
+  class_names:
+  - background
+  - interacting_object
+  freeze_encoder: false
+train:
+  max_iters: 11240
+  batch_size: 16
+  warmup_iters: 1500
+  lr: 6.0e-05
+  head_lr_mult: 10.0
+  weight_decay: 0.01
+  poly_power: 1.0
+  bf16: true
+  log_every: 20
+  ckpt_every: 2000
+eval:
+  splits:
+  - val
+  - test_indomain
+  - test_outdomain
+  boundary_dilation_ratio: 0.02
+  n_vis: 8
+  min_fg_iou: null
+  val_every: 2000
+cascade:
+  enabled: true
+  stage1_checkpoint: /data/runs/b0_hands_only/model_final.pt
+  corruption:
+    morph_probs:
+    - 0.4
+    - 0.3
+    - 0.3
+    kernel_sizes:
+    - 3
+    - 5
+    - 7
+    - 9
+    - 11
+    - 13
+    - 15
+    drop_prob: 0.1
+    blob_prob: 0.2
+    blob_count:
+    - 1
+    - 3
+    blob_radius:
+    - 3
+    - 10

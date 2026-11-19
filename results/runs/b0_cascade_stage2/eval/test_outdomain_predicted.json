@@ -1,0 +1,5563 @@
+{
+  "split": "test_outdomain",
+  "n_images": 500,
+  "class_names": [
+    "background",
+    "hand",
+    "interacting_object"
+  ],
+  "iou": {
+    "background": 0.9621939208076187,
+    "hand": 0.8972436141280757,
+    "interacting_object": 0.5958158243448523
+  },
+  "miou": 0.8184177864268488,
+  "miou_fg": 0.7465297192364639,
+  "boundary_iou": {
+    "hand": 0.8221811096807987,
+    "interacting_object": 0.4552873602548597
+  },
+  "boundary_miou_fg": 0.6387342349678292,
+  "boundary_dilation_ratio": 0.02,
+  "pixel_accuracy": 0.9652605103249733,
+  "confusion_matrix": [
+    [
+      822032236,
+      2562224,
+      8010320
+    ],
+    [
+      5284569,
+      82993116,
+      639845
+    ],
+    [
+      16441798,
+      1018108,
+      38489368
+    ]
+  ],
+  "per_image": {
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9226813011884583,
+        "hand": 0.9003612120432597,
+        "interacting_object": 0.6523912620071188
+      }
+    },
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9902083187673335,
+        "hand": 0.93882049550241,
+        "interacting_object": 0.9218678851256928
+      }
+    },
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9138476729358856,
+        "hand": 0.8780589170028114,
+        "interacting_object": 0.7401110104433628
+      }
+    },
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9959579141084134,
+        "hand": 0.9477934962336947,
+        "interacting_object": 0.8393051031487514
+      }
+    },
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000300": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9864328432504185,
+        "hand": 0.9344700793341326,
+        "interacting_object": 0.979782601578103
+      }
+    },
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.969426514665592,
+        "hand": 0.9150607370464565,
+        "interacting_object": 0.4083838871512836
+      }
+    },
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.7788919613943508,
+        "hand": 0.9051143902321109,
+        "interacting_object": 0.37751471178212653
+      }
+    },
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000480": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9407028627363845,
+        "hand": 0.8086555434379321,
+        "interacting_object": 0.7715130246821145
+      }
+    },
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9266748999680455,
+        "hand": 0.7911482741857073,
+        "interacting_object": 0.8402608463701922
+      }
+    },
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8667978162677084,
+        "hand": 0.9066276267509288,
+        "interacting_object": 0.6690869380035083
+      }
+    },
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000660": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9160368225582173,
+        "hand": 0.895932557792197,
+        "interacting_object": 0.3125136200645839
+      }
+    },
+    "youtube_COOKING POV-K-LnGg1vOIU-1080p-1644527903757_000720": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9557961195539507,
+        "hand": 0.9068362881178942,
+        "interacting_object": 0.9245350549635932
+      }
+    },
+    "youtube_Chicken_000300": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9740602926079674,
+        "hand": 0.9153286993979147,
+        "interacting_object": 0.6956791147028791
+      }
+    },
+    "youtube_Chicken_000540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9921878624634246,
+        "hand": 0.9149596407511227,
+        "interacting_object": 0.8576831210191083
+      }
+    },
+    "youtube_Chicken_000780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9744721225664688,
+        "hand": 0.8928506277917055,
+        "interacting_object": 0.8258901961503544
+      }
+    },
+    "youtube_Chicken_001020": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9812271946310693,
+        "hand": 0.904071992787112,
+        "interacting_object": 0.7663843354481337
+      }
+    },
+    "youtube_Chicken_001200": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9863082676998889,
+        "hand": 0.9389360599263307,
+        "interacting_object": 0.7708756460428329
+      }
+    },
+    "youtube_Chicken_002700": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9940932551687718,
+        "hand": 0.9320031289768946,
+        "interacting_object": 0.849599460078054
+      }
+    },
+    "youtube_Chicken_002820": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9864811599829263,
+        "hand": 0.8032545659136155,
+        "interacting_object": 0.532808729409296
+      }
+    },
+    "youtube_Chicken_003600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8655667757506506,
+        "hand": 0.8320898063210732,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Chicken_003840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9879954855729279,
+        "hand": 0.8565489884966283,
+        "interacting_object": 0.8468453255989511
+      }
+    },
+    "youtube_Chicken_004140": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9210054599002324,
+        "hand": 0.9029798308392973,
+        "interacting_object": 0.1676424982943621
+      }
+    },
+    "youtube_Chicken_004680": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9885139863311215,
+        "hand": 0.9022321334429894,
+        "interacting_object": 0.9196609167973455
+      }
+    },
+    "youtube_Chicken_005040": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9027384278494982,
+        "hand": 0.7355649204098345,
+        "interacting_object": 0.5115391542014492
+      }
+    },
+    "youtube_Chicken_005400": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9825639202330383,
+        "hand": 0.914188436049693,
+        "interacting_object": 0.9084705134163344
+      }
+    },
+    "youtube_Chicken_005520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8457310646365472,
+        "hand": 0.8139656343030239,
+        "interacting_object": 0.08494240126872288
+      }
+    },
+    "youtube_Chicken_005820": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9930902478593057,
+        "hand": 0.8647028296733311,
+        "interacting_object": 0.8877371839678129
+      }
+    },
+    "youtube_Chicken_006240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.94495234633966,
+        "hand": 0.8588383153144147,
+        "interacting_object": 0.6502676710003876
+      }
+    },
+    "youtube_Chicken_006360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.971455965013106,
+        "hand": 0.8164430804277669,
+        "interacting_object": 0.7959540085929482
+      }
+    },
+    "youtube_Chicken_006480": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9588000207661699,
+        "hand": 0.904075021312873,
+        "interacting_object": 0.23676890728570485
+      }
+    },
+    "youtube_Chicken_006900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8824839802965063,
+        "hand": 0.8433866129761269,
+        "interacting_object": 0.5181134897457864
+      }
+    },
+    "youtube_Chicken_007560": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.995845133771891,
+        "hand": 0.9515401722633836,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Chicken_008160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8300272693479062,
+        "hand": 0.807617894500337,
+        "interacting_object": 0.26828511251524223
+      }
+    },
+    "youtube_Chicken_008640": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9799456202280983,
+        "hand": 0.9363092372240182,
+        "interacting_object": 0.7722789194898799
+      }
+    },
+    "youtube_Chicken_009960": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9271028206310044,
+        "hand": 0.594819485797738,
+        "interacting_object": 0.1784345193459994
+      }
+    },
+    "youtube_Chicken_010260": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9865618082946674,
+        "hand": 0.9250779077795817,
+        "interacting_object": 0.638831917179412
+      }
+    },
+    "youtube_Chicken_012000": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.7101236754470734,
+        "hand": 0.834155510437155,
+        "interacting_object": 0.06149205138359397
+      }
+    },
+    "youtube_Chicken_012420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9152494931321944,
+        "hand": 0.8455274921417176,
+        "interacting_object": 0.7152611119038662
+      }
+    },
+    "youtube_Extra-Crabby_000360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9848156194998544,
+        "hand": 0.9519418450540182,
+        "interacting_object": 0.6369313974825355
+      }
+    },
+    "youtube_Extra-Crabby_000480": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9878972862087351,
+        "hand": 0.9346317756548232,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Extra-Crabby_000540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9936301017158771,
+        "hand": 0.9339210938822369,
+        "interacting_object": 0.49015560495395366
+      }
+    },
+    "youtube_Extra-Crabby_000660": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.982242409965963,
+        "hand": 0.9355421919375959,
+        "interacting_object": 0.7217175031952745
+      }
+    },
+    "youtube_Extra-Crabby_001260": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9740011340179772,
+        "hand": 0.8904605947182367,
+        "interacting_object": 0.7898509560043652
+      }
+    },
+    "youtube_Extra-Crabby_001560": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9926291519107237,
+        "hand": 0.9460440528634361,
+        "interacting_object": 0.7607085346215781
+      }
+    },
+    "youtube_Extra-Crabby_001740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9892340085451695,
+        "hand": 0.9314563990587563,
+        "interacting_object": 0.5586264656616415
+      }
+    },
+    "youtube_Extra-Crabby_002520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9577721228546563,
+        "hand": 0.9305306295977502,
+        "interacting_object": 0.5629129712730999
+      }
+    },
+    "youtube_Extra-Crabby_002760": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9881368735335174,
+        "hand": 0.9372574212371851,
+        "interacting_object": 0.8712977380414219
+      }
+    },
+    "youtube_Extra-Crabby_002940": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9910396852610492,
+        "hand": 0.9311872679045092,
+        "interacting_object": 0.8985713720368831
+      }
+    },
+    "youtube_Extra-Crabby_003240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9885262868153042,
+        "hand": 0.9122660891776334,
+        "interacting_object": 0.7817814446876579
+      }
+    },
+    "youtube_Extra-Crabby_003360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9623718770019218,
+        "hand": 0.9338892984823404,
+        "interacting_object": 0.5051985986794526
+      }
+    },
+    "youtube_Extra-Crabby_004320": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9540798790514615,
+        "hand": 0.9359966424468169,
+        "interacting_object": 0.5845412934056783
+      }
+    },
+    "youtube_Extra-Crabby_004740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9715030885726906,
+        "hand": 0.9405682456349882,
+        "interacting_object": 0.7665125243519436
+      }
+    },
+    "youtube_Extra-Crabby_006120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9460889288151972,
+        "hand": 0.9362020146378657,
+        "interacting_object": 0.3919388895789343
+      }
+    },
+    "youtube_Extra-Crabby_006480": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9791297002503352,
+        "hand": 0.9426011992059079,
+        "interacting_object": 0.7445256437315323
+      }
+    },
+    "youtube_Extra-Crabby_006720": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9903679568841383,
+        "hand": 0.9054894101929349,
+        "interacting_object": 0.8556011783920748
+      }
+    },
+    "youtube_Extra-Crabby_006780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9551199491300075,
+        "hand": 0.8986498506086382,
+        "interacting_object": 0.5289617969579059
+      }
+    },
+    "youtube_Extra-Crabby_006840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9336510302699014,
+        "hand": 0.9296439775840803,
+        "interacting_object": 0.32522638903100376
+      }
+    },
+    "youtube_Extra-Crabby_006900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9875561797752809,
+        "hand": 0.9485502076771459,
+        "interacting_object": 0.8825030271579312
+      }
+    },
+    "youtube_Extra-Crabby_007800": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9734257638333043,
+        "hand": 0.9241934981870243,
+        "interacting_object": 0.6076099311995213
+      }
+    },
+    "youtube_Extra-Crabby_008040": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9864285258289748,
+        "hand": 0.8731219096130791,
+        "interacting_object": 0.8948008849557522
+      }
+    },
+    "youtube_Extra-Crabby_008280": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9768792473545724,
+        "hand": 0.9246221147348579,
+        "interacting_object": 0.8723217631229349
+      }
+    },
+    "youtube_Extra-Crabby_008340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9015057237804124,
+        "hand": 0.9383572014886716,
+        "interacting_object": 0.6637193951386633
+      }
+    },
+    "youtube_Extra-Crabby_008580": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9798141576853885,
+        "hand": 0.94251395753707,
+        "interacting_object": 0.8263349683625513
+      }
+    },
+    "youtube_Extra-Crabby_009060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9760716931757386,
+        "hand": 0.9292567517019525,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Extra-Crabby_009960": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9865097819114818,
+        "hand": 0.9471660049788078,
+        "interacting_object": 0.821112349970486
+      }
+    },
+    "youtube_Extra-Crabby_010680": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.958517571800937,
+        "hand": 0.944462508455826,
+        "interacting_object": 0.09599753457375092
+      }
+    },
+    "youtube_Extra-Crabby_011040": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9939962242663255,
+        "hand": 0.9358218640997215,
+        "interacting_object": 0.7983037206710828
+      }
+    },
+    "youtube_Extra-Crabby_011340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9108843953998211,
+        "hand": 0.9357104149914345,
+        "interacting_object": 0.620090074840371
+      }
+    },
+    "youtube_Extra-Crabby_011760": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9859699326531638,
+        "hand": 0.895039486532323,
+        "interacting_object": 0.36137691064993166
+      }
+    },
+    "youtube_Extra-Crabby_012180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9168109564979052,
+        "hand": 0.8313498714940217,
+        "interacting_object": 0.04356681078376035
+      }
+    },
+    "youtube_Extra-Crabby_012780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9213385959236493,
+        "hand": 0.935663697502331,
+        "interacting_object": 0.3849714063172566
+      }
+    },
+    "youtube_Extra-Crabby_013260": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9832406443831743,
+        "hand": 0.9286964011735889,
+        "interacting_object": 0.8362931349007696
+      }
+    },
+    "youtube_Extra-Crabby_013740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9851875465007913,
+        "hand": 0.9261061875212651,
+        "interacting_object": 0.8044920207526105
+      }
+    },
+    "youtube_Extra-Crabby_014160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9864962929184673,
+        "hand": 0.9466875843852933,
+        "interacting_object": 0.8554704489440874
+      }
+    },
+    "youtube_Extra-Crabby_015360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9775344795707022,
+        "hand": 0.9516691788086864,
+        "interacting_object": 0.13655108858426449
+      }
+    },
+    "youtube_Extra-Crabby_015420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9564485304779068,
+        "hand": 0.9356247716768056,
+        "interacting_object": 0.46065556348399045
+      }
+    },
+    "youtube_Extra-Crabby_016080": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9936136990879182,
+        "hand": 0.9376789846588505,
+        "interacting_object": 0.6842973691447428
+      }
+    },
+    "youtube_Extra-Crabby_016140": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9853038269415353,
+        "hand": 0.9460898127962184,
+        "interacting_object": 0.5706259241005421
+      }
+    },
+    "youtube_Extra-Crabby_016380": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9930001878742168,
+        "hand": 0.9366740940178876,
+        "interacting_object": 0.7625931279884355
+      }
+    },
+    "youtube_Extra-Crabby_016740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9533101330676788,
+        "hand": 0.938820066123541,
+        "interacting_object": 0.6733772423332449
+      }
+    },
+    "youtube_Extra-Crabby_017160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9178312747956419,
+        "hand": 0.942301742292427,
+        "interacting_object": 0.6226935970928447
+      }
+    },
+    "youtube_Extra-Crabby_017760": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.949619777471795,
+        "hand": 0.9178218959012555,
+        "interacting_object": 0.5489632755773415
+      }
+    },
+    "youtube_Extra-Crabby_018840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9618164125851444,
+        "hand": 0.9109847245310679,
+        "interacting_object": 0.0883747915004714
+      }
+    },
+    "youtube_Extra-Crabby_019620": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9664875498600854,
+        "hand": 0.9208129871308451,
+        "interacting_object": 0.6163084913355418
+      }
+    },
+    "youtube_Extra-Crabby_021120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9865929788295307,
+        "hand": 0.9183299405519826,
+        "interacting_object": 0.922837396521607
+      }
+    },
+    "youtube_Extra-Crabby_021840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.7219759293030922,
+        "hand": 0.9304417614012188,
+        "interacting_object": 0.050314897777574086
+      }
+    },
+    "youtube_Extra-Crabby_022140": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9748714301788468,
+        "hand": 0.8969577824094469,
+        "interacting_object": 0.343826352530541
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_001260": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9747236111497809,
+        "hand": 0.45420865558924345,
+        "interacting_object": 0.7271231073074391
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_001500": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.970180895787387,
+        "hand": 0.8621402505887217,
+        "interacting_object": 0.8433126934984521
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_002100": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9334011767403488,
+        "hand": 0.8414785228311276,
+        "interacting_object": 0.16958441424570928
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_002520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9781434930163548,
+        "hand": 0.8880527383367139,
+        "interacting_object": 0.8621467441310234
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_003000": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8693708534480942,
+        "hand": 0.8990694410266226,
+        "interacting_object": 0.026932391673641618
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_003360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9910770492168833,
+        "hand": 0.9199102206164121,
+        "interacting_object": 0.7229438908061576
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_004140": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9561201304751321,
+        "hand": 0.7046334106820257,
+        "interacting_object": 0.8060432205010518
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_004560": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9556777954051096,
+        "hand": 0.8884806040693988,
+        "interacting_object": 0.6723851550685475
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_004800": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8754253058749891,
+        "hand": 0.9099687040287173,
+        "interacting_object": 0.3851430187745289
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_004980": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9792023245838695,
+        "hand": 0.8973181948351667,
+        "interacting_object": 0.555621908631814
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_005100": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9781799126637555,
+        "hand": 0.9089240430701416,
+        "interacting_object": 0.8181486880466472
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_006600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9861674424994918,
+        "hand": 0.9262250123905501,
+        "interacting_object": 0.8709332602439359
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_007320": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9623589991524658,
+        "hand": 0.9317336400921432,
+        "interacting_object": 0.7578516440725859
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_007380": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9862072865742545,
+        "hand": 0.9169107335362189,
+        "interacting_object": 0.9134454357598253
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_007800": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9495215439093554,
+        "hand": 0.938499018072439,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_008400": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8445772206655436,
+        "hand": 0.9260899695682304,
+        "interacting_object": 0.2387064061732503
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_009180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9822884614837227,
+        "hand": 0.9362443400972664,
+        "interacting_object": 0.8379397325666549
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_011760": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9893743034654886,
+        "hand": 0.8789996400059293,
+        "interacting_object": 0.9064660134751118
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_011820": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8344747679973642,
+        "hand": 0.6171430225601636,
+        "interacting_object": 0.4179521554039357
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_012120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8857818024538732,
+        "hand": 0.3957364276465325,
+        "interacting_object": 0.7733236649869135
+      }
+    },
+    "youtube_First Person Cooking CHICKEN QUESADILLAS  JONAH IN THE KITCHEN  POV COOKING-zma2SgJg6l0-1080p-1644528321483 (1)_012420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9840697558323996,
+        "hand": 0.8797919167667066,
+        "interacting_object": 0.946537500946038
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_005280": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9861612833780986,
+        "hand": 0.9207693641977935,
+        "interacting_object": 0.6933684755494893
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_008640": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9453285126790114,
+        "hand": 0.8957316060455074,
+        "interacting_object": 0.5257365221457679
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_012600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9791643573245713,
+        "hand": 0.9550353423083647,
+        "interacting_object": 0.75592856375935
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_012900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9725356623101087,
+        "hand": 0.8093775369155495,
+        "interacting_object": 0.6215074911783421
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_013500": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9812622648246911,
+        "hand": 0.9399330047722246,
+        "interacting_object": 0.8122827789023412
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_013560": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8622512380139845,
+        "hand": 0.5801587395464922,
+        "interacting_object": 0.5070287067179639
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_015120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9852970669922299,
+        "hand": 0.8879133211754124,
+        "interacting_object": 0.5957060708898945
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_016860": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9722059193661674,
+        "hand": 0.9405005417215506,
+        "interacting_object": 0.5207041618145386
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_017220": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9731956582805452,
+        "hand": 0.8868667177583166,
+        "interacting_object": 0.5697125177543133
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_017520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9744619730447897,
+        "hand": 0.8914103308183401,
+        "interacting_object": 0.7133077765607886
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_018180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.995790792887565,
+        "hand": 0.9282435681499672,
+        "interacting_object": 0.3899165759883932
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_018660": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9638180193124734,
+        "hand": 0.7973761424572527,
+        "interacting_object": 0.7296399193768045
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_018900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9140178918149261,
+        "hand": 0.8640395439224604,
+        "interacting_object": 0.08345083085494431
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_019200": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9091865552682478,
+        "hand": 0.6341338626360756,
+        "interacting_object": 0.2677170376985393
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790 (1)_019680": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9660881391659836,
+        "hand": 0.8934187160841658,
+        "interacting_object": 0.8943698765406298
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_001920": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.897408154914241,
+        "hand": 0.8530890847915485,
+        "interacting_object": 0.25171912747379904
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_002580": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9928402460843287,
+        "hand": 0.9114015385783882,
+        "interacting_object": 0.2400356268091739
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_002640": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9894977300777331,
+        "hand": 0.9117482109608094,
+        "interacting_object": 0.7451660221362848
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_003000": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9871658345433264,
+        "hand": 0.9523316812290293,
+        "interacting_object": 0.5846260050353285
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_003600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9722519885760144,
+        "hand": 0.7846298600516178,
+        "interacting_object": 0.8293233901257416
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_006360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.987616293933444,
+        "hand": 0.9459081829320096,
+        "interacting_object": 0.9125429114016507
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_006420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.981159925671512,
+        "hand": 0.8976051025185735,
+        "interacting_object": 0.8362323765315347
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_007200": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9884462376541865,
+        "hand": 0.8963339939646845,
+        "interacting_object": 0.5418297960024727
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_007320": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.966339034754857,
+        "hand": 0.8855126477746871,
+        "interacting_object": 0.7017484945850855
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_007380": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9799994679228636,
+        "hand": 0.7334792245848674,
+        "interacting_object": 0.8202665055549961
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_007680": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8914501098977023,
+        "hand": 0.8969672100570747,
+        "interacting_object": 0.421006124589328
+      }
+    },
+    "youtube_First Person Cooking ITALIAN SAUSAGE & PEPPERS WITH POLENTA  JONAH IN THE KITCHEN  POV COOKING-2YPjWvmOb5o-1080p-1644528307790_012060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.963722505257883,
+        "hand": 0.8970932823106964,
+        "interacting_object": 0.7607486385240251
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_001380": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.7357693172408877,
+        "hand": 0.3869214509640663,
+        "interacting_object": 0.24513274627169843
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_001560": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9923039380219782,
+        "hand": 0.9443553758693868,
+        "interacting_object": 0.8870537508678336
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_001740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9945654114308722,
+        "hand": 0.9262452776278612,
+        "interacting_object": 0.5620237732398659
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_002400": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.987637339409902,
+        "hand": 0.9016657780223938,
+        "interacting_object": 0.7796185772106744
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_004020": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9855699115266247,
+        "hand": 0.929099925613687,
+        "interacting_object": 0.8837390537519739
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_004800": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9682699002731074,
+        "hand": 0.9314664817674683,
+        "interacting_object": 0.8300847159317579
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_005040": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9494846021598327,
+        "hand": 0.8949606106782438,
+        "interacting_object": 0.48658244302717635
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_005700": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.968490535842509,
+        "hand": 0.8993268340390999,
+        "interacting_object": 0.6190219578088176
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_006660": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9710971069957344,
+        "hand": 0.9301393656741934,
+        "interacting_object": 0.2787988536067187
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_008040": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9844317825191142,
+        "hand": 0.8865814318968676,
+        "interacting_object": 0.8853133100920711
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_008460": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9909063412002256,
+        "hand": 0.8477592622552985,
+        "interacting_object": 0.7591206990715456
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_009840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9505475054921289,
+        "hand": 0.7318054029369372,
+        "interacting_object": 0.8213912361703981
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_010260": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9912054620217082,
+        "hand": 0.913952396230012,
+        "interacting_object": 0.9421831156684103
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_011100": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9786267714035319,
+        "hand": 0.8739858836448227,
+        "interacting_object": 0.7373819517313746
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_011640": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9381613917794235,
+        "hand": 0.8031094264317515,
+        "interacting_object": 0.5259743135518158
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_012780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9735942593988253,
+        "hand": 0.9122001792714667,
+        "interacting_object": 0.14375433302067617
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_014520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9907191195954486,
+        "hand": 0.8955622741450417,
+        "interacting_object": 0.745765601909742
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_016080": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8843422413660013,
+        "hand": 0.4652301462689034,
+        "interacting_object": 0.6819199897120444
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_016260": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9178564644624959,
+        "hand": 0.7663543435175779,
+        "interacting_object": 0.239492084605893
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_016380": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9559948508232887,
+        "hand": 0.6438911876235645,
+        "interacting_object": 0.33250736672917225
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_016860": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.943677892328901,
+        "hand": 0.8712429485960576,
+        "interacting_object": 0.1071440184697428
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_017520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9305811551916062,
+        "hand": 0.9049044318420499,
+        "interacting_object": 0.6280265675309928
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_017940": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9946056316725514,
+        "hand": 0.9180301518307425,
+        "interacting_object": 0.8068164905491889
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_018660": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9761059075814446,
+        "hand": 0.881288218009884,
+        "interacting_object": 0.5357607282184655
+      }
+    },
+    "youtube_First Person Cooking POPEYES CHICKEN SANDWICH COPYCAT RECIPE  JONAH IN THE KITCHEN  POV COOKING-lNAPNvF0kGg-1080p-1644528296768_021300": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9840669899960185,
+        "hand": 0.8240257804932568,
+        "interacting_object": 0.034422301443515865
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_000840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9934134759320893,
+        "hand": 0.9090193490881099,
+        "interacting_object": 0.8234180638182802
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_001260": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.838071414475787,
+        "hand": 0.9274294932413639,
+        "interacting_object": 0.07938066998778966
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_003480": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9383532261866838,
+        "hand": 0.45141928454023306,
+        "interacting_object": 0.1278504334168957
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_004020": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9929771373199912,
+        "hand": 0.8899890811732504,
+        "interacting_object": 0.018373658359104966
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_004500": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.926445508003369,
+        "hand": 0.8933999274717305,
+        "interacting_object": 0.05997701327730026
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_005160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9875083259290748,
+        "hand": 0.938683456462837,
+        "interacting_object": 0.9537028268917719
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_005340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9342655644975298,
+        "hand": 0.8155061793687023,
+        "interacting_object": 0.468880411684887
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_005760": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.968689229073606,
+        "hand": 0.9443898669644477,
+        "interacting_object": 0.7444606840105232
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_006360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9735353430565837,
+        "hand": 0.9193324525915911,
+        "interacting_object": 0.8528988316075087
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_008340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9076678934395787,
+        "hand": 0.9456627638663362,
+        "interacting_object": 0.3977852415648672
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_008580": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8634108533779858,
+        "hand": 0.9443494187056266,
+        "interacting_object": 0.019178957031951622
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_009540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8914865404487635,
+        "hand": 0.933824066753918,
+        "interacting_object": 0.0385876449233641
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_009840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9899447702931322,
+        "hand": 0.9202158350928585,
+        "interacting_object": 0.8699597763170803
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_010320": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9810362046809923,
+        "hand": 0.9216218249920572,
+        "interacting_object": 0.6925824820320331
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_010980": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9508574736538556,
+        "hand": 0.8944300257524546,
+        "interacting_object": 0.32286096256684493
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_011520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9280392799132816,
+        "hand": 0.8904641693174624,
+        "interacting_object": 0.7761116370329452
+      }
+    },
+    "youtube_First Person Cooking Red Pesto Pasta  30 Minute Pasta  JONAH IN THE KITCHEN-FeAspQ44YFk-1080p-1644528516587_014760": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9841894493898273,
+        "hand": 0.9279101662952168,
+        "interacting_object": 0.941502012209593
+      }
+    },
+    "youtube_Good_000780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9764496924989847,
+        "hand": 0.9530001205968448,
+        "interacting_object": 0.6153524434578387
+      }
+    },
+    "youtube_Good_001260": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9241764862577563,
+        "hand": 0.9195885551050498,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Good_001320": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9840396317542238,
+        "hand": 0.9210159855451082,
+        "interacting_object": 0.777812219088063
+      }
+    },
+    "youtube_Good_002280": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9867918631769361,
+        "hand": 0.9633657348832053,
+        "interacting_object": 0.7822170830417187
+      }
+    },
+    "youtube_Good_003240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9896505618812144,
+        "hand": 0.9602681091647498,
+        "interacting_object": 0.9011764705882352
+      }
+    },
+    "youtube_Good_003540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9258183424791883,
+        "hand": 0.9161291242275426,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Good_004440": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9670638767719988,
+        "hand": 0.9161982773228713,
+        "interacting_object": 0.977138104169964
+      }
+    },
+    "youtube_Good_004560": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8257205335726052,
+        "hand": 0.9130616538108851,
+        "interacting_object": 0.6558647782176131
+      }
+    },
+    "youtube_Good_004740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9925580263074304,
+        "hand": 0.9330951714600859,
+        "interacting_object": 0.8168510934913304
+      }
+    },
+    "youtube_Good_006000": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9921428059123593,
+        "hand": 0.9335586923892901,
+        "interacting_object": 0.8626565607697683
+      }
+    },
+    "youtube_Good_006480": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9878852545310391,
+        "hand": 0.9238276600809331,
+        "interacting_object": 0.8825216576914071
+      }
+    },
+    "youtube_Good_006600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9788515269057471,
+        "hand": 0.9493567374565828,
+        "interacting_object": 0.3318416648475588
+      }
+    },
+    "youtube_Good_008160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.993912848132517,
+        "hand": 0.9437714437558128,
+        "interacting_object": 0.5358725223474543
+      }
+    },
+    "youtube_Good_012720": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9765254924246618,
+        "hand": 0.9611807606772741,
+        "interacting_object": 0.9428268139845453
+      }
+    },
+    "youtube_Good_013140": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9591038604386859,
+        "hand": 0.8633787959410386,
+        "interacting_object": 0.47866274228101735
+      }
+    },
+    "youtube_Good_014100": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9925941688331408,
+        "hand": 0.9514866536747879,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Good_014340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9939983600684984,
+        "hand": 0.9610212252114974,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Good_014760": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8402251260596317,
+        "hand": 0.9458190886306961,
+        "interacting_object": 0.41253290573738866
+      }
+    },
+    "youtube_Good_015240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9851866088652558,
+        "hand": 0.9441834384573227,
+        "interacting_object": 0.8074327809991539
+      }
+    },
+    "youtube_Good_015420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9459490995575154,
+        "hand": 0.9421105183154004,
+        "interacting_object": 0.48904055944055946
+      }
+    },
+    "youtube_Good_015720": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9846277867991654,
+        "hand": 0.9594100007083769,
+        "interacting_object": 0.9507248839053121
+      }
+    },
+    "youtube_Good_017340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9856900473764757,
+        "hand": 0.9426139008979049,
+        "interacting_object": 0.9450957305211426
+      }
+    },
+    "youtube_Good_017940": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.997048791661258,
+        "hand": 0.9368348589714967,
+        "interacting_object": 0.9119141001736
+      }
+    },
+    "youtube_How_001140": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9745942865693371,
+        "hand": 0.8198249552741432,
+        "interacting_object": 0.7815560357879106
+      }
+    },
+    "youtube_How_003720": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9964265613783929,
+        "hand": 0.9160758621340709,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_How_004740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9788597608876083,
+        "hand": 0.909425221481959,
+        "interacting_object": 0.8748798657991764
+      }
+    },
+    "youtube_How_005460": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9680203235771208,
+        "hand": 0.9234814682610506,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_How_005820": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.7921873840445269,
+        "hand": 0.8811510906401709,
+        "interacting_object": 0.4359737328134619
+      }
+    },
+    "youtube_How_009000": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.989767202143025,
+        "hand": 0.9191083755423052,
+        "interacting_object": 0.8080865019985651
+      }
+    },
+    "youtube_How_011160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9876273242566359,
+        "hand": 0.9520642271255183,
+        "interacting_object": 0.8355182539132043
+      }
+    },
+    "youtube_How_011280": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9149073709492039,
+        "hand": 0.9036205316223648,
+        "interacting_object": 0.23376860399397137
+      }
+    },
+    "youtube_How_014220": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9699995683496397,
+        "hand": 0.916231785242878,
+        "interacting_object": 0.6763668588205808
+      }
+    },
+    "youtube_How_014760": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9777128980397981,
+        "hand": 0.897479689071204,
+        "interacting_object": 0.36916307635896967
+      }
+    },
+    "youtube_How_015240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9675455602946879,
+        "hand": 0.9426514975621082,
+        "interacting_object": 0.06739004541436801
+      }
+    },
+    "youtube_How_017400": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9879955709355916,
+        "hand": 0.935475951344716,
+        "interacting_object": 0.7460446514898479
+      }
+    },
+    "youtube_How_018540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9711384224965509,
+        "hand": 0.9436116243101902,
+        "interacting_object": 0.03652370471714948
+      }
+    },
+    "youtube_How_018840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9831331845135568,
+        "hand": 0.9429330595730547,
+        "interacting_object": 0.5622953678051804
+      }
+    },
+    "youtube_How_019620": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9760534271064222,
+        "hand": 0.9512002864510213,
+        "interacting_object": 0.8251285331531053
+      }
+    },
+    "youtube_How_020160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9565461617678555,
+        "hand": 0.9468062812263347,
+        "interacting_object": 0.6536266737923458
+      }
+    },
+    "youtube_Late_000000": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.990798482516754,
+        "hand": 0.9249939995199616,
+        "interacting_object": 0.8446148716238746
+      }
+    },
+    "youtube_Late_000060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.6291716554614748,
+        "hand": 0.9197581652740449,
+        "interacting_object": 0.04540315706931233
+      }
+    },
+    "youtube_Late_000180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9941318177643366,
+        "hand": 0.9230834308596889,
+        "interacting_object": 0.8968891438770957
+      }
+    },
+    "youtube_Late_000900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9944298110706287,
+        "hand": 0.9431097926234419,
+        "interacting_object": 0.858463750122521
+      }
+    },
+    "youtube_Late_001200": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9899718307375099,
+        "hand": 0.918916639727895,
+        "interacting_object": 0.7625768563131682
+      }
+    },
+    "youtube_Late_002100": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9695068661383267,
+        "hand": 0.7647447404322539,
+        "interacting_object": 0.05683096784381847
+      }
+    },
+    "youtube_Late_002220": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.7030526452148589,
+        "hand": 0.9270168298019864,
+        "interacting_object": 0.07428452309411088
+      }
+    },
+    "youtube_Late_002520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9737353118182288,
+        "hand": 0.8918773586750357,
+        "interacting_object": 0.13054005934718102
+      }
+    },
+    "youtube_Late_002580": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9915606412294296,
+        "hand": 0.9093369026516659,
+        "interacting_object": 0.9433274355262452
+      }
+    },
+    "youtube_Late_003360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9792450922291014,
+        "hand": 0.964152414827093,
+        "interacting_object": 0.6396195114119819
+      }
+    },
+    "youtube_Late_004380": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9634569921446301,
+        "hand": 0.8976577336990926,
+        "interacting_object": 0.0853189970689629
+      }
+    },
+    "youtube_Late_005580": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9640610535489217,
+        "hand": 0.9433311815846942,
+        "interacting_object": 0.05901804913012315
+      }
+    },
+    "youtube_Late_006780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9908726200720206,
+        "hand": 0.9252886861885958,
+        "interacting_object": 0.748927004131235
+      }
+    },
+    "youtube_Late_007260": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9720805266153013,
+        "hand": 0.936303980954103,
+        "interacting_object": 0.6437295671505165
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_000120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9952717529356598,
+        "hand": 0.9452146690518783,
+        "interacting_object": null
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_000720": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9897108039238278,
+        "hand": 0.9476428962888155,
+        "interacting_object": 0.9317728025829475
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_003120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9751031008433747,
+        "hand": 0.87696640915801,
+        "interacting_object": 0.9060393815250429
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_004020": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9946885047659264,
+        "hand": 0.941941434171086,
+        "interacting_object": 0.20887065259867135
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_004200": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9865448896611193,
+        "hand": 0.9422147214457747,
+        "interacting_object": 0.913769104615427
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_004740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9681212805976026,
+        "hand": 0.9082503975030917,
+        "interacting_object": 0.25050488510452484
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_004800": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9710547420760139,
+        "hand": 0.9143540619655653,
+        "interacting_object": 0.5941026978437226
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_004980": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9803150758729358,
+        "hand": 0.9287940137350641,
+        "interacting_object": 0.7180709157935584
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_005520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9900807022434295,
+        "hand": 0.931303816354779,
+        "interacting_object": 0.3338496047853023
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_006180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.7300081370919387,
+        "hand": 0.9310547102716568,
+        "interacting_object": 0.42643868475546315
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_006540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9127058621366054,
+        "hand": 0.9258122814599458,
+        "interacting_object": 0.7851978915799518
+      }
+    },
+    "youtube_Making Chicken Fried Rice POV  First Person Cooking-EkqKbuJKByY-1080p-1644527850807_006840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9832960829592835,
+        "hand": 0.9360723645278552,
+        "interacting_object": 0.9365150244508098
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_000420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9721692362741364,
+        "hand": 0.9149178976732391,
+        "interacting_object": 0.2690692957214963
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_000480": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9481690745764522,
+        "hand": 0.9444941375559047,
+        "interacting_object": 0.705567725859512
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_000780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9781292465810054,
+        "hand": 0.9029630132505508,
+        "interacting_object": 0.49648020907979595
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_001080": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9907717683207056,
+        "hand": 0.9591939052435395,
+        "interacting_object": 0.8639868348370466
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_001500": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9648953469953357,
+        "hand": 0.9193286385621005,
+        "interacting_object": 0.6821176895741733
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_001620": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9925483065098069,
+        "hand": 0.904530066367232,
+        "interacting_object": 0.8098723045416215
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_002700": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9779877414900614,
+        "hand": 0.8800712421144224,
+        "interacting_object": 0.1389743974772881
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_003060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.904656683556095,
+        "hand": 0.9059653150752327,
+        "interacting_object": 0.4987974866044127
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_003420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9768298708204269,
+        "hand": 0.9351831729017115,
+        "interacting_object": 0.9118943374730238
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_003720": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9902774482980394,
+        "hand": 0.9056923341270036,
+        "interacting_object": 0.6921057721532978
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_003780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9714102476105496,
+        "hand": 0.7860040647535645,
+        "interacting_object": 0.6371684394775818
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_004080": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9874621924145026,
+        "hand": 0.9052983778747195,
+        "interacting_object": 0.5679289365934905
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_004380": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8774997380785442,
+        "hand": 0.8904101070610548,
+        "interacting_object": 0.0734338154958512
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_004560": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9657401202736787,
+        "hand": 0.8998770105197799,
+        "interacting_object": 0.7507381711470184
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_004980": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9690224586347124,
+        "hand": 0.951276511087943,
+        "interacting_object": 0.5851714673104269
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_005160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9491544178086523,
+        "hand": 0.8787267832107098,
+        "interacting_object": 0.2895122666406021
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_005280": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9862960522158327,
+        "hand": 0.9003596226874778,
+        "interacting_object": 0.8155273796398383
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_006060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9898511895928603,
+        "hand": 0.9290804545660343,
+        "interacting_object": 0.8542806272389901
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_006300": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9355308421248894,
+        "hand": 0.8935653761788646,
+        "interacting_object": 0.6608962335106726
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_006360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.854504525948545,
+        "hand": 0.9094101239726368,
+        "interacting_object": 0.5807436344792972
+      }
+    },
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_006840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9876162038158725,
+        "hand": 0.8949875610430296,
+        "interacting_object": 0.8973492080608433
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_000060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9975243241212018,
+        "hand": 0.9180966954494116,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_000120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9961367978699187,
+        "hand": 0.9421913243137662,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_000600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9969152146022653,
+        "hand": 0.9004084072118737,
+        "interacting_object": 0.8704102333792761
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_001740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9975528648085414,
+        "hand": 0.9295730463970888,
+        "interacting_object": 0.9509972546555089
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_003780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9888805936443076,
+        "hand": 0.882084829740261,
+        "interacting_object": 0.7985996975872723
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_003900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9815280985287312,
+        "hand": 0.8940962692358653,
+        "interacting_object": 0.5803927148548662
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_004140": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.996135012362961,
+        "hand": 0.9312514906024727,
+        "interacting_object": 0.5971134020618557
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_004920": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9968664369551282,
+        "hand": 0.916506501826745,
+        "interacting_object": 0.7214365463342017
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_005760": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.983630905210596,
+        "hand": 0.9633184198269656,
+        "interacting_object": 0.548696036540445
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_006240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9379931827056849,
+        "hand": 0.9337520259319287,
+        "interacting_object": 0.21181800778508073
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_006300": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9145334099043443,
+        "hand": 0.9577647327895098,
+        "interacting_object": 0.27989672515259906
+      }
+    },
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_006960": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9953573558940408,
+        "hand": 0.9043024064307155,
+        "interacting_object": 0.9755682412228426
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_000060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9869858942830388,
+        "hand": 0.9284544563875655,
+        "interacting_object": 0.8639072167302116
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_000120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.986389030578814,
+        "hand": 0.8379799554989255,
+        "interacting_object": 0.09916723317471109
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_000360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9899866086960327,
+        "hand": 0.9082745632705908,
+        "interacting_object": 0.8868220458609116
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_000420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9946714504674555,
+        "hand": 0.7848687734333155,
+        "interacting_object": 0.5985854503464203
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_000540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9810385801402317,
+        "hand": 0.7820900011278337,
+        "interacting_object": 0.5979675182828379
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_000900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9939553637804304,
+        "hand": 0.9510057417645397,
+        "interacting_object": 0.7906808146048903
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_001140": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9863922988462881,
+        "hand": 0.8685044234990995,
+        "interacting_object": 0.6900970480612083
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_001200": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9716287816898356,
+        "hand": 0.8572108152586173,
+        "interacting_object": 0.16429601560953538
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_001560": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9917613945604677,
+        "hand": 0.8738757118274229,
+        "interacting_object": 0.8265128556066087
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_002040": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9723935527324397,
+        "hand": 0.8939550532148826,
+        "interacting_object": 0.7212237260107054
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_002160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9879664558996892,
+        "hand": 0.8963011314186249,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_003000": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9891560252909799,
+        "hand": 0.9167406788994085,
+        "interacting_object": 0.7954394509630286
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_003420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9897804737628182,
+        "hand": 0.846979122393519,
+        "interacting_object": 0.9429042834179536
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_005340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9646632337100961,
+        "hand": 0.7983575400642906,
+        "interacting_object": 0.4542626176673935
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_005520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9841417598437332,
+        "hand": 0.8020053628842659,
+        "interacting_object": 0.002072538860103627
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_006240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9821423236137542,
+        "hand": 0.9130381679389313,
+        "interacting_object": 0.9437900524770444
+      }
+    },
+    "youtube_Making Smash Burgers After Work POV  First Person Cooking-6mPU9OVrXzQ-1080p-1644527620854_006720": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9710259166664598,
+        "hand": 0.889677125718475,
+        "interacting_object": 0.7908330114587356
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_000120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9686810870835428,
+        "hand": 0.906898795044408,
+        "interacting_object": 0.22417787502413283
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_001020": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9911428970964394,
+        "hand": 0.8855191503444956,
+        "interacting_object": 0.7672610882487426
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_001080": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9923515148362015,
+        "hand": 0.9201649768001375,
+        "interacting_object": 0.8286581882685428
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_001440": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9910100339120744,
+        "hand": 0.9388013695909498,
+        "interacting_object": 0.924309411806317
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_002280": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.992034153470841,
+        "hand": 0.9262581994213858,
+        "interacting_object": 0.6920944336149014
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_002400": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9868148158905906,
+        "hand": 0.8903849800872369,
+        "interacting_object": 0.7215905929484208
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_002580": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9889229859623501,
+        "hand": 0.937973898488193,
+        "interacting_object": 0.904592054027744
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_003300": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9494500863452137,
+        "hand": 0.9394393284612078,
+        "interacting_object": 0.5131068644642697
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_003660": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9922010626757313,
+        "hand": 0.9050290735041701,
+        "interacting_object": 0.3312222222222222
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_004020": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9731222072020792,
+        "hand": 0.9133655450200099,
+        "interacting_object": 0.8420495464169255
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_004320": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9583675320883525,
+        "hand": 0.9280654870521016,
+        "interacting_object": 0.7667054407982624
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_004680": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9448743025037891,
+        "hand": 0.9023837831995362,
+        "interacting_object": 0.5969534077469328
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_004860": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.966508347851426,
+        "hand": 0.9360531706167273,
+        "interacting_object": 0.4189170061179875
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_005520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9484376697916563,
+        "hand": 0.9156703535579567,
+        "interacting_object": 0.4232762546350842
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_005760": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9298017461876342,
+        "hand": 0.9321871601450625,
+        "interacting_object": 0.14239492939985732
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_006240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9621912275630362,
+        "hand": 0.92938100889187,
+        "interacting_object": 0.8829975518207442
+      }
+    },
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_007320": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9940610835163005,
+        "hand": 0.9373721757894906,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_000180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9953756539295122,
+        "hand": 0.9134113878849525,
+        "interacting_object": 0.3270181219110379
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_000420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.972302531309947,
+        "hand": 0.8920952721453258,
+        "interacting_object": 0.8622045084739566
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_000840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9552740325957697,
+        "hand": 0.9313566184262726,
+        "interacting_object": 0.5527403075181586
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_001380": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9346092862053966,
+        "hand": 0.9471049031761638,
+        "interacting_object": 0.5016179783316052
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_001680": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9895864071091294,
+        "hand": 0.9195873536478395,
+        "interacting_object": 0.8724561301059885
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_002040": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.947309653479367,
+        "hand": 0.9288541550132383,
+        "interacting_object": 0.7331179139386994
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_002340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9628299673889952,
+        "hand": 0.8881771821339706,
+        "interacting_object": 0.5987746790408089
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_003420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.991608080906596,
+        "hand": 0.9011803241655842,
+        "interacting_object": 0.7375888698210346
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_003660": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9728491416150765,
+        "hand": 0.9146290075968264,
+        "interacting_object": 0.8568959545209451
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_004320": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9891448167694818,
+        "hand": 0.899609375,
+        "interacting_object": 0.7485328313586536
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_005100": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8869632665024358,
+        "hand": 0.8745650643347652,
+        "interacting_object": 0.37628752030397494
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_005280": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9692755305793448,
+        "hand": 0.8816648675432232,
+        "interacting_object": 0.2593832756162151
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_005820": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9859657890814906,
+        "hand": 0.8939416208589318,
+        "interacting_object": 0.9399683073937131
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_006300": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.988979311237004,
+        "hand": 0.9167744586307124,
+        "interacting_object": 0.9329120473022912
+      }
+    },
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_007200": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9964587866818619,
+        "hand": 0.9419306415048098,
+        "interacting_object": 0.776295731707317
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_000180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9797308041081281,
+        "hand": 0.9455003537593402,
+        "interacting_object": 0.9397951791464415
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_000360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9720473987667376,
+        "hand": 0.7279638317308437,
+        "interacting_object": 0.053231939163498096
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_000480": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9809105109391145,
+        "hand": 0.9147463291013441,
+        "interacting_object": 0.9081549236649654
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_000600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9090436949012037,
+        "hand": 0.947941980696449,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_000720": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9906559344779051,
+        "hand": 0.9217922652427445,
+        "interacting_object": 0.6002695886598834
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_000960": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9361720966394046,
+        "hand": 0.9166471811270436,
+        "interacting_object": 0.5696251059914486
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_001020": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9843289996377077,
+        "hand": 0.8030339556078201,
+        "interacting_object": 0.6183768972630153
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_001080": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9580466814150896,
+        "hand": 0.8485737809412515,
+        "interacting_object": 0.6687534691574838
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_001680": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9757547373927428,
+        "hand": 0.9211380456598093,
+        "interacting_object": 0.7688149488799128
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_002820": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9382177907705158,
+        "hand": 0.7606472990812357,
+        "interacting_object": 0.37795768713989664
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_003060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9679788189502556,
+        "hand": 0.8339987660326764,
+        "interacting_object": 0.8853895088121806
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_003120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9631659084268058,
+        "hand": 0.7621612548258948,
+        "interacting_object": 0.7376218323586745
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_004320": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9017600887539668,
+        "hand": 0.6556015758657027,
+        "interacting_object": 0.8652643517892261
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_004560": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9540889380154749,
+        "hand": 0.9165137827732751,
+        "interacting_object": 0.823372081415722
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_004920": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.934393906951719,
+        "hand": 0.8817148504345139,
+        "interacting_object": 0.8399883627900211
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_005340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9790811169828756,
+        "hand": 0.9183795805605268,
+        "interacting_object": 0.7787449023068963
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_005700": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9761870716199083,
+        "hand": 0.904973474801061,
+        "interacting_object": 0.8723610304086771
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_006540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9531698473911467,
+        "hand": 0.8656358275765597,
+        "interacting_object": 0.90909515233787
+      }
+    },
+    "youtube_Making a Philly Cheesesteak POV  First Person Cooking #philly #cheesesteak #gopro-eRpr67cT6bo-1080p-1644527695918_007080": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9810087947751656,
+        "hand": 0.9208668884673984,
+        "interacting_object": 0.7856986020639684
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_000300": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9930925183146814,
+        "hand": 0.8867740640944791,
+        "interacting_object": 0.752585814957945
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_000360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9912351398835495,
+        "hand": 0.8755871481376173,
+        "interacting_object": 0.5645282734733831
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_000840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.987129613372912,
+        "hand": 0.8511281693417073,
+        "interacting_object": 0.4452394401556518
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_001860": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9959774215281926,
+        "hand": 0.9535826359832636,
+        "interacting_object": 0.13422920126830742
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_002160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9970477818661027,
+        "hand": 0.9310103643415781,
+        "interacting_object": 0.777907038231717
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_003060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9929856790948186,
+        "hand": 0.9112762126936633,
+        "interacting_object": 0.9203486587686452
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_003180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9935189388487218,
+        "hand": 0.9288657739936458,
+        "interacting_object": 0.949905807632273
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_003600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9909008817510275,
+        "hand": 0.9280415501093172,
+        "interacting_object": 0.9625004955008523
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_003960": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9957182576859811,
+        "hand": 0.9422066248634514,
+        "interacting_object": 0.8406113537117904
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_004440": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9798795586021298,
+        "hand": 0.9346362520296226,
+        "interacting_object": 0.34116331096196867
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_004800": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9851046094010244,
+        "hand": 0.8891040341218357,
+        "interacting_object": 0.45362646903779963
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_005160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.995467189631896,
+        "hand": 0.9258765399780763,
+        "interacting_object": 0.783917866740164
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_005580": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9834953051959424,
+        "hand": 0.9336668901841441,
+        "interacting_object": 0.40659767436547645
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_005940": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9948314047020361,
+        "hand": 0.8218597063621533,
+        "interacting_object": 0.8964018353054818
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_006780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9819862709912637,
+        "hand": 0.8683965171220429,
+        "interacting_object": 0.920311379698863
+      }
+    },
+    "youtube_Making a T-Bone Steak POV  First Person Cooking-znuEJcLMSjw-1080p-1644527668544_007080": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9540635423098598,
+        "hand": 0.9402784556365488,
+        "interacting_object": 0.6922500711621148
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_000180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9844500944862324,
+        "hand": 0.9248783940034289,
+        "interacting_object": 0.5127414009827448
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_000240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9761341391257761,
+        "hand": 0.9331724852645896,
+        "interacting_object": 0.6757349973089344
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_000480": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9733302195235871,
+        "hand": 0.90049491925916,
+        "interacting_object": 0.5923264015566095
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_000900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9976799495390496,
+        "hand": 0.9496015794528833,
+        "interacting_object": 0.8828474576271187
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_001740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.971909138200104,
+        "hand": 0.9092443021352378,
+        "interacting_object": 0.590867386548098
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_001920": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.995939358160539,
+        "hand": 0.9371929658020267,
+        "interacting_object": 0.7972956361401352
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_003840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9881185104696322,
+        "hand": 0.9414146270013257,
+        "interacting_object": 0.7080483431834783
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_004740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8268552800980776,
+        "hand": 0.9226861870533632,
+        "interacting_object": 0.5281865284974093
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_005220": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9459978175271908,
+        "hand": 0.9255377459113534,
+        "interacting_object": 0.6970241355132851
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_005640": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9575308538468598,
+        "hand": 0.9193648581961741,
+        "interacting_object": 0.32666604355547246
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_006780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9745831125482897,
+        "hand": 0.8956061408152461,
+        "interacting_object": 0.6441343941343941
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_006960": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.982186225201741,
+        "hand": 0.8516834791263901,
+        "interacting_object": 0.6467555497175883
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_007500": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.7556441822710172,
+        "hand": 0.9277763176858579,
+        "interacting_object": 0.00609441275503524
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_007620": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9358719547534824,
+        "hand": 0.945273541625111,
+        "interacting_object": 0.1360528323151247
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_008280": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.980714170904161,
+        "hand": 0.8814569800342725,
+        "interacting_object": 0.48175778984552114
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_008400": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9899204716364991,
+        "hand": 0.9399578651685393,
+        "interacting_object": 0.5688324417037611
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_009480": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9686986593916723,
+        "hand": 0.9146329467544093,
+        "interacting_object": 0.7490364847126237
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_010020": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9859570464633952,
+        "hand": 0.8759523364679994,
+        "interacting_object": 0.8919969118275728
+      }
+    },
+    "youtube_POV 'From-Scratch' Meatballs & Spaghetti for My Wife  First Person Cooking-RN4LfG5ZHE4-1080p-1644527646933_010500": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9690116346620434,
+        "hand": 0.9177854236866573,
+        "interacting_object": 0.7805947796320069
+      }
+    },
+    "youtube_POV Cooking MONGOLIAN BEEF NOODLES  JONAH IN THE KITCHEN-seV_bNo_fLE-1080p-1644528285252 (1)_009780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9655925570479925,
+        "hand": 0.8730760016249605,
+        "interacting_object": 0.29817204841058603
+      }
+    },
+    "youtube_POV Cooking MONGOLIAN BEEF NOODLES  JONAH IN THE KITCHEN-seV_bNo_fLE-1080p-1644528285252 (1)_011400": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9500578112084216,
+        "hand": 0.9150441745463574,
+        "interacting_object": 0.2832706382785477
+      }
+    },
+    "youtube_POV Cooking MONGOLIAN BEEF NOODLES  JONAH IN THE KITCHEN-seV_bNo_fLE-1080p-1644528285252 (1)_013980": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.944743282618314,
+        "hand": 0.9284537389100127,
+        "interacting_object": 0.16886545554722293
+      }
+    },
+    "youtube_POV Cooking MONGOLIAN BEEF NOODLES  JONAH IN THE KITCHEN-seV_bNo_fLE-1080p-1644528285252 (1)_014820": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9865445145165613,
+        "hand": 0.9289201697253541,
+        "interacting_object": 0.9293751662407049
+      }
+    },
+    "youtube_POV Cooking MONGOLIAN BEEF NOODLES  JONAH IN THE KITCHEN-seV_bNo_fLE-1080p-1644528285252 (1)_018180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9987376593828788,
+        "hand": 0.954539782147505,
+        "interacting_object": null
+      }
+    },
+    "youtube_POV Cooking MONGOLIAN BEEF NOODLES  JONAH IN THE KITCHEN-seV_bNo_fLE-1080p-1644528285252_002460": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9941025551794194,
+        "hand": 0.95382712976933,
+        "interacting_object": 0.9145636134344152
+      }
+    },
+    "youtube_POV Cooking MONGOLIAN BEEF NOODLES  JONAH IN THE KITCHEN-seV_bNo_fLE-1080p-1644528285252_002580": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9641978094675764,
+        "hand": 0.7060573546625049,
+        "interacting_object": 0.7736089841755998
+      }
+    },
+    "youtube_POV Cooking MONGOLIAN BEEF NOODLES  JONAH IN THE KITCHEN-seV_bNo_fLE-1080p-1644528285252_003060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9742722457877216,
+        "hand": 0.8176294045722331,
+        "interacting_object": 0.6737123713576438
+      }
+    },
+    "youtube_Really_000780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9854866727301034,
+        "hand": 0.7991861971766953,
+        "interacting_object": 0.6559544075197987
+      }
+    },
+    "youtube_Really_001140": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9934245651970796,
+        "hand": 0.898423625879722,
+        "interacting_object": 0.9323806158637928
+      }
+    },
+    "youtube_Really_001920": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9956028375133658,
+        "hand": 0.8746296138700419,
+        "interacting_object": 0.613593124712983
+      }
+    },
+    "youtube_Really_003240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.982850111667603,
+        "hand": 0.9281054085644459,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Really_003960": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9875981392328856,
+        "hand": 0.9161712437694122,
+        "interacting_object": 0.33677041321056234
+      }
+    },
+    "youtube_Really_004560": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9717140523631208,
+        "hand": 0.8877619391709912,
+        "interacting_object": 0.9147484858754117
+      }
+    },
+    "youtube_Really_004920": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9903388337821226,
+        "hand": 0.9438908535123471,
+        "interacting_object": 0.4939071122011036
+      }
+    },
+    "youtube_Really_005160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.990193401685439,
+        "hand": 0.9269016381010162,
+        "interacting_object": 0.43238620904108527
+      }
+    },
+    "youtube_Really_005640": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9779779173441302,
+        "hand": 0.9042378991772182,
+        "interacting_object": 0.606658822997036
+      }
+    },
+    "youtube_Really_006300": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9697713769544917,
+        "hand": 0.6693630295995356,
+        "interacting_object": 0.6196120845050112
+      }
+    },
+    "youtube_Really_006540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.983049617600534,
+        "hand": 0.921330957033938,
+        "interacting_object": 0.7324962864827974
+      }
+    },
+    "youtube_Really_006900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9917439521201596,
+        "hand": 0.9075722707643785,
+        "interacting_object": 0.8072484673638658
+      }
+    },
+    "youtube_Really_008040": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.957637463067755,
+        "hand": 0.8780108078836629,
+        "interacting_object": 0.5006057812602884
+      }
+    },
+    "youtube_Really_008280": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9627465000601132,
+        "hand": 0.9300938263919959,
+        "interacting_object": 0.6446395620998402
+      }
+    },
+    "youtube_Really_009600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9772870841545006,
+        "hand": 0.9339829504362411,
+        "interacting_object": 0.5187586845761927
+      }
+    },
+    "youtube_Really_011220": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9383714393036695,
+        "hand": 0.9287484687045953,
+        "interacting_object": 0.4640570733771774
+      }
+    },
+    "youtube_Really_011400": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9874634483047126,
+        "hand": 0.9389714955954402,
+        "interacting_object": 0.6344364447812724
+      }
+    },
+    "youtube_Really_011880": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9938845211088134,
+        "hand": 0.9480044288993013,
+        "interacting_object": 0.7079334331249449
+      }
+    },
+    "youtube_Really_014340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9790654321461044,
+        "hand": 0.9211579477102255,
+        "interacting_object": 0.6298950331320002
+      }
+    },
+    "youtube_Really_014580": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9773261948347793,
+        "hand": 0.929670530175335,
+        "interacting_object": 0.21132562054514847
+      }
+    },
+    "youtube_Really_014640": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9940823194408491,
+        "hand": 0.9486732857225803,
+        "interacting_object": 0.8542214546453664
+      }
+    },
+    "youtube_Really_016080": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9830432010802584,
+        "hand": 0.871232858420905,
+        "interacting_object": 0.6820318851850543
+      }
+    },
+    "youtube_Really_016620": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9903403814217292,
+        "hand": 0.9576850894848501,
+        "interacting_object": 0.30869149952244507
+      }
+    },
+    "youtube_Really_018240": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9941740588489831,
+        "hand": 0.9331631522229271,
+        "interacting_object": 0.9629058357069182
+      }
+    },
+    "youtube_Really_020340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9492607188152746,
+        "hand": 0.9458879517304383,
+        "interacting_object": 0.6882582522478138
+      }
+    },
+    "youtube_Really_021540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9954799632113043,
+        "hand": 0.9494307400379507,
+        "interacting_object": 0.8686340227254149
+      }
+    },
+    "youtube_Really_023220": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9818514869496773,
+        "hand": 0.9505027448843307,
+        "interacting_object": 0.8103977955407184
+      }
+    },
+    "youtube_Really_024600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9023142205871622,
+        "hand": 0.9401623734589556,
+        "interacting_object": 0.16076038827109745
+      }
+    },
+    "youtube_Really_027540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.7072328545042367,
+        "hand": 0.956001252146012,
+        "interacting_object": 0.08440490239150178
+      }
+    },
+    "youtube_Really_030060": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9939667900136813,
+        "hand": 0.938588734362729,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Really_030900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8959244735656885,
+        "hand": 0.9526461544104611,
+        "interacting_object": 0.19562498455149913
+      }
+    },
+    "youtube_Really_033360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9925703230151611,
+        "hand": 0.9330546748818568,
+        "interacting_object": 0.8417273581581112
+      }
+    },
+    "youtube_Really_033900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9736530538631227,
+        "hand": 0.9338062288554443,
+        "interacting_object": 0.8899180950283161
+      }
+    },
+    "youtube_Really_035100": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8987173177340881,
+        "hand": 0.9241753014801205,
+        "interacting_object": 0.1625122039175675
+      }
+    },
+    "youtube_Really_035640": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9883201609520814,
+        "hand": 0.9409198454077318,
+        "interacting_object": 0.7906574179005965
+      }
+    },
+    "youtube_Really_036000": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.979284715074351,
+        "hand": 0.9128540861296797,
+        "interacting_object": 0.6312281403017888
+      }
+    },
+    "youtube_Really_036420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9860234676612286,
+        "hand": 0.9114584898290315,
+        "interacting_object": 0.8274962438416473
+      }
+    },
+    "youtube_Really_036840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.971331218621147,
+        "hand": 0.949732605338087,
+        "interacting_object": 0.3448339763136171
+      }
+    },
+    "youtube_Really_037620": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.983021273101603,
+        "hand": 0.9097355533790401,
+        "interacting_object": 0.17582769876428073
+      }
+    },
+    "youtube_Really_037680": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9576880981286547,
+        "hand": 0.9315811635904274,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Really_038040": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9761080387436136,
+        "hand": 0.8688317899221772,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Really_039720": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9833741479512457,
+        "hand": 0.885719058578959,
+        "interacting_object": 0.7835717078404452
+      }
+    },
+    "youtube_Really_042600": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9939113535289775,
+        "hand": 0.8753241307778036,
+        "interacting_object": 0.5506788759077992
+      }
+    },
+    "youtube_Really_044040": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9766243583036941,
+        "hand": 0.9176118270390395,
+        "interacting_object": 0.1333095209747192
+      }
+    },
+    "youtube_Really_044220": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9917944952819463,
+        "hand": 0.9251865490842136,
+        "interacting_object": 0.5347364318425412
+      }
+    },
+    "youtube_Really_044580": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9947390068396325,
+        "hand": 0.9547054545454545,
+        "interacting_object": 0.92863130728004
+      }
+    },
+    "youtube_Really_044760": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.854217226880757,
+        "hand": 0.8865850709986866,
+        "interacting_object": 0.33632560548811113
+      }
+    },
+    "youtube_Really_045720": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9554552463779613,
+        "hand": 0.949581350521053,
+        "interacting_object": 0.21862939520965194
+      }
+    },
+    "youtube_Really_048900": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9966178889358007,
+        "hand": 0.9434367160214472,
+        "interacting_object": 0.8006511249345968
+      }
+    },
+    "youtube_Really_050520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9905725903367057,
+        "hand": 0.9568076150650637,
+        "interacting_object": 0.4859207950609848
+      }
+    },
+    "youtube_Really_053460": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9193442717592838,
+        "hand": 0.9115057556120636,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Really_054420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.972497900755728,
+        "hand": 0.9217589451895145,
+        "interacting_object": 0.3046696951620551
+      }
+    },
+    "youtube_Really_056040": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9960394953647039,
+        "hand": 0.95215698533591,
+        "interacting_object": 0.08123791102514506
+      }
+    },
+    "youtube_Really_062940": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9914474890909631,
+        "hand": 0.9502208531907474,
+        "interacting_object": 0.7541140129177197
+      }
+    },
+    "youtube_Really_065280": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9889619197154298,
+        "hand": 0.8511354079058032,
+        "interacting_object": 0.8971246803467847
+      }
+    },
+    "youtube_Really_066360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9814364516307343,
+        "hand": 0.8982575445345057,
+        "interacting_object": 0.8510043641249442
+      }
+    },
+    "youtube_Really_067500": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9972073184322773,
+        "hand": 0.9572828812400274,
+        "interacting_object": 0.6841411399767352
+      }
+    },
+    "youtube_Sauerkraut_000660": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9771047840430488,
+        "hand": 0.9555739077975552,
+        "interacting_object": 0.42682947951848965
+      }
+    },
+    "youtube_Sauerkraut_001440": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9858235596520464,
+        "hand": 0.8691926322356108,
+        "interacting_object": 0.5147061004731464
+      }
+    },
+    "youtube_Sauerkraut_002220": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9824588837993297,
+        "hand": 0.9525821486651571,
+        "interacting_object": 0.40975776185602186
+      }
+    },
+    "youtube_Sauerkraut_003840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9018206459845243,
+        "hand": 0.9378698224852071,
+        "interacting_object": 0.6545885344429033
+      }
+    },
+    "youtube_Sauerkraut_004860": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9830289491259989,
+        "hand": 0.9524389725571313,
+        "interacting_object": 0.43355325164938735
+      }
+    },
+    "youtube_Sauerkraut_007680": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.970573599896954,
+        "hand": 0.9463319886448528,
+        "interacting_object": 0.8639015017705901
+      }
+    },
+    "youtube_Sauerkraut_013200": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9640531364055821,
+        "hand": 0.9367887698313814,
+        "interacting_object": 0.7327585794914193
+      }
+    },
+    "youtube_Sauerkraut_015540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.8800326001380089,
+        "hand": 0.9295951318040886,
+        "interacting_object": 0.4701517012725256
+      }
+    },
+    "youtube_Sauerkraut_016740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9866180414998806,
+        "hand": 0.9309656603750482,
+        "interacting_object": 0.7675340385555813
+      }
+    },
+    "youtube_Sauerkraut_018000": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9893310973021202,
+        "hand": 0.948897751501066,
+        "interacting_object": 0.8480882240708235
+      }
+    },
+    "youtube_Sauerkraut_021120": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.98825835506992,
+        "hand": 0.8825946103943555,
+        "interacting_object": 0.5759186083480946
+      }
+    },
+    "youtube_Sauerkraut_021780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9927476623947491,
+        "hand": 0.9170426494571253,
+        "interacting_object": 0.8096671055106263
+      }
+    },
+    "youtube_Sauerkraut_021960": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9813647881954567,
+        "hand": 0.9104568328283235,
+        "interacting_object": 0.5488905183957151
+      }
+    },
+    "youtube_Sauerkraut_022500": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9913302255456206,
+        "hand": 0.8943111350768401,
+        "interacting_object": 0.8888998345023249
+      }
+    },
+    "youtube_Sauerkraut_022800": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9502732831100229,
+        "hand": 0.9236779875938175,
+        "interacting_object": 0.36224241852773287
+      }
+    },
+    "youtube_Sauerkraut_024540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9812041600698194,
+        "hand": 0.8994644989790808,
+        "interacting_object": 0.13837503327122705
+      }
+    },
+    "youtube_Sauerkraut_024840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9897034962858858,
+        "hand": 0.9392421920607122,
+        "interacting_object": 0.14994912440422
+      }
+    },
+    "youtube_Sauerkraut_025800": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9881860746423454,
+        "hand": 0.9285846368046642,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_Sauerkraut_026340": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9800936607920703,
+        "hand": 0.9612236242391177,
+        "interacting_object": 0.7868890433171184
+      }
+    },
+    "youtube_Sauerkraut_027420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9761560665032725,
+        "hand": 0.8926184481574732,
+        "interacting_object": 0.9419726190532449
+      }
+    },
+    "youtube_Why_001860": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9924671784631632,
+        "hand": 0.9507352712091472,
+        "interacting_object": 0.8507228363969386
+      }
+    },
+    "youtube_Why_002160": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9885110449326815,
+        "hand": 0.9457920863815711,
+        "interacting_object": 0.9644786950807149
+      }
+    },
+    "youtube_Why_002520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9931064855345852,
+        "hand": 0.9473945366602952,
+        "interacting_object": 0.8561781493689203
+      }
+    },
+    "youtube_Why_002880": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9826693093922153,
+        "hand": 0.9464174216161345,
+        "interacting_object": 0.9438122176906547
+      }
+    },
+    "youtube_Why_005520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9915598799086006,
+        "hand": 0.9448106361310913,
+        "interacting_object": 0.9324318319830561
+      }
+    },
+    "youtube_Why_006540": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9816746254864216,
+        "hand": 0.938410260866898,
+        "interacting_object": 0.9079838553617339
+      }
+    },
+    "youtube_Why_009840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9783334478072852,
+        "hand": 0.9272285140640534,
+        "interacting_object": 0.8984804884213801
+      }
+    },
+    "youtube_Why_010740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9701721302516311,
+        "hand": 0.874318007722732,
+        "interacting_object": 0.785096777028363
+      }
+    },
+    "youtube_Why_013980": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9896969368192747,
+        "hand": 0.9414990298410166,
+        "interacting_object": 0.8832323815017786
+      }
+    },
+    "youtube_Why_014580": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9746837840926242,
+        "hand": 0.9170962878620151,
+        "interacting_object": 0.6370719618611587
+      }
+    },
+    "youtube_Why_015420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9926857751038448,
+        "hand": 0.9164444743504555,
+        "interacting_object": 0.8213125741093984
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_001440": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9953093623145938,
+        "hand": 0.9484631298950791,
+        "interacting_object": 0.9699900982557697
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_005520": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9840597476001909,
+        "hand": 0.8838336898527206,
+        "interacting_object": 0.6672688303735457
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_006960": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9035733256192658,
+        "hand": 0.9316963230883877,
+        "interacting_object": 0.08171789912358976
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_007020": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9616059426285231,
+        "hand": 0.9586430535545044,
+        "interacting_object": 0.2944620759219623
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_007200": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9944321721862145,
+        "hand": 0.9257850636285687,
+        "interacting_object": 0.8302388423988842
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_007440": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9972568669026177,
+        "hand": 0.7820956322136368,
+        "interacting_object": 0.6716363387291947
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_008460": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9646973523885044,
+        "hand": 0.918695365213221,
+        "interacting_object": 0.7608124628701326
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_009660": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9362181322244134,
+        "hand": 0.8706804014990301,
+        "interacting_object": 0.588031956075044
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_011220": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9387264267571759,
+        "hand": 0.6746778497342674,
+        "interacting_object": 0.8409247325283113
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_011820": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9851380824872139,
+        "hand": 0.9353256704980842,
+        "interacting_object": 0.9017538428796688
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_012420": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.948362586736265,
+        "hand": 0.9247746232704268,
+        "interacting_object": 0.7091991870559136
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_012780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9126089654341446,
+        "hand": 0.9329100383035992,
+        "interacting_object": 0.24431102705710903
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_012840": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9926751849120157,
+        "hand": 0.8172696636357856,
+        "interacting_object": 0.0
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_013980": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9214778041148738,
+        "hand": 0.8859998511018463,
+        "interacting_object": 0.1574519895954397
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_014460": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.966118991110931,
+        "hand": 0.9143573536709588,
+        "interacting_object": 0.7550022841480127
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_015360": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9075559383369572,
+        "hand": 0.8870116794200564,
+        "interacting_object": 0.23431210602263233
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_016020": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9411841286266481,
+        "hand": 0.8892543859649122,
+        "interacting_object": 0.5473254264885468
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_016980": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9293283044993312,
+        "hand": 0.628325438138295,
+        "interacting_object": 0.7030336491535951
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_017400": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9424079320113314,
+        "hand": 0.5679905851612602,
+        "interacting_object": 0.8647031703995969
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_018180": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9830393298694637,
+        "hand": 0.8508115984902022,
+        "interacting_object": 0.9148940073566508
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_019200": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.986789866204982,
+        "hand": 0.888965122927387,
+        "interacting_object": 0.9153070177245223
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_019320": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9344849442384929,
+        "hand": 0.5017910830764323,
+        "interacting_object": 0.7672817455528469
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886_007740": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.990340368203539,
+        "hand": 0.9207309147380159,
+        "interacting_object": 0.7926278471176728
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886_008220": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.955971408293277,
+        "hand": 0.9314717612831334,
+        "interacting_object": 0.6562694497739325
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886_008700": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9540236560805133,
+        "hand": 0.9221036215787646,
+        "interacting_object": 0.715424121803952
+      }
+    },
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886_009780": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9667364544033092,
+        "hand": 0.9137965723483255,
+        "interacting_object": 0.7494250428051832
+      }
+    }
+  },
+  "eval_seconds": 15.6,
+  "hand_mode": "predicted",
+  "eval_seconds_scope": "all requested hand modes together",
+  "run_name": "b0_cascade_stage2",
+  "stage1_checkpoint": "/data/runs/b0_hands_only/model_final.pt",
+  "stage2_label_map": {
+    "1": 0,
+    "2": 1
+  },
+  "hand_input_encoding": "binary_0_1",
+  "oracle_pastes_gt_hands": false,
+  "vis_names": [
+    "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_003720",
+    "youtube_Why_010740",
+    "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_003900",
+    "youtube_Chicken_006900",
+    "youtube_Good_004440",
+    "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_003660",
+    "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_002280",
+    "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_011820"
+  ]
+}
