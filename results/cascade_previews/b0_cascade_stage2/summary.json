@@ -1,0 +1,356 @@
+{
+  "run_name": "b0_cascade_stage2",
+  "seed": 0,
+  "resolution": "after geometry, 512 crop",
+  "corruption": {
+    "morph_probs": [
+      0.4,
+      0.3,
+      0.3
+    ],
+    "kernel_sizes": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "drop_prob": 0.1,
+    "blob_prob": 0.2,
+    "blob_count": [
+      1,
+      3
+    ],
+    "blob_radius": [
+      3,
+      10
+    ]
+  },
+  "random_draws": [
+    {
+      "name": "epic_P12_03_frame_0000070471",
+      "source": "epic",
+      "draw": 0,
+      "dropped_component": false,
+      "morphology": "none",
+      "kernel": null,
+      "blobs": [
+        [
+          89,
+          416,
+          3
+        ]
+      ],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "epic_P12_03_frame_0000070471",
+      "source": "epic",
+      "draw": 1,
+      "dropped_component": false,
+      "morphology": "dilation",
+      "kernel": 15,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "epic_P12_03_frame_0000070471",
+      "source": "epic",
+      "draw": 2,
+      "dropped_component": false,
+      "morphology": "erosion",
+      "kernel": 13,
+      "blobs": [
+        [
+          283,
+          17,
+          9
+        ],
+        [
+          373,
+          433,
+          9
+        ]
+      ],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1,
+        255
+      ]
+    },
+    {
+      "name": "epic_P12_03_frame_0000070471",
+      "source": "epic",
+      "draw": 3,
+      "dropped_component": false,
+      "morphology": "dilation",
+      "kernel": 5,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "thu_use_chopstick_RGB_use_chopstick_cgy_2_77",
+      "source": "thu",
+      "draw": 0,
+      "dropped_component": false,
+      "morphology": "none",
+      "kernel": null,
+      "blobs": [
+        [
+          269,
+          331,
+          8
+        ]
+      ],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1,
+        255
+      ]
+    },
+    {
+      "name": "thu_use_chopstick_RGB_use_chopstick_cgy_2_77",
+      "source": "thu",
+      "draw": 1,
+      "dropped_component": false,
+      "morphology": "none",
+      "kernel": null,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1,
+        255
+      ]
+    },
+    {
+      "name": "thu_use_chopstick_RGB_use_chopstick_cgy_2_77",
+      "source": "thu",
+      "draw": 2,
+      "dropped_component": false,
+      "morphology": "dilation",
+      "kernel": 15,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1,
+        255
+      ]
+    },
+    {
+      "name": "thu_use_chopstick_RGB_use_chopstick_cgy_2_77",
+      "source": "thu",
+      "draw": 3,
+      "dropped_component": false,
+      "morphology": "none",
+      "kernel": null,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1,
+        255
+      ]
+    },
+    {
+      "name": "escape_GX010025_013440",
+      "source": "own",
+      "draw": 0,
+      "dropped_component": false,
+      "morphology": "none",
+      "kernel": null,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1,
+        255
+      ]
+    },
+    {
+      "name": "escape_GX010025_013440",
+      "source": "own",
+      "draw": 1,
+      "dropped_component": false,
+      "morphology": "erosion",
+      "kernel": 11,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1,
+        255
+      ]
+    },
+    {
+      "name": "escape_GX010025_013440",
+      "source": "own",
+      "draw": 2,
+      "dropped_component": false,
+      "morphology": "none",
+      "kernel": null,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1,
+        255
+      ]
+    },
+    {
+      "name": "escape_GX010025_013440",
+      "source": "own",
+      "draw": 3,
+      "dropped_component": false,
+      "morphology": "none",
+      "kernel": null,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        1,
+        255
+      ]
+    },
+    {
+      "name": "ego4d_4c2ea5f1-64a3-41d4-9ce4-e1ea443720b3_18600",
+      "source": "ego4d",
+      "draw": 0,
+      "dropped_component": false,
+      "morphology": "dilation",
+      "kernel": 3,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0
+      ]
+    },
+    {
+      "name": "ego4d_4c2ea5f1-64a3-41d4-9ce4-e1ea443720b3_18600",
+      "source": "ego4d",
+      "draw": 1,
+      "dropped_component": false,
+      "morphology": "none",
+      "kernel": null,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "ego4d_4c2ea5f1-64a3-41d4-9ce4-e1ea443720b3_18600",
+      "source": "ego4d",
+      "draw": 2,
+      "dropped_component": true,
+      "morphology": "none",
+      "kernel": null,
+      "blobs": [
+        [
+          458,
+          407,
+          6
+        ],
+        [
+          118,
+          392,
+          8
+        ],
+        [
+          291,
+          207,
+          3
+        ]
+      ],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0
+      ]
+    },
+    {
+      "name": "ego4d_4c2ea5f1-64a3-41d4-9ce4-e1ea443720b3_18600",
+      "source": "ego4d",
+      "draw": 3,
+      "dropped_component": false,
+      "morphology": "none",
+      "kernel": null,
+      "blobs": [],
+      "input_values": [
+        0.0,
+        1.0
+      ],
+      "target_values": [
+        0,
+        255
+      ]
+    }
+  ],
+  "stress_panels": "Forced examples on one identical nonempty-hand crop, not training frequencies",
+  "stress_sample": {
+    "name": "epic_P12_03_frame_0000070471",
+    "seed": 7
+  }
+}

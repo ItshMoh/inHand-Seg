@@ -1,0 +1,13 @@
+# Phase 4 (b): full fine-tune, 3 classes (the main single-stage model). Full pre-resized train set (8,993 images,
+# Phase 2 augmentation), 20 epochs at batch 16 = 11,240 iterations, 1,500 warmup, poly decay to 0. Full val every
+# 2,000 iterations for the curve only (the final model is reported), then val / test_indomain / test_outdomain.
+# Unset fields use src/config.py DEFAULTS.
+seed: 0
+train:
+  max_iters: 11240
+  warmup_iters: 1500
+  ckpt_every: 2000
+eval:
+  splits: [val, test_indomain, test_outdomain]
+  n_vis: 8
+  val_every: 2000

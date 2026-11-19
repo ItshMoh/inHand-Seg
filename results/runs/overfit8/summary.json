@@ -1,0 +1,94 @@
+{
+  "run_name": "overfit8",
+  "run_dir": "/data/runs/overfit8",
+  "train": {
+    "n_train_images": 8,
+    "train_sources": {
+      "ego4d": 2,
+      "epic": 2,
+      "own": 2,
+      "thu": 2
+    },
+    "train_names": [
+      "ego4d_130e4f24-c55c-4d09-a1fc-7d9198ae1030_450",
+      "ego4d_599037f1-5825-4315-a75d-9a50d16959b5_150",
+      "epic_P26_37_frame_0000000361",
+      "epic_P30_05_frame_0000049951",
+      "escape_S00_long_cut_810",
+      "escape_S05_short_cut_2310",
+      "thu_plug_RGB_plug_cwx_2_126",
+      "thu_use_mobilephone_RGB_use_mobilephone_lzy_1_68"
+    ],
+    "steps": 500,
+    "resumed_from": null,
+    "train_seconds": 30.1,
+    "first_loss": 0.96432,
+    "last_loss": 0.01676,
+    "imgs_per_s": 154.5,
+    "data_wait_frac": 0.006,
+    "peak_gpu_mem_gb": 4.26,
+    "n_params_M": 3.71,
+    "n_trainable_M": 3.71
+  },
+  "eval": {
+    "train": {
+      "split": "train",
+      "n_images": 8,
+      "class_names": [
+        "background",
+        "hand",
+        "interacting_object"
+      ],
+      "iou": {
+        "background": 0.9931172613497938,
+        "hand": 0.9355150327254909,
+        "interacting_object": 0.9574410131239166
+      },
+      "miou": 0.9620244357330671,
+      "miou_fg": 0.9464780229247037,
+      "boundary_iou": {
+        "hand": 0.8843686036311439,
+        "interacting_object": 0.8998383450279382
+      },
+      "boundary_miou_fg": 0.8921034743295411,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9932436836091926,
+      "confusion_matrix": [
+        [
+          8041049,
+          22976,
+          10853
+        ],
+        [
+          15887,
+          668215,
+          3948
+        ],
+        [
+          6012,
+          3249,
+          541318
+        ]
+      ],
+      "eval_seconds": 0.9,
+      "run_name": "overfit8",
+      "vis_names": [
+        "ego4d_130e4f24-c55c-4d09-a1fc-7d9198ae1030_450",
+        "ego4d_599037f1-5825-4315-a75d-9a50d16959b5_150",
+        "epic_P26_37_frame_0000000361",
+        "epic_P30_05_frame_0000049951",
+        "escape_S00_long_cut_810",
+        "escape_S05_short_cut_2310",
+        "thu_plug_RGB_plug_cwx_2_126",
+        "thu_use_mobilephone_RGB_use_mobilephone_lzy_1_68"
+      ]
+    }
+  },
+  "checks": {
+    "loss_finite": true,
+    "loss_decreased_by_half": true,
+    "train_n_images_8": true,
+    "train_ious_in_0_1": true,
+    "train_fg_iou_ge_0.9": true
+  }
+}

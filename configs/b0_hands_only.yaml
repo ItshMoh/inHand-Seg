@@ -1,0 +1,16 @@
+# Phase 4 (c): hands-only (background vs hand), stage 1 of the Phase 5 cascade. Same schedule as b0_full_ft.yaml.
+# label_map {2: 0}: interacting object -> background; 2nd-order objects stay 255 (ignore), so hand IoU is scored on
+# exactly the same pixels as in the 3-class runs. Applied identically in training, evaluation and the panels.
+seed: 0
+data:
+  label_map: {2: 0}
+model:
+  class_names: [background, hand]
+train:
+  max_iters: 11240
+  warmup_iters: 1500
+  ckpt_every: 2000
+eval:
+  splits: [val, test_indomain, test_outdomain]
+  n_vis: 8
+  val_every: 2000

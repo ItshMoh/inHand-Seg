@@ -1,0 +1,14 @@
+# Phase 4 (c), second seed: identical to b0_hands_only.yaml except the seed.
+seed: 1
+data:
+  label_map: {2: 0}
+model:
+  class_names: [background, hand]
+train:
+  max_iters: 11240
+  warmup_iters: 1500
+  ckpt_every: 2000
+eval:
+  splits: [val, test_indomain, test_outdomain]
+  n_vis: 8
+  val_every: 2000

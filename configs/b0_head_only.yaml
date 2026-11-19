@@ -1,0 +1,13 @@
+# Phase 4 (a): head-only. Same as b0_full_ft.yaml, but the MiT encoder is frozen (and kept in eval mode); only the
+# decode head trains, at the same head lr (6e-5 x 10), so the encoder is the only difference from (b).
+seed: 0
+model:
+  freeze_encoder: true
+train:
+  max_iters: 11240
+  warmup_iters: 1500
+  ckpt_every: 2000
+eval:
+  splits: [val, test_indomain, test_outdomain]
+  n_vis: 8
+  val_every: 2000

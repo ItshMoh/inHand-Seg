@@ -1,0 +1,16 @@
+# Same stage 2 as seed 0, with seed 1; shares the frozen seed-0 stage-1 checkpoint.
+seed: 1
+data:
+  label_map: {1: 0, 2: 1}
+model:
+  class_names: [background, interacting_object]
+train:
+  max_iters: 11240
+  warmup_iters: 1500
+  ckpt_every: 2000
+eval:
+  splits: [val, test_indomain, test_outdomain]
+  n_vis: 8
+  val_every: 2000
+cascade:
+  enabled: true

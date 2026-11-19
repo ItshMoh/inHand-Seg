@@ -1,0 +1,17 @@
+# Phase 3 overfit test: 8 dev-subset images (2 per source, each >= 1% hand and >= 1% object pixels, seed 0),
+# no augmentation (512 px shorter side + pad), all 8 in every batch. Then scored on the same 8 images at
+# original resolution; every foreground IoU must reach 0.90.
+data:
+  train_file_list: configs/dev_subset_500.txt
+  subset: {per_source: 2, min_class_share: 0.01}
+  augment: false
+train:
+  max_iters: 500
+  batch_size: 8
+  warmup_iters: 25
+  log_every: 10
+  ckpt_every: 0
+eval:
+  splits: [train]
+  n_vis: 8
+  min_fg_iou: 0.90

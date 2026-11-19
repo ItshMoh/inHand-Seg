@@ -1,0 +1,32 @@
+run_name: smoke_dev500
+seed: 0
+data:
+  train_root: /data/egohos_512
+  train_file_list: configs/dev_subset_500.txt
+  subset: null
+  augment: true
+  num_workers: 8
+model:
+  pretrained: nvidia/mit-b0
+  class_names:
+  - background
+  - hand
+  - interacting_object
+  freeze_encoder: false
+train:
+  max_iters: 1000
+  batch_size: 16
+  warmup_iters: 100
+  lr: 6.0e-05
+  head_lr_mult: 10.0
+  weight_decay: 0.01
+  poly_power: 1.0
+  bf16: true
+  log_every: 20
+  ckpt_every: 500
+eval:
+  splits:
+  - val
+  boundary_dilation_ratio: 0.02
+  n_vis: 6
+  min_fg_iou: null

@@ -1,0 +1,196 @@
+{
+  "run_name": "b0_full_ft_s1",
+  "run_dir": "/data/runs/b0_full_ft_s1",
+  "train": {
+    "n_train_images": 8993,
+    "train_sources": {
+      "ego4d": 6227,
+      "epic": 1685,
+      "own": 444,
+      "thu": 637
+    },
+    "train_names": null,
+    "steps": 11240,
+    "resumed_from": null,
+    "train_seconds": 782.6,
+    "val_curve_seconds": 67.3,
+    "first_loss": 1.07745,
+    "last_loss": 0.16244,
+    "imgs_per_s": 285.2,
+    "data_wait_frac": 0.036,
+    "peak_gpu_mem_gb": 4.75,
+    "n_params_M": 3.71,
+    "n_trainable_M": 3.71
+  },
+  "eval": {
+    "val": {
+      "split": "val",
+      "n_images": 1124,
+      "class_names": [
+        "background",
+        "hand",
+        "interacting_object"
+      ],
+      "iou": {
+        "background": 0.9406590425011199,
+        "hand": 0.8214921169988999,
+        "interacting_object": 0.4417966933591698
+      },
+      "miou": 0.7346492842863964,
+      "miou_fg": 0.6316444051790349,
+      "boundary_iou": {
+        "hand": 0.688292748057246,
+        "interacting_object": 0.33679341722852857
+      },
+      "boundary_miou_fg": 0.5125430826428873,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9453368776344999,
+      "confusion_matrix": [
+        [
+          1688973392,
+          15923439,
+          19535188
+        ],
+        [
+          19936109,
+          191058479,
+          1952533
+        ],
+        [
+          51153220,
+          3704379,
+          60424418
+        ]
+      ],
+      "eval_seconds": 13.3,
+      "run_name": "b0_full_ft_s1",
+      "label_map": null,
+      "vis_names": [
+        "epic_P12_05_frame_0000001171",
+        "escape_GX010071_009900",
+        "ego4d_6f93978d-a3d0-467d-b401-e23b3c92f3bf_40800",
+        "epic_P28_18_frame_0000003781",
+        "thu_use_mobilephone_RGB_use_mobilephone_cgy_1_59",
+        "escape_GX010029_002700",
+        "ego4d_937ce95b-1fd0-4a2b-a9ed-8f9359dd38f1_10950",
+        "thu_cut_fruit_RGB_cut_fruit_fjw_2_103"
+      ]
+    },
+    "test_indomain": {
+      "split": "test_indomain",
+      "n_images": 1126,
+      "class_names": [
+        "background",
+        "hand",
+        "interacting_object"
+      ],
+      "iou": {
+        "background": 0.9381630551823833,
+        "hand": 0.8233290298949605,
+        "interacting_object": 0.46515778502541655
+      },
+      "miou": 0.7422166233675869,
+      "miou_fg": 0.6442434074601885,
+      "boundary_iou": {
+        "hand": 0.6829356042852,
+        "interacting_object": 0.33675797042984984
+      },
+      "boundary_miou_fg": 0.5098467873575249,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9436277909531591,
+      "confusion_matrix": [
+        [
+          1641295071,
+          16891149,
+          25318232
+        ],
+        [
+          20231274,
+          200108712,
+          2179040
+        ],
+        [
+          45741683,
+          3638114,
+          66860779
+        ]
+      ],
+      "eval_seconds": 16.2,
+      "run_name": "b0_full_ft_s1",
+      "label_map": null,
+      "vis_names": [
+        "epic_P12_05_frame_0000002161",
+        "escape_GX010071_010440",
+        "ego4d_72546b99-74eb-49f3-9e90-b0773dd7ef24_750",
+        "epic_P32_02_frame_0000003061",
+        "thu_throw_paperplane_RGB_throw_paperplane_fjw_3_54",
+        "escape_GX010025_011460",
+        "ego4d_9a4ed30a-1535-4eaa-b9dc-40437b77f852_15900",
+        "thu_fetch_water_RGB_fetch_water_cwx_1_109"
+      ]
+    },
+    "test_outdomain": {
+      "split": "test_outdomain",
+      "n_images": 500,
+      "class_names": [
+        "background",
+        "hand",
+        "interacting_object"
+      ],
+      "iou": {
+        "background": 0.9606311481623059,
+        "hand": 0.88267624164811,
+        "interacting_object": 0.5811007002086852
+      },
+      "miou": 0.808136030006367,
+      "miou_fg": 0.7318884709283976,
+      "boundary_iou": {
+        "hand": 0.7991866161343674,
+        "interacting_object": 0.43975756513771086
+      },
+      "boundary_miou_fg": 0.6194720906360391,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9634773751131368,
+      "confusion_matrix": [
+        [
+          822263145,
+          3209662,
+          7131973
+        ],
+        [
+          5741546,
+          82402696,
+          773288
+        ],
+        [
+          17615035,
+          1228324,
+          37105915
+        ]
+      ],
+      "eval_seconds": 8.9,
+      "run_name": "b0_full_ft_s1",
+      "label_map": null,
+      "vis_names": [
+        "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_003720",
+        "youtube_Why_010740",
+        "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_003900",
+        "youtube_Chicken_006900",
+        "youtube_Good_004440",
+        "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_003660",
+        "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_002280",
+        "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_011820"
+      ]
+    }
+  },
+  "checks": {
+    "loss_finite": true,
+    "loss_decreased_by_half": true,
+    "val_n_images_1124": true,
+    "val_ious_in_0_1": true,
+    "test_indomain_n_images_1126": true,
+    "test_indomain_ious_in_0_1": true,
+    "test_outdomain_n_images_500": true,
+    "test_outdomain_ious_in_0_1": true
+  }
+}

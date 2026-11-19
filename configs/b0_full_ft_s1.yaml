@@ -1,0 +1,11 @@
+# Phase 4 (b), second seed: identical to b0_full_ft.yaml except the seed (head init, data order, augmentation),
+# to measure run-to-run noise.
+seed: 1
+train:
+  max_iters: 11240
+  warmup_iters: 1500
+  ckpt_every: 2000
+eval:
+  splits: [val, test_indomain, test_outdomain]
+  n_vis: 8
+  val_every: 2000

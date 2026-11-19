@@ -1,0 +1,172 @@
+{
+  "run_name": "b0_hands_only_s1",
+  "run_dir": "/data/runs/b0_hands_only_s1",
+  "train": {
+    "n_train_images": 8993,
+    "train_sources": {
+      "ego4d": 6227,
+      "epic": 1685,
+      "own": 444,
+      "thu": 637
+    },
+    "train_names": null,
+    "steps": 11240,
+    "resumed_from": null,
+    "train_seconds": 865.3,
+    "val_curve_seconds": 93.0,
+    "first_loss": 0.68549,
+    "last_loss": 0.03783,
+    "imgs_per_s": 269.0,
+    "data_wait_frac": 0.045,
+    "peak_gpu_mem_gb": 4.74,
+    "n_params_M": 3.71,
+    "n_trainable_M": 3.71
+  },
+  "eval": {
+    "val": {
+      "split": "val",
+      "n_images": 1124,
+      "class_names": [
+        "background",
+        "hand"
+      ],
+      "iou": {
+        "background": 0.9812011524366147,
+        "hand": 0.8474448894525226
+      },
+      "miou": 0.9143230209445686,
+      "miou_fg": 0.8474448894525226,
+      "boundary_iou": {
+        "hand": 0.722111892894706
+      },
+      "boundary_miou_fg": 0.722111892894706,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9829786534027545,
+      "confusion_matrix": [
+        [
+          1823635352,
+          16078684
+        ],
+        [
+          18860373,
+          194086748
+        ]
+      ],
+      "eval_seconds": 17.9,
+      "run_name": "b0_hands_only_s1",
+      "label_map": {
+        "2": 0
+      },
+      "vis_names": [
+        "epic_P12_05_frame_0000001171",
+        "escape_GX010071_009900",
+        "ego4d_6f93978d-a3d0-467d-b401-e23b3c92f3bf_40800",
+        "epic_P28_18_frame_0000003781",
+        "thu_use_mobilephone_RGB_use_mobilephone_cgy_1_59",
+        "escape_GX010029_002700",
+        "ego4d_937ce95b-1fd0-4a2b-a9ed-8f9359dd38f1_10950",
+        "thu_cut_fruit_RGB_cut_fruit_fjw_2_103"
+      ]
+    },
+    "test_indomain": {
+      "split": "test_indomain",
+      "n_images": 1126,
+      "class_names": [
+        "background",
+        "hand"
+      ],
+      "iou": {
+        "background": 0.979774186538222,
+        "hand": 0.8463775469060663
+      },
+      "miou": 0.9130758667221441,
+      "miou_fg": 0.8463775469060663,
+      "boundary_iou": {
+        "hand": 0.7194183498191654
+      },
+      "boundary_miou_fg": 0.7194183498191654,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9818020466084989,
+      "confusion_matrix": [
+        [
+          1782708792,
+          17036236
+        ],
+        [
+          19764831,
+          202754195
+        ]
+      ],
+      "eval_seconds": 21.8,
+      "run_name": "b0_hands_only_s1",
+      "label_map": {
+        "2": 0
+      },
+      "vis_names": [
+        "epic_P12_05_frame_0000002161",
+        "escape_GX010071_010440",
+        "ego4d_72546b99-74eb-49f3-9e90-b0773dd7ef24_750",
+        "epic_P32_02_frame_0000003061",
+        "thu_throw_paperplane_RGB_throw_paperplane_fjw_3_54",
+        "escape_GX010025_011460",
+        "ego4d_9a4ed30a-1535-4eaa-b9dc-40437b77f852_15900",
+        "thu_fetch_water_RGB_fetch_water_cwx_1_109"
+      ]
+    },
+    "test_outdomain": {
+      "split": "test_outdomain",
+      "n_images": 500,
+      "class_names": [
+        "background",
+        "hand"
+      ],
+      "iou": {
+        "background": 0.9892959651486954,
+        "hand": 0.8962957320069188
+      },
+      "miou": 0.9427958485778072,
+      "miou_fg": 0.8962957320069188,
+      "boundary_iou": {
+        "hand": 0.8223472294325788
+      },
+      "boundary_miou_fg": 0.8223472294325788,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9902023719596947,
+      "confusion_matrix": [
+        [
+          885123379,
+          3430675
+        ],
+        [
+          6146228,
+          82771302
+        ]
+      ],
+      "eval_seconds": 15.8,
+      "run_name": "b0_hands_only_s1",
+      "label_map": {
+        "2": 0
+      },
+      "vis_names": [
+        "youtube_Making Japanese Katsudon POV  First Person Cooking-YYz5a6wS2oE-1080p-1644527980851_003720",
+        "youtube_Why_010740",
+        "youtube_Making Korean-Style Fried Chicken POV  First Person Cooking-7VXQvrFL5vI-1080p-1644527793665_003900",
+        "youtube_Chicken_006900",
+        "youtube_Good_004440",
+        "youtube_Making Sweet and Sour Pork POV  First Person Cooking-tntGipgzKL0-1080p-1644527934072_003660",
+        "youtube_Making Spaghetti Aglio e Olio POV  First Person Cooking-7ECKKEh9tnY-1080p-1644528035294_002280",
+        "youtube_how to cook PASTA RISOTTATA  UNDER 30 MINUTE PASTA MADE LIKE RISOTTO  JONAH IN THE KITCHEN-QHjXmwMg3MY-1080p-1644528336886 (1)_011820"
+      ]
+    }
+  },
+  "checks": {
+    "loss_finite": true,
+    "loss_decreased_by_half": true,
+    "val_n_images_1124": true,
+    "val_ious_in_0_1": true,
+    "test_indomain_n_images_1126": true,
+    "test_indomain_ious_in_0_1": true,
+    "test_outdomain_n_images_500": true,
+    "test_outdomain_ious_in_0_1": true
+  }
+}

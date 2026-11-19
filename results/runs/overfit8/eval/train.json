@@ -1,0 +1,142 @@
+{
+  "split": "train",
+  "n_images": 8,
+  "class_names": [
+    "background",
+    "hand",
+    "interacting_object"
+  ],
+  "iou": {
+    "background": 0.9931172613497938,
+    "hand": 0.9355150327254909,
+    "interacting_object": 0.9574410131239166
+  },
+  "miou": 0.9620244357330671,
+  "miou_fg": 0.9464780229247037,
+  "boundary_iou": {
+    "hand": 0.8843686036311439,
+    "interacting_object": 0.8998383450279382
+  },
+  "boundary_miou_fg": 0.8921034743295411,
+  "boundary_dilation_ratio": 0.02,
+  "pixel_accuracy": 0.9932436836091926,
+  "confusion_matrix": [
+    [
+      8041049,
+      22976,
+      10853
+    ],
+    [
+      15887,
+      668215,
+      3948
+    ],
+    [
+      6012,
+      3249,
+      541318
+    ]
+  ],
+  "eval_seconds": 0.9,
+  "per_image": {
+    "ego4d_130e4f24-c55c-4d09-a1fc-7d9198ae1030_450": {
+      "size": [
+        1920,
+        1440
+      ],
+      "iou": {
+        "background": 0.9961734768425632,
+        "hand": 0.951127222445414,
+        "interacting_object": 0.9807894369457079
+      }
+    },
+    "ego4d_599037f1-5825-4315-a75d-9a50d16959b5_150": {
+      "size": [
+        1440,
+        1080
+      ],
+      "iou": {
+        "background": 0.9857540311336029,
+        "hand": 0.8858420700269866,
+        "interacting_object": 0.7967822383085785
+      }
+    },
+    "epic_P26_37_frame_0000000361": {
+      "size": [
+        456,
+        256
+      ],
+      "iou": {
+        "background": 0.9971553117901071,
+        "hand": 0.9745171476830432,
+        "interacting_object": 0.9623222748815166
+      }
+    },
+    "epic_P30_05_frame_0000049951": {
+      "size": [
+        456,
+        256
+      ],
+      "iou": {
+        "background": 0.9962354017824645,
+        "hand": 0.9697709923664122,
+        "interacting_object": 0.9751359058907406
+      }
+    },
+    "escape_S00_long_cut_810": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9950544914416015,
+        "hand": 0.9560757478681876,
+        "interacting_object": 0.9739866129938214
+      }
+    },
+    "escape_S05_short_cut_2310": {
+      "size": [
+        1920,
+        1080
+      ],
+      "iou": {
+        "background": 0.9941405784961179,
+        "hand": 0.9436406104675742,
+        "interacting_object": 0.9385548360571487
+      }
+    },
+    "thu_plug_RGB_plug_cwx_2_126": {
+      "size": [
+        640,
+        480
+      ],
+      "iou": {
+        "background": 0.9915148877976006,
+        "hand": 0.8975404770732913,
+        "interacting_object": 0.7300961301454276
+      }
+    },
+    "thu_use_mobilephone_RGB_use_mobilephone_lzy_1_68": {
+      "size": [
+        640,
+        480
+      ],
+      "iou": {
+        "background": 0.9811918324503102,
+        "hand": 0.9430951742953887,
+        "interacting_object": 0.9255102040816326
+      }
+    }
+  },
+  "run_name": "overfit8",
+  "vis_names": [
+    "ego4d_130e4f24-c55c-4d09-a1fc-7d9198ae1030_450",
+    "ego4d_599037f1-5825-4315-a75d-9a50d16959b5_150",
+    "epic_P26_37_frame_0000000361",
+    "epic_P30_05_frame_0000049951",
+    "escape_S00_long_cut_810",
+    "escape_S05_short_cut_2310",
+    "thu_plug_RGB_plug_cwx_2_126",
+    "thu_use_mobilephone_RGB_use_mobilephone_lzy_1_68"
+  ]
+}

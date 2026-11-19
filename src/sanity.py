@@ -76,10 +76,9 @@ def overlay_classes(image: np.ndarray, mask: np.ndarray, alpha: float = 0.45) ->
     return out
 
 
-def _class_legend() -> list[Patch]:
-    return [
-        Patch(color=np.array(CLASS_COLOURS[1]) / 255, label="1 hand"),
-        Patch(color=np.array(CLASS_COLOURS[2]) / 255, label="2 interacting object"),
+def _class_legend(num_classes: int = 3) -> list[Patch]:
+    labels = {1: "1 hand", 2: "2 interacting object"}
+    return [Patch(color=np.array(CLASS_COLOURS[c]) / 255, label=labels[c]) for c in range(1, num_classes)] + [
         Patch(color=np.array(IGNORE_COLOUR) / 255, label="255 ignore (hatched)"),
     ]
 

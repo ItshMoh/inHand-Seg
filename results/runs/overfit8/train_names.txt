@@ -1,0 +1,8 @@
+ego4d_130e4f24-c55c-4d09-a1fc-7d9198ae1030_450
+ego4d_599037f1-5825-4315-a75d-9a50d16959b5_150
+epic_P26_37_frame_0000000361
+epic_P30_05_frame_0000049951
+escape_S00_long_cut_810
+escape_S05_short_cut_2310
+thu_plug_RGB_plug_cwx_2_126
+thu_use_mobilephone_RGB_use_mobilephone_lzy_1_68

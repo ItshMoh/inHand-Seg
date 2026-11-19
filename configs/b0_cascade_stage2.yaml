@@ -1,0 +1,16 @@
+# Phase 5: RGB + corrupted GT hands, binary object head; composed predicted/oracle eval.
+seed: 0
+data:
+  label_map: {1: 0, 2: 1}
+model:
+  class_names: [background, interacting_object]
+train:
+  max_iters: 11240
+  warmup_iters: 1500
+  ckpt_every: 2000
+eval:
+  splits: [val, test_indomain, test_outdomain]
+  n_vis: 8
+  val_every: 2000
+cascade:
+  enabled: true

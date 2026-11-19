@@ -1,0 +1,82 @@
+{
+  "run_name": "smoke_dev500",
+  "run_dir": "/data/runs/smoke_dev500",
+  "train": {
+    "n_train_images": 500,
+    "train_sources": {
+      "ego4d": 346,
+      "epic": 94,
+      "own": 25,
+      "thu": 35
+    },
+    "train_names": null,
+    "steps": 1000,
+    "resumed_from": null,
+    "train_seconds": 67.2,
+    "first_loss": 1.04833,
+    "last_loss": 0.18312,
+    "imgs_per_s": 274.9,
+    "data_wait_frac": 0.015,
+    "peak_gpu_mem_gb": 4.75,
+    "n_params_M": 3.71,
+    "n_trainable_M": 3.71
+  },
+  "eval": {
+    "val": {
+      "split": "val",
+      "n_images": 1124,
+      "class_names": [
+        "background",
+        "hand",
+        "interacting_object"
+      ],
+      "iou": {
+        "background": 0.9096145943269361,
+        "hand": 0.6918456240431102,
+        "interacting_object": 0.2477101118245979
+      },
+      "miou": 0.6163901100648814,
+      "miou_fg": 0.46977786793385407,
+      "boundary_iou": {
+        "hand": 0.5391630362412387,
+        "interacting_object": 0.18562223169486952
+      },
+      "boundary_miou_fg": 0.3623926339680541,
+      "boundary_dilation_ratio": 0.02,
+      "pixel_accuracy": 0.9146398788701783,
+      "confusion_matrix": [
+        [
+          1671384473,
+          27786100,
+          25261446
+        ],
+        [
+          38950294,
+          170341873,
+          3654954
+        ],
+        [
+          74082129,
+          5480482,
+          35719406
+        ]
+      ],
+      "eval_seconds": 21.1,
+      "run_name": "smoke_dev500",
+      "vis_names": [
+        "epic_P12_05_frame_0000001171",
+        "escape_GX010071_009900",
+        "ego4d_6f93978d-a3d0-467d-b401-e23b3c92f3bf_40800",
+        "epic_P28_18_frame_0000003781",
+        "thu_use_mobilephone_RGB_use_mobilephone_cgy_1_59",
+        "escape_GX010029_002700"
+      ]
+    }
+  },
+  "checks": {
+    "loss_finite": true,
+    "loss_decreased_by_half": true,
+    "val_n_images_1124": true,
+    "val_ious_in_0_1": true
+  }
+}

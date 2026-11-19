@@ -1,0 +1,11 @@
+# Phase 3 smoke test: 1,000 iterations (batch 16, ~32 passes) on the 500-image dev subset with the normal
+# training augmentation, then full-resolution evaluation on the whole val set. Unset fields use src/config.py DEFAULTS.
+data:
+  train_file_list: configs/dev_subset_500.txt
+train:
+  max_iters: 1000
+  warmup_iters: 100
+  ckpt_every: 500
+eval:
+  splits: [val]
+  n_vis: 6
