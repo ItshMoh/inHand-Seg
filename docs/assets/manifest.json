@@ -1,0 +1,219 @@
+{
+  "schema": 1,
+  "purpose": "Local Phase-8 README review assets; original outputs preserved",
+  "created_date": "2026-11-19",
+  "phase6_analysis_fingerprint": "029ee11ad0192b08535327cfd58fe5ea2c4dafe03bdf2004e569f887c4b6f36c",
+  "sam_proposal_fingerprint": "da9e8fd9abfeff47963c5caf63b14fc6f9c9b4187a47821108e3c3ee096a9847",
+  "phase7_analysis_fingerprint": "d95f14a370407ff1c0aacdda4dfd3639c5188a880c9178b19175c289b21418f9",
+  "licensing": "No new license granted. Dataset-frame/panel publication and checkpoint redistribution decisions remain unresolved.",
+  "assets": [
+    {
+      "path": "docs/assets/tray-recovery-seed0.png",
+      "original_path": "results/phase7/phase7_v1/gallery/9884ad4ff80c7e5cb7fc814e_full.png",
+      "sha256": "6413a22dc36eeb937d6e6b6c7dfa8f8a119e8f076e72723ce63261563c0bee05",
+      "bytes": 1474857,
+      "pixel_size": [
+        1650,
+        1036
+      ],
+      "transformation": "none; byte-identical copy",
+      "case_id": "9884ad4ff80c7e5cb7fc814e",
+      "case_fingerprint": "f58edf269d239954e93543dbb0fa21432f342337f4e8e37a27bdac75b8ced3ed",
+      "original_image": {
+        "height": 1080,
+        "image_sha256": "4f4222c9176debd4f476eaa3103a48e5356aad7b1ff93faca2b8f0a6102b928d",
+        "name": "youtube_POV Cooking MONGOLIAN BEEF NOODLES  JONAH IN THE KITCHEN-seV_bNo_fLE-1080p-1644528285252_003060",
+        "split": "test_outdomain",
+        "width": 1920
+      },
+      "label_sha256": "9d93111d4c743aea7465b841e0f40268d035f244e66c57417ab0fec63944fdd1",
+      "case_record": "results/phase7/phase7_v1/case_records/9884ad4ff80c7e5cb7fc814e.json",
+      "matched_crop_original": "results/phase7/phase7_v1/gallery/9884ad4ff80c7e5cb7fc814e_crop.png",
+      "displayed_baseline_run": "b0_full_ft",
+      "displayed_baseline_seed": 0,
+      "displayed_stage2_run": "b0_cascade_stage2",
+      "displayed_stage2_seed": 0,
+      "shared_stage1_run": "b0_hands_only",
+      "shared_stage1_seed": 0,
+      "object_iou_per_run": {
+        "b0_cascade_stage2": 0.6737123713576438,
+        "b0_cascade_stage2_s1": 0.6182453871666846,
+        "b0_full_ft": 0.004663703271879326,
+        "b0_full_ft_s1": 0.0
+      },
+      "caption_scores": "embedded original caption uses two-seed image means; panels display seed 0",
+      "sam_region": null
+    },
+    {
+      "path": "docs/assets/book-regression-seed0.png",
+      "original_path": "results/phase7/phase7_v1/gallery/819bb07cb30e12e169a83fc7_full.png",
+      "sha256": "8e54be6a5fd0cd501c028e8418b6d5a69d0f851b63d09c6c49c12806d821c36e",
+      "bytes": 977514,
+      "pixel_size": [
+        1650,
+        1036
+      ],
+      "transformation": "none; byte-identical copy",
+      "case_id": "819bb07cb30e12e169a83fc7",
+      "case_fingerprint": "3a016b36ca45914ce7ae9378bcd230ad07cf48ec74f9d62418dea268b04e1015",
+      "original_image": {
+        "height": 2160,
+        "image_sha256": "e24e1ef5fd0f6b8553d5676b640f7a5c8efc40988dd56ab109b7628138910930",
+        "name": "escape_GX010035_006540",
+        "split": "test_indomain",
+        "width": 3840
+      },
+      "label_sha256": "0fabbd2103c14c4b06dfa4719a103bd92016d36f5d092e98518add61dcff87f9",
+      "case_record": "results/phase7/phase7_v1/case_records/819bb07cb30e12e169a83fc7.json",
+      "matched_crop_original": "results/phase7/phase7_v1/gallery/819bb07cb30e12e169a83fc7_crop.png",
+      "displayed_baseline_run": "b0_full_ft",
+      "displayed_baseline_seed": 0,
+      "displayed_stage2_run": "b0_cascade_stage2",
+      "displayed_stage2_seed": 0,
+      "shared_stage1_run": "b0_hands_only",
+      "shared_stage1_seed": 0,
+      "object_iou_per_run": {
+        "b0_cascade_stage2": 0.05522796221286663,
+        "b0_cascade_stage2_s1": 0.11369318465923296,
+        "b0_full_ft": 0.2199331651623694,
+        "b0_full_ft_s1": 0.058404547413815275
+      },
+      "caption_scores": "embedded original caption uses two-seed image means; panels display seed 0",
+      "sam_region": null
+    },
+    {
+      "path": "docs/assets/headlamp-sam60-seed0.png",
+      "original_path": "results/phase7/phase7_v1/gallery/09ce8413ab9b0a71cb210772_sam60_full.png",
+      "sha256": "d3c5ff3e9cfa158b7c664f85e211602b7d650a75d55a3f7c5c3e46147fcda68d",
+      "bytes": 1726806,
+      "pixel_size": [
+        1650,
+        1243
+      ],
+      "transformation": "none; byte-identical copy",
+      "case_id": "09ce8413ab9b0a71cb210772_sam60",
+      "case_fingerprint": "0a094024a107c9c155c197af8d89b376995455b444f81f7307be0a7d6048f4a8",
+      "original_image": {
+        "height": 1080,
+        "image_sha256": "fa3272189bf0284f7350fea47a38c66f2599465b37259d5fc80905dc5cfc3f86",
+        "name": "ego4d_11f51f72-c0bd-4631-aabb-6ecbe17d95c9_25950",
+        "split": "test_indomain",
+        "width": 1440
+      },
+      "label_sha256": "8a458e0e1fbe127ab35d89b4b14291e7d4bb32ce72aec455b8ae28a9be272e96",
+      "case_record": "results/phase7/phase7_v1/case_records/09ce8413ab9b0a71cb210772_sam60.json",
+      "matched_crop_original": "results/phase7/phase7_v1/gallery/09ce8413ab9b0a71cb210772_sam60_crop.png",
+      "displayed_baseline_run": "b0_full_ft",
+      "displayed_baseline_seed": 0,
+      "displayed_stage2_run": "b0_cascade_stage2",
+      "displayed_stage2_seed": 0,
+      "shared_stage1_run": "b0_hands_only",
+      "shared_stage1_seed": 0,
+      "object_iou_per_run": {
+        "b0_cascade_stage2": 0.013915876432602246,
+        "b0_cascade_stage2_s1": 0.017993409298447612,
+        "b0_full_ft": 0.08171056017843356,
+        "b0_full_ft_s1": 0.05480747966680591
+      },
+      "caption_scores": "embedded original caption uses two-seed image means; panels display seed 0",
+      "sam_region": {
+        "area": 3090,
+        "bbox_xyxy": [
+          144,
+          437,
+          208,
+          500
+        ],
+        "bin": 3,
+        "distance": 0.09540200841636691,
+        "distance_px": 171.72361514946044,
+        "mask_id": 60,
+        "object_fractions": {
+          "b0_cascade_stage2": 1.0,
+          "b0_cascade_stage2_s1": 1.0,
+          "b0_full_ft": 0.0,
+          "b0_full_ft_s1": 0.0
+        }
+      }
+    },
+    {
+      "path": "docs/assets/packaging-sam18-seed0.png",
+      "original_path": "results/phase7/phase7_v1/gallery/b9e5a553830bcf66609d2202_sam18_full.png",
+      "sha256": "f0d3c268ff4721bab7282d164807847d29a3f7640b075dfdc6929266ac90e915",
+      "bytes": 1065915,
+      "pixel_size": [
+        1650,
+        1035
+      ],
+      "transformation": "none; byte-identical copy",
+      "case_id": "b9e5a553830bcf66609d2202_sam18",
+      "case_fingerprint": "654cd9ab7a8ab8ecb2eaf40aab2f1b017f8fe2a85f00a6a25d9732f6defa3134",
+      "original_image": {
+        "height": 256,
+        "image_sha256": "ccef4547b0339988ffe7ea570c3406ef5e899dfd7654f6bc8669d2f5eeba4d28",
+        "name": "epic_P07_101_frame_0000018721",
+        "split": "test_indomain",
+        "width": 456
+      },
+      "label_sha256": "36d485022beb005ff6230e6448d3325d89ef1e83ce3a703f6414c700f43e4091",
+      "case_record": "results/phase7/phase7_v1/case_records/b9e5a553830bcf66609d2202_sam18.json",
+      "matched_crop_original": "results/phase7/phase7_v1/gallery/b9e5a553830bcf66609d2202_sam18_crop.png",
+      "displayed_baseline_run": "b0_full_ft",
+      "displayed_baseline_seed": 0,
+      "displayed_stage2_run": "b0_cascade_stage2",
+      "displayed_stage2_seed": 0,
+      "shared_stage1_run": "b0_hands_only",
+      "shared_stage1_seed": 0,
+      "object_iou_per_run": {
+        "b0_cascade_stage2": 0.6120888457337056,
+        "b0_cascade_stage2_s1": 0.7221538882055487,
+        "b0_full_ft": 0.020901894512140886,
+        "b0_full_ft_s1": 0.26987012987012987
+      },
+      "caption_scores": "embedded original caption uses two-seed image means; panels display seed 0",
+      "sam_region": {
+        "area": 3541,
+        "bbox_xyxy": [
+          291,
+          192,
+          406,
+          256
+        ],
+        "bin": 3,
+        "distance": 0.05102506462271195,
+        "distance_px": 26.68332812825267,
+        "mask_id": 18,
+        "object_fractions": {
+          "b0_cascade_stage2": 0.12256424738774357,
+          "b0_cascade_stage2_s1": 0.0002824060999717594,
+          "b0_full_ft": 0.8525840158147416,
+          "b0_full_ft_s1": 0.9364586275063541
+        }
+      }
+    },
+    {
+      "path": "docs/assets/background-fp-distance.png",
+      "original_path": "results/clutter_fp_vs_distance.png",
+      "sha256": "786887c7bb172d80852f5f79e9531509916d94927b8c8a570bf101dc43d79733",
+      "bytes": 322917,
+      "pixel_size": [
+        2250,
+        1350
+      ],
+      "transformation": "none; byte-identical copy",
+      "cohort": "shared eligible SAM background proposals; strict >0.5 event; two-seed rates"
+    },
+    {
+      "path": "docs/assets/source-comparison.png",
+      "original_path": "results/phase7/phase7_v1/source_comparison.png",
+      "sha256": "8a99526a117682f16c9a75fca82a56e19d2e8eed49c096fa17720621d1fe9ade",
+      "bytes": 87586,
+      "pixel_size": [
+        1650,
+        1200
+      ],
+      "transformation": "none; byte-identical copy",
+      "cohort": "four-run defined-score intersection; mean and IQR of seed-averaged per-image IoUs"
+    }
+  ]
+}
